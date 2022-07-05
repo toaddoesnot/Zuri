@@ -85,9 +85,9 @@ public class TypeDictionary : MonoBehaviour
                 SentenceTypes.RemoveAt(randomIndex);
                 repeatSc.Checker();
 
-                generatorSc1.CreateCard();
-                generatorSc2.CreateCard();
-                generatorSc3.CreateCard();
+                //generatorSc1.CreateCard();
+               //generatorSc2.CreateCard();
+                //generatorSc3.CreateCard();
                 randomizer4Generators.GiveCard();
 
                 Round++;

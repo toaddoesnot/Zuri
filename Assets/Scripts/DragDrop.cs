@@ -8,7 +8,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     CanvasGroup canvasGroup;
     //Vector3 offset;
 
-
     void Awake()
     {
         //rectTransform = GetComponent<RectTransform>();
@@ -23,8 +22,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         canvasGroup.blocksRaycasts = false;
         canvasGroup.alpha = .6f;
     }
-    
-    
+
+
     public void OnPointerDown(PointerEventData eventData)
     {
         //offset = transform.position - Input.mousePosition;

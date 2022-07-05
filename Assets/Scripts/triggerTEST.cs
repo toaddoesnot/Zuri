@@ -13,9 +13,14 @@ public class triggerTEST : MonoBehaviour
 
     public TextMeshProUGUI textOnBubble;
 
+
+    public void Update()
+    {
+        
+    }
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Answer")
+        if (collision.gameObject.tag == "Answer" || collision.gameObject.tag == "Answer2" || collision.gameObject.tag == "Answer3")
         {
             if (argumentScript.snatched)
             {
@@ -63,7 +68,7 @@ public class triggerTEST : MonoBehaviour
                 {
                     currentCard = 7;
                 }
-                
+
                 GenerateAnswer();
                 argumentScript.card.GetComponent<SubTrigger>().TriggerAnswer();
             }
@@ -78,11 +83,13 @@ public class triggerTEST : MonoBehaviour
         }
         else
         {
-            if (collision.gameObject.tag == "Answer")
+            if (collision.gameObject.tag == "Answer" || collision.gameObject.tag == "Answer2" || collision.gameObject.tag == "Answer3")
             {
                 argumentScript.HaveSentence = false;
+
                 argumentScript.card = null;
                 argumentScript.cardSc = null;
+
                 argumentScript.damage = 0;
 
                 currentCard = 0;

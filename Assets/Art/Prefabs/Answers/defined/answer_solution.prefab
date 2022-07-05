@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: -7410337474753102530}
   m_Layer: 5
   m_Name: answer_solution
-  m_TagString: Answer
+  m_TagString: Answer2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,7 +179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 4.490001, y: -538.8204}
   m_SizeDelta: {x: 230, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4937793524466488690
@@ -244,7 +244,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 228.2936, y: 228.2936}
   m_EdgeRadius: 0
 --- !u!114 &4937793524466488701
 MonoBehaviour:
@@ -270,6 +270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793608be3b85bca479555b720b9deadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Answers: []
+  currentCard: 0
   haveMood: 0
   haveSTD: 0
   havePast: 0
@@ -287,8 +289,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c50bd29c2c72648b2be9d14ce910e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  r_XAxis: -252
-  r_YAxis: -539.1602
+  m_RectTransform: {fileID: 4937793524466488688}
+  r_XAxis: 4.490001
+  r_YAxis: -538.8204
 --- !u!225 &8765978443557044834
 CanvasGroup:
   m_ObjectHideFlags: 0

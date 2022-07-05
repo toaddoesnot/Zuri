@@ -23,19 +23,38 @@ public class SlotList : MonoBehaviour
 
     public void GiveCard()
     {
-        currentSlot1 = Random.Range(0, DefinedCards.Count);
-        generator1.card = DefinedCards[currentSlot1];
-        DefinedCards.RemoveAt(currentSlot1);
+        if(generator1.SlotFull is false)
+        {
+            currentSlot1 = Random.Range(0, DefinedCards.Count);
 
-        currentSlot2 = Random.Range(0, DefinedCards.Count);
-        generator2.card = DefinedCards[currentSlot2];
-        DefinedCards.RemoveAt(currentSlot2);
+            generator1.card = DefinedCards[currentSlot1];
+            generator1.CreateCard();
+            //generator1.card.GetComponent<RectTrnasformChange>().ChangePosition1();
+            DefinedCards.RemoveAt(currentSlot1);
+            
+        }
 
-        currentSlot3 = Random.Range(0, UndefinedCards.Count);
-        generator3.card = UndefinedCards[currentSlot3];
-        UndefinedCards.RemoveAt(currentSlot3);
+        if (generator2.SlotFull is false)
+        {
+            currentSlot2 = Random.Range(0, DefinedCards.Count);
+
+            generator2.card = DefinedCards[currentSlot2];
+            generator2.CreateCard();
+            //generator2.card.GetComponent<RectTrnasformChange>().ChangePosition2();
+            DefinedCards.RemoveAt(currentSlot2);
+        }
+
+        if (generator3.SlotFull is false)
+        {
+            currentSlot3 = Random.Range(0, UndefinedCards.Count);
+
+            //generator3.card.GetComponent<RectTrnasformChange>().ChangePosition2();
+            generator3.card = UndefinedCards[currentSlot3];
+            generator3.CreateCard();
+            UndefinedCards.RemoveAt(currentSlot3);
+        }
+
+        
+
     }
-
-
-
 }

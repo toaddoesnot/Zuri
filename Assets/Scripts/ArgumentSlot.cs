@@ -36,13 +36,16 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        snatched = true;
+        HaveSentence = false;
+        Destroy(card);
+        
 
-      if (eventData.pointerDrag != null)
-        {
-            snatched = true;
-            HaveSentence = false;
-            Destroy(card);
-        }
+       // if (eventData.pointerDrag != null)
+        //{
+            
+            //cardSc = null;
+       // }
 
     }
 

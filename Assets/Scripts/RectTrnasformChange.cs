@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class RectTrnasformChange : MonoBehaviour
 {
-    RectTransform m_RectTransform;
+    public RectTransform m_RectTransform;
 
     public float r_XAxis, r_YAxis;
 
     // Start is called before the first frame update
     void Start()
     {
-        m_RectTransform = GetComponent<RectTransform>();
-
-        m_RectTransform.anchoredPosition = new Vector2(r_XAxis, r_YAxis);
+        r_XAxis = 0;
+        r_YAxis = 0;
     }
 
     // Update is called once per frame
@@ -21,4 +20,10 @@ public class RectTrnasformChange : MonoBehaviour
     {
         
     }
+
+    public void ChangePosition()
+    {
+        m_RectTransform.anchoredPosition = new Vector2(r_XAxis, r_YAxis);
+    }
+
 }
