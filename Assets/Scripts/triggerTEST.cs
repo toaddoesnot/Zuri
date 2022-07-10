@@ -103,11 +103,11 @@ public class triggerTEST : MonoBehaviour
 
     public void GenerateAnswer()
      {
-        foreach (GameObject bubble in Bubbles)
-        {
-           bubble.SetActive(false);
-           Bubbles[currentCard].SetActive(true);
-        }
+       // foreach (GameObject bubble in Bubbles)
+       // {
+           //bubble.SetActive(false);
+           //Bubbles[currentCard].SetActive(true);
+       // }
 
         
 
