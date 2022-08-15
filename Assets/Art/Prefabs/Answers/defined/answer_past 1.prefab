@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 6592308469151871657}
   m_Layer: 5
   m_Name: answer_past 1
-  m_TagString: Answer2
+  m_TagString: Answer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.490001, y: -538.8204}
+  m_AnchoredPosition: {x: -252, y: -538.8204}
   m_SizeDelta: {x: 230, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8443084065097369466
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RectTransform: {fileID: 8443084065097369464}
-  r_XAxis: 4.490001
+  r_XAxis: -252
   r_YAxis: -538.8204
 --- !u!225 &6511420673219414777
 CanvasGroup:
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - I learned more since then.
+  - 'I learned more about safe sex since. '
 --- !u!1 &8443084065772033103
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.6}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8443084065772033096
 CanvasRenderer:
@@ -307,7 +307,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I learned more since then.
+  m_text: I learned more about safe sex since.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -412,7 +412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -42}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8443084065927917665
 CanvasRenderer:
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

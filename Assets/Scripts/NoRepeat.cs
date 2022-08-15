@@ -118,6 +118,9 @@ public class NoRepeat : MonoBehaviour
         problemBub.SetActive(false);
 
         slotScript.needMood = true;
+        slotScript.needSTD = false;
+        slotScript.needPast = false;
+        slotScript.needProblem = false;
     }
 
     public void STD()
@@ -130,7 +133,10 @@ public class NoRepeat : MonoBehaviour
         pastBub.SetActive(false);
         problemBub.SetActive(false);
 
+        slotScript.needMood = false;
         slotScript.needSTD = true;
+        slotScript.needPast = false;
+        slotScript.needProblem = false;
     }
 
     public void Mood2()
@@ -144,6 +150,9 @@ public class NoRepeat : MonoBehaviour
         problemBub.SetActive(false);
 
         slotScript.needMood = true;
+        slotScript.needSTD = false;
+        slotScript.needPast = false;
+        slotScript.needProblem = false;
     }
 
     public void Past()
@@ -156,7 +165,10 @@ public class NoRepeat : MonoBehaviour
         pastBub.SetActive(true);
         problemBub.SetActive(false);
 
+        slotScript.needMood = false;
+        slotScript.needSTD = false;
         slotScript.needPast = true;
+        slotScript.needProblem = false;
     }
 
     public void Problem()
@@ -169,6 +181,9 @@ public class NoRepeat : MonoBehaviour
         pastBub.SetActive(false);
         problemBub.SetActive(true);
 
+        slotScript.needMood = false;
+        slotScript.needSTD = false;
+        slotScript.needPast = false;
         slotScript.needProblem = true;
     }
 

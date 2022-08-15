@@ -14,6 +14,8 @@ public class CardDrawer : MonoBehaviour, IDropHandler
     public AnswerRandomizer cardRand;
     public int TimesDrawn;
 
+    public bool cardDrawn;
+
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
@@ -21,7 +23,7 @@ public class CardDrawer : MonoBehaviour, IDropHandler
             Destroy(cardDelete);
 
             TimesDrawn++;
-
+            cardDrawn = true;
         }
 
     }

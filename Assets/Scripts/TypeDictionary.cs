@@ -9,6 +9,9 @@ public class TypeDictionary : MonoBehaviour
     public List<GameObject> SentenceTypes = new List<GameObject>();
     public int currentType;
 
+    public Slider partnerSlider;
+    public Slider playerSlider;
+
     public NoRepeat repeatSc;
     public GameObject repeater;
 
@@ -31,14 +34,18 @@ public class TypeDictionary : MonoBehaviour
     public triggerTEST bossSc;
     public TextMeshProUGUI textOnBub;
 
-    
+    public CardDrawer cardDrawer;
+
+    public cardsBug bugger;
+
 
     // Start is called before the first frame update
     void Start()
     {
         currentType = -1;
         repeatSc = repeater.GetComponent<NoRepeat>();
-        GenerateType();
+        //GenerateType();
+
     }
 
     public void Update()
@@ -62,8 +69,6 @@ public class TypeDictionary : MonoBehaviour
         {
             r4.SetActive(false);
             r5.SetActive(true);
-
-            
         }
     }
 
@@ -73,28 +78,63 @@ public class TypeDictionary : MonoBehaviour
         {
             if (argumentSc.snatched)
             {
-                //destroyer.SetActive(true);
-                textOnBub.text = ("");
-                argumentSc.snatched = false;
+                    bossSc.InsideTrigger = false;
+                    argumentSc.HaveRightOne = false;
+                    //destroyer.SetActive(true);
+                    textOnBub.text = ("...");
+                    argumentSc.snatched = false;
+                    argumentSc.snatchedTwice = false;
 
-                bossSc.currentCard = 0;
-                bossSc.GenerateAnswer();
+                    bossSc.currentCard = 0;
 
-                int randomIndex = Random.Range(0, SentenceTypes.Count);
-                currentType = randomIndex;
-                SentenceTypes.RemoveAt(randomIndex);
-                repeatSc.Checker();
+                    int randomIndex = Random.Range(0, SentenceTypes.Count);
+                    currentType = randomIndex;
+                    SentenceTypes.RemoveAt(randomIndex);
+                    repeatSc.Checker();
+                    randomizer4Generators.GiveCard();
 
-                //generatorSc1.CreateCard();
-               //generatorSc2.CreateCard();
-                //generatorSc3.CreateCard();
-                randomizer4Generators.GiveCard();
+                    Round++;
 
-                Round++;
+                if (partnerSlider.value <= 0 || playerSlider.value < 0)
+                {
+                    
+                }
+                else
+                {
+                    FindObjectOfType<EndScreenSc>().PartnerRecap();
+                    cardDrawer.cardDrawn = false;
+                }
+
             }
             else
             {
+                if (cardDrawer.cardDrawn)
+                {
+                        textOnBub.text = ("...");
+                        argumentSc.snatched = false;
+                        argumentSc.snatchedTwice = false;
 
+                        bossSc.currentCard = 0;
+
+                        int randomIndex = Random.Range(0, SentenceTypes.Count);
+                        currentType = randomIndex;
+                        SentenceTypes.RemoveAt(randomIndex);
+                        repeatSc.Checker();
+                        randomizer4Generators.GiveCard();
+
+                        Round++;
+
+                        if(partnerSlider.value <=0 || playerSlider.value < 0)
+                    {
+                        
+                    }
+                    else
+                    {
+                        FindObjectOfType<EndScreenSc>().PlayerRecap();
+                        FindObjectOfType<EndScreenSc>().PartnerRecap();
+                        cardDrawer.cardDrawn = false;
+                    } 
+                }
             }
         }
 
@@ -105,8 +145,10 @@ public class TypeDictionary : MonoBehaviour
             SentenceTypes.RemoveAt(randomIndex);
             repeatSc.Checker();
 
+            FindObjectOfType<EndScreenSc>().PartnerRecap();
             Started = true;
         }
-
+        //bugger.DestroyCard = false;
+        
     }
 }

@@ -73,7 +73,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -42}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3056941255440291491
 CanvasRenderer:
@@ -137,7 +137,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -208,7 +208,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3056941256165156769
 CanvasRenderer:
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You can have STIs without symptoms.
+  m_text: One of us can have a STD without symptoms.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -272,7 +272,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -327,7 +327,7 @@ GameObject:
   - component: {fileID: -1863280048100870684}
   m_Layer: 5
   m_Name: answer_sti 1
-  m_TagString: Answer
+  m_TagString: Answer2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -351,7 +351,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -263, y: -538.8204}
+  m_AnchoredPosition: {x: 4.490001, y: -538.8204}
   m_SizeDelta: {x: 230, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3056941256943941842
@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RectTransform: {fileID: 3056941256943941852}
-  r_XAxis: -263
+  r_XAxis: 4.490001
   r_YAxis: -538.8204
 --- !u!225 &8951014643841570948
 CanvasGroup:
@@ -510,4 +510,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - You can have STIs without symptoms.
+  - 'One of us can have a STD without symptoms. '

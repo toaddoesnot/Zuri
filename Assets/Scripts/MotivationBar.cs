@@ -12,6 +12,6 @@ public class MotivationBar : MonoBehaviour
 
     public void Update()
     {
-        sliderText.text = "Motivation: " + playerMotivation.value.ToString();
+        sliderText.text = "MOTIVATION: " + playerMotivation.value.ToString();
     }
 }

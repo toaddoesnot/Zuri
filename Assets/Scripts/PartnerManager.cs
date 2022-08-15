@@ -61,14 +61,12 @@ public class PartnerManager : MonoBehaviour
             dialogueText.text += letter;
             yield return null;
         }
-        
+        //yield return new WaitForSeconds(0.3f);
     }
 
     IEnumerator StopEarly()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(5f);
         startearly = false;
-
-
     }
 }

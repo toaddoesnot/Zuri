@@ -22,6 +22,7 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
     public bool Iam3;
 
 
+
     //RectTransform self;
 
     // Start is called before the first frame update
@@ -74,6 +75,7 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
             if (collision.gameObject.tag == "Answer")
             {
                 SlotFull = true;
+
             }
         }
 
@@ -82,6 +84,8 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
             if (collision.gameObject.tag == "Answer2")
             {
                 SlotFull = true;
+
+               
             }
         }
 
@@ -122,6 +126,7 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
             }
         }
     }
+
 
 
 }

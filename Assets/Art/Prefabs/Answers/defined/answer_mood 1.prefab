@@ -57,7 +57,7 @@ GameObject:
   - component: {fileID: 3213027922733684783}
   m_Layer: 5
   m_Name: answer_mood 1
-  m_TagString: Answer2
+  m_TagString: Answer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.490001, y: -538.8204}
+  m_AnchoredPosition: {x: -252, y: -538.8204}
   m_SizeDelta: {x: 230, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7050364242703660206
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - I will put it on for you.
+  - 'I will put a condom for you to make it special. '
 --- !u!114 &7050364242703660193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RectTransform: {fileID: 7050364242703660192}
-  r_XAxis: 4.490001
+  r_XAxis: -252
   r_YAxis: -538.8204
 --- !u!225 &6575398789313464575
 CanvasGroup:
@@ -277,7 +277,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -42}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7050364243817137453
 CanvasRenderer:
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -412,7 +412,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0.3}
-  m_SizeDelta: {x: 200, y: 50}
+  m_SizeDelta: {x: 180, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7050364244105543317
 CanvasRenderer:
@@ -442,7 +442,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I will put it on for you.
+  m_text: I will put a condom for you to make it special.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -476,7 +476,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
