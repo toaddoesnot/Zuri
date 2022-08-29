@@ -14,8 +14,13 @@ public class SelectTouch : MonoBehaviour
 
     public Patterns patternSc;
 
+    public bool gotValue;
+    public bool wrongling;
+    public bool rightling;
+
     private void Start()
     {
+        
         image = GetComponent<Image>();
         patternSc = FindObjectOfType<Patterns>();
         self = this.gameObject;
@@ -29,31 +34,67 @@ public class SelectTouch : MonoBehaviour
         else
         {
             MousePressed = false;
-            image.color = new Color(1f, 1f, 1f, 0.5f);
-            CircleSelected = false;
-        }
-    }
 
-    public void OnMouseEnter()
-    {
-        if (MousePressed)
-        {
-            if (CircleSelected)
+            if (wrongling)
             {
-                patternSc.Recent = patternSc.mostRecent;
-                patternSc.mostRecent = self;
+                image.color = new Color32(220, 153, 160, 255);
             }
             else
             {
-                image.color = new Color(1f, 1f, 1f, 1f);
+                if (rightling)
+                {
+                    image.color = new Color32(193, 232, 225, 255);
+                }
+                else
+                {
+                    image.color = new Color(1f, 1f, 1f, 0.5f);
+                }
+            }
 
-                ///patternSc.Circles.Add(self);
+            CircleSelected = false;
+
+            gotValue = false;
+            patternSc.howManySelected = 0;
+        }
+    }
+
+    public void OnMouseOver()
+    {
+        if (MousePressed)
+        {
+            if (patternSc.ActiveCircles.Contains(self))
+            {
+                if (gotValue)
+                {
+
+                }
+                else
+                {
+                    patternSc.howManySelected += 1;
+                    gotValue = true;
+                }
+            }
+
+            if (CircleSelected)
+            {
+
+            }
+            else
+            {
+                
+                image.color = new Color(1f, 1f, 1f, 1f);
                 patternSc.Recent = patternSc.mostRecent;
                 patternSc.mostRecent = self;
+
+                //patternSc.fullKey = "";
+                patternSc.fullKey += CircleNum;
+                patternSc.lastcombination = patternSc.fullKey;
+                patternSc.thatManySelected = patternSc.howManySelected;
 
                 CircleSelected = true;
             }
             
         }
     }
+
 }

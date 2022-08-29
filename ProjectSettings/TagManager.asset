@@ -9,6 +9,8 @@ TagManager:
   - slider
   - Answer2
   - Answer3
+  - Circle
+  - Stick
   layers:
   - Default
   - TransparentFX

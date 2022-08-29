@@ -12,10 +12,14 @@ public class Patterns : MonoBehaviour
 
     public string twoNumbers;
     public string fullKey;
+    public string lastcombination;
 
     public GameObject Recent;
     public GameObject mostRecent;
-    
+
+    public List<GameObject> ActiveCircles = new List<GameObject>();
+    public int howManySelected;
+    public int thatManySelected;
 
     public void Update()
     {
@@ -27,22 +31,17 @@ public class Patterns : MonoBehaviour
         else
         {
             twoNumbers = "";
+            fullKey = "";
             Recent = null;
             mostRecent = null;
             MousePressed = false;
         }
-
-
-        //twoNumbers = Circles[0].GetComponent<SelectTouch>().CircleNum + Circles[1].GetComponent<SelectTouch>().CircleNum.ToString();
-        
-
-
-
     }
 
     public void AddString()
     {
         //Combinations.Add(twoNumbers);
     }
+
 
 }

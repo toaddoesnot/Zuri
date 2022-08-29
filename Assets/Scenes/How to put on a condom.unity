@@ -198,27 +198,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textScript: {fileID: 1743574350}
   Step1: {fileID: 2054750600}
-  Step2: {fileID: 1478593051}
-  Step2right: {fileID: 1954886434}
-  Step2wrong: {fileID: 937657101}
   Step3organ: {fileID: 281010760}
   Step3base: {fileID: 1209827975}
   pinchedNot: {fileID: 1249896241}
   pinched: {fileID: 637396834}
-  con1: {fileID: 1953858001}
-  con2: {fileID: 44766752}
-  con3: {fileID: 1105576197}
-  con4: {fileID: 2136330636}
-  fullcheck: 0
-  expiration: 0
-  placeRight: 0
-  placeWrong: 0
-  placement: 0
-  pinchSpot: 0
-  condom1: 0
-  condom2: 0
-  condom3: 0
-  condom4: 0
+  Positioning:
+  - {fileID: 1478593051}
+  - {fileID: 1954886434}
+  - {fileID: 937657101}
+  CondomStart:
+  - {fileID: 1953858001}
+  - {fileID: 44766752}
+  - {fileID: 1105576197}
+  - {fileID: 2136330636}
 --- !u!4 &40132154
 Transform:
   m_ObjectHideFlags: 0
@@ -327,7 +319,7 @@ GameObject:
   - component: {fileID: 118791371}
   m_Layer: 5
   m_Name: circle10
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -445,6 +437,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &118791371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -485,7 +480,7 @@ GameObject:
   - component: {fileID: 143720271}
   m_Layer: 5
   m_Name: stick10-13
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -567,6 +562,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1013
   myTrigger2: 1310
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &189696009
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,7 +581,7 @@ GameObject:
   - component: {fileID: 189696017}
   m_Layer: 5
   m_Name: circle12
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -702,6 +699,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &189696017
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -759,7 +759,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2054750601}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -818,7 +818,7 @@ GameObject:
   - component: {fileID: 213916811}
   m_Layer: 5
   m_Name: stick5-6
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -900,6 +900,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 56
   myTrigger2: 65
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &281010760
 GameObject:
   m_ObjectHideFlags: 0
@@ -990,7 +992,7 @@ GameObject:
   - component: {fileID: 344067396}
   m_Layer: 5
   m_Name: stick1-2
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1072,6 +1074,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 12
   myTrigger2: 21
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &377819490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,6 +1181,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &427725037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 427725038}
+  - component: {fileID: 427725040}
+  - component: {fileID: 427725039}
+  m_Layer: 5
+  m_Name: baseEdge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &427725038
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427725037}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2054750601}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 256, y: 0}
+  m_SizeDelta: {x: 53.5, y: 562}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &427725039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427725037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -498445634, guid: 5644afdefedeba44693eb14fe98d7414, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &427725040
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427725037}
+  m_CullTransparentMesh: 1
 --- !u!1 &438734097
 GameObject:
   m_ObjectHideFlags: 0
@@ -1191,7 +1271,7 @@ GameObject:
   - component: {fileID: 438734101}
   m_Layer: 5
   m_Name: stick13-14
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1273,6 +1353,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1314
   myTrigger2: 1413
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &442189914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1369,7 @@ GameObject:
   - component: {fileID: 442189918}
   m_Layer: 5
   m_Name: stick11-14
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1369,6 +1451,84 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1114
   myTrigger2: 1410
+  rightstick: 0
+  wrongstick: 0
+--- !u!1 &496110353
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496110354}
+  - component: {fileID: 496110356}
+  - component: {fileID: 496110355}
+  m_Layer: 5
+  m_Name: edgeEdge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &496110354
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496110353}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2054750601}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 259, y: 0}
+  m_SizeDelta: {x: 66, y: 661.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &496110355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496110353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1991713391, guid: c38fa81b786fe544d8831e2dc3beb985, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &496110356
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496110353}
+  m_CullTransparentMesh: 1
 --- !u!1 &503007370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1383,7 +1543,7 @@ GameObject:
   - component: {fileID: 503007374}
   m_Layer: 5
   m_Name: stick4-5
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1465,6 +1625,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 45
   myTrigger2: 54
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &532448076
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1644,7 @@ GameObject:
   - component: {fileID: 532448084}
   m_Layer: 5
   m_Name: circle9
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1600,6 +1762,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &532448084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1710,7 +1875,7 @@ GameObject:
   - component: {fileID: 555651785}
   m_Layer: 5
   m_Name: circle7
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1828,6 +1993,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &555651785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1871,7 +2039,7 @@ GameObject:
   - component: {fileID: 563566716}
   m_Layer: 5
   m_Name: circle13
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1989,6 +2157,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &563566716
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2029,7 +2200,7 @@ GameObject:
   - component: {fileID: 608143180}
   m_Layer: 5
   m_Name: stick6-9
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2111,6 +2282,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 69
   myTrigger2: 96
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &615392742
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,7 +2301,7 @@ GameObject:
   - component: {fileID: 615392750}
   m_Layer: 5
   m_Name: circle1
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2246,6 +2419,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &615392750
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2362,7 +2538,7 @@ GameObject:
   - component: {fileID: 727338963}
   m_Layer: 5
   m_Name: stick7-10
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2444,6 +2620,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 710
   myTrigger2: 107
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &734871761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2458,7 +2636,7 @@ GameObject:
   - component: {fileID: 734871765}
   m_Layer: 5
   m_Name: stick8-9
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2540,6 +2718,84 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 89
   myTrigger2: 98
+  rightstick: 0
+  wrongstick: 0
+--- !u!1 &773834799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 773834800}
+  - component: {fileID: 773834802}
+  - component: {fileID: 773834801}
+  m_Layer: 5
+  m_Name: dateEdge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &773834800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773834799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2054750601}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 242.3, y: 0}
+  m_SizeDelta: {x: 32.7, y: 535.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &773834801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773834799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1572838626, guid: ea872689093803c4c9168a39de70998f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &773834802
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773834799}
+  m_CullTransparentMesh: 1
 --- !u!1 &804188059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2554,7 +2810,7 @@ GameObject:
   - component: {fileID: 804188063}
   m_Layer: 5
   m_Name: stick2-3
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2636,6 +2892,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 23
   myTrigger2: 32
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &810804728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2804,8 +3062,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 613.28, y: 661.17}
+  m_AnchoredPosition: {x: -32, y: 0}
+  m_SizeDelta: {x: 524, y: 562}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &875373629
 MonoBehaviour:
@@ -2827,7 +3085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2f5a7b6135b140c4fbc2577b65931617, type: 3}
+  m_Sprite: {fileID: -132920306, guid: 5644afdefedeba44693eb14fe98d7414, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2859,7 +3117,7 @@ GameObject:
   - component: {fileID: 908409703}
   m_Layer: 5
   m_Name: stick3-6
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2941,6 +3199,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 36
   myTrigger2: 63
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &937657101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3031,7 +3291,7 @@ GameObject:
   - component: {fileID: 946129425}
   m_Layer: 5
   m_Name: stick9-12
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3113,6 +3373,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 912
   myTrigger2: 129
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &974460256
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,7 +3389,7 @@ GameObject:
   - component: {fileID: 974460260}
   m_Layer: 5
   m_Name: stick5-8
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3209,6 +3471,84 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 58
   myTrigger2: 85
+  rightstick: 0
+  wrongstick: 0
+--- !u!1 &983265552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983265553}
+  - component: {fileID: 983265555}
+  - component: {fileID: 983265554}
+  m_Layer: 5
+  m_Name: cellophan
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &983265553
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983265552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2054750601}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -18, y: 0}
+  m_SizeDelta: {x: 489.5, y: 535.8}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &983265554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983265552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -1441589333, guid: ea872689093803c4c9168a39de70998f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &983265555
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983265552}
+  m_CullTransparentMesh: 1
 --- !u!1 &1004472907
 GameObject:
   m_ObjectHideFlags: 0
@@ -3378,7 +3718,7 @@ GameObject:
   - component: {fileID: 1147159630}
   m_Layer: 5
   m_Name: circle14
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3496,6 +3836,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1147159630
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3615,7 +3958,7 @@ GameObject:
   - component: {fileID: 1210471389}
   m_Layer: 5
   m_Name: circle5
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3733,6 +4076,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1210471389
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3759,6 +4105,82 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 240, y: 240}
   m_EdgeRadius: 0
+--- !u!1 &1240491852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1240491853}
+  - component: {fileID: 1240491855}
+  - component: {fileID: 1240491854}
+  m_Layer: 5
+  m_Name: edge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1240491853
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240491852}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2054750601}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -38, y: 0}
+  m_SizeDelta: {x: 530, y: 661.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1240491854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240491852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -162521899, guid: c38fa81b786fe544d8831e2dc3beb985, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1240491855
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240491852}
+  m_CullTransparentMesh: 1
 --- !u!1 &1242465331
 GameObject:
   m_ObjectHideFlags: 0
@@ -3950,7 +4372,7 @@ GameObject:
   - component: {fileID: 1296740182}
   m_Layer: 5
   m_Name: stick11-12
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4032,6 +4454,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1112
   myTrigger2: 1211
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1341665636
 GameObject:
   m_ObjectHideFlags: 0
@@ -4046,7 +4470,7 @@ GameObject:
   - component: {fileID: 1341665640}
   m_Layer: 5
   m_Name: stick4-7
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4128,82 +4552,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 47
   myTrigger2: 74
---- !u!1 &1366738899
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1366738900}
-  - component: {fileID: 1366738902}
-  - component: {fileID: 1366738901}
-  m_Layer: 5
-  m_Name: edge
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1366738900
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366738899}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2054750601}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 613.28, y: 661.17}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1366738901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366738899}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2177bd750776bb44fa6b4ecc3caa4ee1, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1366738902
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1366738899}
-  m_CullTransparentMesh: 1
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1428989456
 GameObject:
   m_ObjectHideFlags: 0
@@ -4221,7 +4571,7 @@ GameObject:
   - component: {fileID: 1428989464}
   m_Layer: 5
   m_Name: circle3
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4339,6 +4689,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1428989464
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4472,12 +4825,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2054750601}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 613.28, y: 661.17}
+  m_AnchoredPosition: {x: -6, y: 0}
+  m_SizeDelta: {x: 600, y: 661.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486016801
 MonoBehaviour:
@@ -4499,7 +4852,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c645d7c31234b6d469b90bf3096dc799, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4574cf1a4e2979c40a6510895ee03ee3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4534,7 +4887,7 @@ GameObject:
   - component: {fileID: 1493478811}
   m_Layer: 5
   m_Name: circle4
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4652,6 +5005,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1493478811
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4692,7 +5048,7 @@ GameObject:
   - component: {fileID: 1514396714}
   m_Layer: 5
   m_Name: stick7-8
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4774,6 +5130,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 78
   myTrigger2: 87
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1620346363
 GameObject:
   m_ObjectHideFlags: 0
@@ -4791,7 +5149,7 @@ GameObject:
   - component: {fileID: 1620346371}
   m_Layer: 5
   m_Name: circle6
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4909,6 +5267,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1620346371
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4952,7 +5313,7 @@ GameObject:
   - component: {fileID: 1672150519}
   m_Layer: 5
   m_Name: circle11
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5070,6 +5431,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1672150519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5110,7 +5474,7 @@ GameObject:
   - component: {fileID: 1743166042}
   m_Layer: 5
   m_Name: stick12-15
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5192,6 +5556,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1215
   myTrigger2: 1512
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1743574348
 GameObject:
   m_ObjectHideFlags: 0
@@ -5246,20 +5612,21 @@ MonoBehaviour:
   instructions: {fileID: 1815470828}
   Steps:
   - Start
-  - Let's try to put this condom on!
   - First, make sure there are no tears or defects on a package
   - Seems good! What else should we check?
-  - Right! Never use a condom if it's expired.
   - Now open it carefully...
   - Do you know how to position it the right way?
-  - The next step is very short, yet important...
-  - Right! Pinch this air out.
+  - Pinch this air out.
   - While still pinchhing, can you do the next step?
-  - Great job!
+  - Great! Now will you do this again without tips?
   currentSentence: 0
   displaySentence: 
   stepsScript: {fileID: 40132153}
   canProceed: 1
+  patternSc: {fileID: 1788972694}
+  buttonNext: {fileID: 810804731}
+  animating: 0
+  circles: []
 --- !u!1 &1754680820
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,7 +5644,7 @@ GameObject:
   - component: {fileID: 1754680828}
   m_Layer: 5
   m_Name: circle2
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5395,6 +5762,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1754680828
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5510,8 +5880,21 @@ MonoBehaviour:
   MousePressed: 0
   twoNumbers: 
   fullKey: 
+  lastcombination: 
   Recent: {fileID: 0}
   mostRecent: {fileID: 0}
+  ActiveCircles:
+  - {fileID: 1493478803}
+  - {fileID: 1210471381}
+  - {fileID: 1620346363}
+  - {fileID: 555651777}
+  - {fileID: 2039653715}
+  - {fileID: 532448076}
+  - {fileID: 118791363}
+  - {fileID: 1672150511}
+  - {fileID: 189696009}
+  howManySelected: 0
+  thatManySelected: 0
 --- !u!1 &1803801469
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,7 +5909,7 @@ GameObject:
   - component: {fileID: 1803801473}
   m_Layer: 5
   m_Name: stick8-11
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5608,6 +5991,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 811
   myTrigger2: 118
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1815470828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5666,7 +6051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: While still pinching, unroll the condom all the way down the penis.
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -5757,7 +6142,7 @@ GameObject:
   - component: {fileID: 1833498492}
   m_Layer: 5
   m_Name: stick14-15
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5839,6 +6224,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1415
   myTrigger2: 1514
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1861812008
 GameObject:
   m_ObjectHideFlags: 0
@@ -5853,7 +6240,7 @@ GameObject:
   - component: {fileID: 1861812012}
   m_Layer: 5
   m_Name: stick2-5
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5935,6 +6322,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 25
   myTrigger2: 52
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &1905325835
 GameObject:
   m_ObjectHideFlags: 0
@@ -5990,7 +6379,7 @@ GameObject:
   - component: {fileID: 1923687541}
   m_Layer: 5
   m_Name: circle15
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6108,6 +6497,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &1923687541
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6339,7 +6731,7 @@ GameObject:
   - component: {fileID: 2028297498}
   m_Layer: 5
   m_Name: stick10-11
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6421,6 +6813,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 1011
   myTrigger2: 1110
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &2039653715
 GameObject:
   m_ObjectHideFlags: 0
@@ -6438,7 +6832,7 @@ GameObject:
   - component: {fileID: 2039653723}
   m_Layer: 5
   m_Name: circle8
-  m_TagString: Untagged
+  m_TagString: Circle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6556,6 +6950,9 @@ MonoBehaviour:
   image: {fileID: 0}
   self: {fileID: 0}
   patternSc: {fileID: 0}
+  gotValue: 0
+  wrongling: 0
+  rightling: 0
 --- !u!61 &2039653723
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6591,6 +6988,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2054750601}
+  - component: {fileID: 2054750602}
   m_Layer: 5
   m_Name: Step1
   m_TagString: Untagged
@@ -6611,8 +7009,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 875373628}
-  - {fileID: 1366738900}
+  - {fileID: 427725038}
+  - {fileID: 1240491853}
+  - {fileID: 496110354}
   - {fileID: 213379397}
+  - {fileID: 983265553}
+  - {fileID: 773834800}
   - {fileID: 1486016800}
   m_Father: {fileID: 377819494}
   m_RootOrder: 0
@@ -6622,6 +7024,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -196}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &2054750602
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054750600}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 89c67a56340416c44866c2bfedbbb4c9, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 89c67a56340416c44866c2bfedbbb4c9, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2094287234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,7 +7054,7 @@ GameObject:
   - component: {fileID: 2094287238}
   m_Layer: 5
   m_Name: stick1-4
-  m_TagString: Untagged
+  m_TagString: Stick
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6718,6 +7136,8 @@ MonoBehaviour:
   litUp: 0
   myTrigger: 14
   myTrigger2: 41
+  rightstick: 0
+  wrongstick: 0
 --- !u!1 &2136330636
 GameObject:
   m_ObjectHideFlags: 0

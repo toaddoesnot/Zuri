@@ -16,6 +16,9 @@ public class Sticks : MonoBehaviour
     public string myTrigger;
     public string myTrigger2;
 
+    public bool rightstick;
+    public bool wrongstick;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +37,7 @@ public class Sticks : MonoBehaviour
             }
             else
             {
+
                 if (myTrigger == patternsSc.twoNumbers || myTrigger2 == patternsSc.twoNumbers)
                 {
                     image.color = new Color(1f, 1f, 1f, 1f);
@@ -43,26 +47,23 @@ public class Sticks : MonoBehaviour
         }
         else
         {
-            image.color = new Color(1f, 1f, 1f, 0.5f);
             litUp = false;
+
+            if (wrongstick)
+            {
+                image.color = new Color32(220, 153, 160, 255);
+            }
+            else
+            {
+                if (rightstick)
+                {
+                    image.color = new Color32(193, 232, 225, 255);
+                }
+                else
+                {
+                    image.color = new Color(1f, 1f, 1f, 0.5f);
+                }
+            }
         } 
-
-        
-
-        
-
-
-
-        //if (circle1.CircleSelected is true)
-       // {
-         //   if (circle2.CircleSelected is true)
-         //   {
-         //       image.color = new Color(1f, 1f, 1f, 0.5f);
-         //   }
-        //}
-       // else
-       // {
-       //     image.color = new Color(1f, 1f, 1f, 1f);
-       // }
     }
 }
