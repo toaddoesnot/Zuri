@@ -13,14 +13,12 @@ public class SelectTouch : MonoBehaviour
     public GameObject self;
 
     public Patterns patternSc;
-
+    public instructionText textSC;
     public bool gotValue;
-    public bool wrongling;
-    public bool rightling;
+    public bool ImChecked;
 
     private void Start()
     {
-        
         image = GetComponent<Image>();
         patternSc = FindObjectOfType<Patterns>();
         self = this.gameObject;
@@ -30,32 +28,23 @@ public class SelectTouch : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             MousePressed = true;
+            ImChecked = false;
         }
         else
         {
+            if (ImChecked is false)
+            {
+                CheckColors();
+                ImChecked = true;
+            }
             MousePressed = false;
-
-            if (wrongling)
-            {
-                image.color = new Color32(220, 153, 160, 255);
-            }
-            else
-            {
-                if (rightling)
-                {
-                    image.color = new Color32(193, 232, 225, 255);
-                }
-                else
-                {
-                    image.color = new Color(1f, 1f, 1f, 0.5f);
-                }
-            }
-
             CircleSelected = false;
-
             gotValue = false;
             patternSc.howManySelected = 0;
         }
+
+
+
     }
 
     public void OnMouseOver()
@@ -93,8 +82,49 @@ public class SelectTouch : MonoBehaviour
 
                 CircleSelected = true;
             }
-            
         }
     }
+
+    public void CheckColors()
+    {
+        if (textSC.canProceed)
+        {
+            foreach (GameObject circle in textSC.circles)
+            {
+                if (circle.GetComponent<SelectTouch>().CircleSelected)
+                {
+                    circle.GetComponent<Image>().color = new Color32(0, 255, 0, 255);
+                }
+            }
+            foreach (GameObject stick in textSC.sticks)
+            {
+                if (stick.GetComponent<Sticks>().litUp)
+                {
+                    stick.GetComponent<Image>().color = new Color32(0, 255, 0, 255);
+                }
+            }
+            patternSc.cour = false;
+        }
+        else
+        {
+            foreach (GameObject circle in textSC.circles)
+            {
+                if (circle.GetComponent<SelectTouch>().CircleSelected)
+                {
+                    circle.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
+                }
+            }
+
+            foreach (GameObject stick in textSC.sticks)
+            {
+                if (stick.GetComponent<Sticks>().litUp)
+                {
+                    stick.GetComponent<Image>().color = new Color32(255, 0, 0, 255);
+                }
+            }
+            patternSc.cour = false;
+        }
+    }
+
 
 }

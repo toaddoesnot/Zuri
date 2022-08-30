@@ -20,6 +20,8 @@ public class Patterns : MonoBehaviour
     public List<GameObject> ActiveCircles = new List<GameObject>();
     public int howManySelected;
     public int thatManySelected;
+    public instructionText textSc;
+    public bool cour;
 
     public void Update()
     {
@@ -35,13 +37,35 @@ public class Patterns : MonoBehaviour
             Recent = null;
             mostRecent = null;
             MousePressed = false;
+
+            if (cour is false)
+            {
+                StartCoroutine(AddString2());
+                cour = true;
+            }
+            
         }
     }
 
     public void AddString()
     {
-        //Combinations.Add(twoNumbers);
+        
     }
 
+    public IEnumerator AddString2()
+    {
+        
+        yield return new WaitForSeconds(1f);
+
+        foreach (GameObject circle in textSc.circles)
+        {
+            circle.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
+        }
+
+        foreach (GameObject stick in textSc.sticks)
+        {
+            stick.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);
+        }
+    }
 
 }
