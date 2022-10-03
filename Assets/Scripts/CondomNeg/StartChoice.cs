@@ -37,9 +37,14 @@ public class StartChoice : MonoBehaviour
 
     public GameObject animImage;
 
+    public bool partnerOrange;
+    public bool partnerPink;
+    public bool partnerGrey;
+
     public void Partner1()
     {
         animImage.SetActive(true);
+        partnerOrange = true;
 
         startUI.SetActive(false);
         FindObjectOfType<TypeDictionary>().GenerateType();
@@ -49,6 +54,7 @@ public class StartChoice : MonoBehaviour
     public void Partner2()
     {
         animImage.SetActive(true);
+        partnerPink = true;
 
         spriteRenderer.sprite = partner2;
         startUI.SetActive(false);
@@ -86,6 +92,7 @@ public class StartChoice : MonoBehaviour
     public void Partner3()
     {
         animImage.SetActive(true);
+        partnerGrey = true;
 
         spriteRenderer.sprite = partner3;
         startUI.SetActive(false);

@@ -11,12 +11,17 @@ public class PartnerAnim : MonoBehaviour
     public bool noCardAnim;
 
     public ArgumentSlot bubbleSc;
+    public bool IAmFemale;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = gameObject.GetComponent<Animation>();
         anim.Play("partnerTest");
+        if (IAmFemale)
+        {
+            anim.Play("partnerTestFem");
+        }
     }
 
     private void Update()
@@ -27,7 +32,10 @@ public class PartnerAnim : MonoBehaviour
     void StandardAnimation()
     {
         anim.CrossFade("partnerTest");
-
+        if (IAmFemale)
+        {
+            anim.CrossFade("partnerTestFem");
+        }
         oneCardAnim = false;
         twoCardAnim = false;
         noCardAnim = false;
@@ -39,24 +47,33 @@ public class PartnerAnim : MonoBehaviour
         if (oneCardAnim)
         {
             anim.CrossFade("partnerBrushOff");
-        
-        Invoke("StandardAnimation", 2.4f);
+            if (IAmFemale)
+            {
+                anim.CrossFade("partnerBrushOffFem");
+            }
+            Invoke("StandardAnimation", 2.4f);
         }
         else
         {
             if (twoCardAnim)
             {
                 anim.CrossFade("partnerApproval");
-           
-            Invoke("StandardAnimation", 2.1f);
+                if (IAmFemale)
+                {
+                    anim.CrossFade("partnerApprovalFem");
+                }
+                Invoke("StandardAnimation", 2.1f);
         }
             else
             {
                 if (noCardAnim)
                 {
                     anim.CrossFade("partnerShrug");
-                
-                Invoke("StandardAnimation", 3.1f);
+                    if (IAmFemale)
+                    {
+                        anim.CrossFade("partnerShrugFem");
+                    }
+                    Invoke("StandardAnimation", 3.1f);
             }
             }
         }

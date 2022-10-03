@@ -34,6 +34,7 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
     public cardsBug bugger;
 
     public PartnerAnim animateSc;
+    public PartnerAnim animateSc2;
 
     void Start()
     {
@@ -91,11 +92,15 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
             {
                 animateSc.twoCardAnim = true;
                 animateSc.ChangeAnimation();
+                animateSc2.twoCardAnim = true;
+                animateSc2.ChangeAnimation();
             }
             else
             {
                 animateSc.oneCardAnim = true;
                 animateSc.ChangeAnimation();
+                animateSc2.oneCardAnim = true;
+                animateSc2.ChangeAnimation();
             }
             //bugger.DestroyCard = false;
         }
@@ -106,6 +111,8 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
 
             animateSc.noCardAnim = true;
             animateSc.ChangeAnimation();
+            animateSc2.noCardAnim = true;
+            animateSc2.ChangeAnimation();
             //bugger.DestroyCard = false;
             //FindObjectOfType<EndScreenSc>().PlayerRecap();
         }
