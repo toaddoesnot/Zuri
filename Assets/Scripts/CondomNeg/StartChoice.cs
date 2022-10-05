@@ -91,7 +91,7 @@ public class StartChoice : MonoBehaviour
 
     public void Partner3()
     {
-        animImage.SetActive(true);
+       animImage.SetActive(true);
         partnerGrey = true;
 
         spriteRenderer.sprite = partner3;

@@ -11,12 +11,10 @@ public class quickFix : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void Destruction()
     {
-        if (Input.GetMouseButton(0))
-        {
-            Destroy(self);
-        }
+        Destroy(self);
     }
+
 }

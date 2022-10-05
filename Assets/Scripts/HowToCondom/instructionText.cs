@@ -9,6 +9,7 @@ public class instructionText : MonoBehaviour
 {
     public GameObject instructions;
     public List<string> Steps = new List<string>();
+    public List<string> FemaleText = new List<string>();
 
     public int currentSentence;
     public string displaySentence;
@@ -31,6 +32,8 @@ public class instructionText : MonoBehaviour
     public bool can;
 
     public GameObject transition;
+
+    public CondomChoice choiceSc;
 
     // Start is called before the first frame update
     void Start()
@@ -118,59 +121,129 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence is 4)
         {
-            if (patternSc.lastcombination is "85" || patternSc.lastcombination is "8115" || patternSc.lastcombination is "1185")
+            stepsScript.condomWrap.SetActive(false);
+
+            if (choiceSc.femaleCon is false)
             {
-                canProceed = true;
-
-                Steps[4] = "That's right!";
-                instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
-
-                foreach (GameObject cond in stepsScript.Positioning)
+                if (patternSc.lastcombination is "85" || patternSc.lastcombination is "8115" || patternSc.lastcombination is "1185")
                 {
-                    cond.SetActive(false);
-                    stepsScript.Positioning[1].SetActive(true);
+                    canProceed = true;
+
+                    Steps[4] = "That's right!";
+                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
+
+                    ////POSITION////
+                    foreach (GameObject cond in stepsScript.Positioning)
+                    {
+                        cond.SetActive(false);
+                        stepsScript.Positioning[1].SetActive(true);
+                    }
+
+
+                }
+                else
+                {
+                    canProceed = false;
+
+                    if (patternSc.lastcombination is "811" || patternSc.lastcombination is "5811" || patternSc.lastcombination is "8511")
+                    {
+                        foreach (GameObject cond in stepsScript.Positioning)
+                        {
+                            cond.SetActive(false);
+                            stepsScript.Positioning[2].SetActive(true);
+                        }
+                        Steps[4] = "That looks inside out.";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
+                    }
+                    if (patternSc.lastcombination is "58" || patternSc.lastcombination is "118")
+                    {
+                        foreach (GameObject cond in stepsScript.Positioning)
+                        {
+                            cond.SetActive(false);
+                            stepsScript.Positioning[0].SetActive(true);
+                        }
+                        Steps[4] = "Do you know how to position it the right way?";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
+                    }
                 }
             }
             else
             {
-                canProceed = false;
-                
-                if (patternSc.lastcombination is "811" || patternSc.lastcombination is "5811" || patternSc.lastcombination is "8511")
+                foreach (GameObject cond in stepsScript.Positioning)
                 {
-                    foreach (GameObject cond in stepsScript.Positioning)
-                    {
-                        cond.SetActive(false);
-                        stepsScript.Positioning[2].SetActive(true);
-                    }
-                    Steps[4] = "That looks inside out.";
+                    cond.SetActive(false);
+                }
+                    
+                stepsScript.condomFem.SetActive(true);
+
+                if (patternSc.lastcombination is "5" || patternSc.lastcombination is "456" || patternSc.lastcombination is "654")//
+                {
+                    canProceed = true;
+
+                    Steps[4] = "That's right!";
                     instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
                 }
-                if (patternSc.lastcombination is "58" || patternSc.lastcombination is "118")
+                else
                 {
-                    foreach (GameObject cond in stepsScript.Positioning)
+                    canProceed = false;
+
+                    if (patternSc.lastcombination is "11" || patternSc.lastcombination is "101112" || patternSc.lastcombination is "121110")
                     {
-                        cond.SetActive(false);
-                        stepsScript.Positioning[0].SetActive(true);
+                        Steps[4] = "That’s the thin, outer ring that remains outside of the body.";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
                     }
-                    Steps[4] = "Do you know how to position it the right way?";
-                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
+                    else
+                    {
+                        Steps[4] = "Find the inner ring that goes inside the vagina";
+                    }
                 }
             }
+
         }
 
         if (currentSentence is 5)
         {
-            if (patternSc.lastcombination is "2")
+            if (choiceSc.femaleCon is false)
             {
-                stepsScript.pinchedNot.SetActive(false);
-                stepsScript.pinched.SetActive(true);
-                canProceed = true;
-                Steps[5] = "That way the condom will not slide!";
-                instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+                print("externals out");
+                if (patternSc.lastcombination is "2")
+                {
+                    stepsScript.pinchedNot.SetActive(false);
+                    stepsScript.pinched.SetActive(true);
+                    canProceed = true;
+                    Steps[5] = "That way the condom will not slide!";
+                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+                }
+                else
+                {
+                    canProceed = false;
+                }
             }
             else
             {
-                canProceed = false;
+                stepsScript.Step3organ.SetActive(false);
+                stepsScript.Step3base.SetActive(false);
+                stepsScript.pinchedNot.SetActive(false);
+
+                stepsScript.condomFem.SetActive(false);
+                stepsScript.placementFull.SetActive(true);
+                stepsScript.placementHalf.SetActive(false);
+
+                if (patternSc.lastcombination is "78" || patternSc.lastcombination is "98")
+                {
+                    stepsScript.placementFull.SetActive(false);
+                    stepsScript.placementHalf.SetActive(true);
+
+                    canProceed = true;
+                    Steps[5] = "Yes! Similar to a menstrual cup or a tampon";
+                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+                }
+                else
+                {
+                    canProceed = false;
+                    stepsScript.placementFull.SetActive(true);
+                    stepsScript.placementHalf.SetActive(false);
+                }
             }
         }
 
@@ -286,5 +359,12 @@ public class instructionText : MonoBehaviour
     public void Replay()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void FemaleTextActivator()
+    {
+        Steps[4] = FemaleText[0];
+        Steps[5] = FemaleText[1];
+        Steps[6] = FemaleText[2];
     }
 }

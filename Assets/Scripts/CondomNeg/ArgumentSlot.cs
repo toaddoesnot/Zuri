@@ -39,6 +39,9 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
     void Start()
     {
         partnerMotivation = GameObject.FindGameObjectWithTag("slider").GetComponent<Slider>();
+
+
+
     }
 
     public void Update()

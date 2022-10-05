@@ -278,6 +278,9 @@ MonoBehaviour:
   Past1: {fileID: 2087408977}
   Problem1: {fileID: 1232861678}
   animImage: {fileID: 59418284}
+  partnerOrange: 0
+  partnerPink: 0
+  partnerGrey: 0
 --- !u!1 &30283593
 GameObject:
   m_ObjectHideFlags: 0
@@ -1336,6 +1339,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &175914410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,7 +1687,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159.1, y: 4.46}
+  m_AnchoredPosition: {x: -159.1, y: 24.260006}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &248961051
@@ -1944,6 +1951,10 @@ MonoBehaviour:
     description: 5
     power: 5
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &301553773
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,8 +2601,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.4, y: 59}
-  m_SizeDelta: {x: 471, y: 158}
+  m_AnchoredPosition: {x: -30.7, y: 41}
+  m_SizeDelta: {x: 419.5, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371912106
 MonoBehaviour:
@@ -2665,7 +2676,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2829,6 +2840,10 @@ MonoBehaviour:
     description: 6
     power: 6
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &432852272
 GameObject:
   m_ObjectHideFlags: 0
@@ -2864,7 +2879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159, y: -3}
+  m_AnchoredPosition: {x: -159, y: 16.800007}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &432852274
@@ -3775,6 +3790,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: I've never used it with other partners.
+  maleTxt: 'I already told you: nothing happens after just one time.'
+  femaleReactive: 1
 --- !u!1 &590727260
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,6 +5112,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &783370988
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,6 +5272,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: It's too confusing to use.
+  maleTxt: It is too small for me.
+  femaleReactive: 1
 --- !u!1 &792129421
 GameObject:
   m_ObjectHideFlags: 0
@@ -5600,6 +5627,10 @@ MonoBehaviour:
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &821109005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5879,7 +5910,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159, y: -1.8}
+  m_AnchoredPosition: {x: -159, y: 18}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &849134712
@@ -6211,6 +6242,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &973732630
 GameObject:
   m_ObjectHideFlags: 0
@@ -6251,8 +6286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.40001, y: -250.7}
-  m_SizeDelta: {x: 471, y: 158}
+  m_AnchoredPosition: {x: -33, y: -260.5}
+  m_SizeDelta: {x: 419.5, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &973732632
 MonoBehaviour:
@@ -6326,7 +6361,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6505,6 +6540,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1034830022
 GameObject:
   m_ObjectHideFlags: 0
@@ -7387,7 +7426,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.5, y: 12.28}
+  m_AnchoredPosition: {x: 23.5, y: 32.080006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1088944024
@@ -7473,7 +7512,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -86.73075, w: -64.74434}
+  m_margin: {x: 0, y: 54.646614, z: -36.342247, w: -4.419979}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8060,6 +8099,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1235745949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8502,7 +8545,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &1257353847
 RectTransform:
@@ -9076,6 +9119,10 @@ MonoBehaviour:
     description: 6
     power: 6
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: There's no risk for pregnancy anyway.
+  maleTxt: "You\u2019re on the pill, right?"
+  femaleReactive: 1
 --- !u!1 &1417138834
 GameObject:
   m_ObjectHideFlags: 0
@@ -9131,6 +9178,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1422632110
 GameObject:
   m_ObjectHideFlags: 0
@@ -9663,6 +9714,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1481658942
 GameObject:
   m_ObjectHideFlags: 0
@@ -9741,7 +9796,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.5, y: 12.28}
+  m_AnchoredPosition: {x: 23.5, y: 32.080006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1482758301
@@ -9827,7 +9882,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -86.73075, w: -64.74434}
+  m_margin: {x: 0, y: 52.380886, z: -47.445015, w: -3.119564}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -9908,7 +9963,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.5, y: -4}
+  m_AnchoredPosition: {x: -162.5, y: 21}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1508457153
@@ -10004,6 +10059,10 @@ MonoBehaviour:
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1511692736
 GameObject:
   m_ObjectHideFlags: 0
@@ -10404,6 +10463,10 @@ MonoBehaviour:
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1574247796
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,8 +10791,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55.4, y: -102.4}
-  m_SizeDelta: {x: 471, y: 140}
+  m_AnchoredPosition: {x: -32, y: -109}
+  m_SizeDelta: {x: 419.5, y: 105}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630712902
 MonoBehaviour:
@@ -10803,7 +10866,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -11303,7 +11366,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1778263515}
   - component: {fileID: 1778263517}
-  - component: {fileID: 1778263516}
   m_Layer: 6
   m_Name: Panel
   m_TagString: Untagged
@@ -11334,36 +11396,6 @@ RectTransform:
   m_AnchoredPosition: {x: 37, y: 222}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1778263516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1778263514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9725491, g: 0.9333334, b: 0.8980393, a: 0}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1778263517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11933,6 +11965,10 @@ MonoBehaviour:
     description: 5
     power: 5
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1857245527
 GameObject:
   m_ObjectHideFlags: 0
@@ -12031,7 +12067,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159.1, y: 4.46}
+  m_AnchoredPosition: {x: -159.1, y: 24.260006}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897808924
@@ -12160,6 +12196,10 @@ MonoBehaviour:
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1931371361
 GameObject:
   m_ObjectHideFlags: 0
@@ -12215,6 +12255,10 @@ MonoBehaviour:
     description: 6
     power: 6
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &1938158943
 GameObject:
   m_ObjectHideFlags: 0
@@ -12301,6 +12345,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: I can't really warm up with the condom in.
+  maleTxt: "If I put it on, I\u2019ll lose my erection."
+  femaleReactive: 1
 --- !u!1 &1984125743
 GameObject:
   m_ObjectHideFlags: 0
@@ -12924,7 +12972,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.5, y: 12.28}
+  m_AnchoredPosition: {x: 23.5, y: 32.080006}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052743566
@@ -13010,7 +13058,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -86.73075, w: -64.74434}
+  m_margin: {x: 0, y: 52.360645, z: -70.19581, w: -5.95343}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -13110,6 +13158,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: 
+  maleTxt: 
+  femaleReactive: 0
 --- !u!1 &2065112142
 GameObject:
   m_ObjectHideFlags: 0
@@ -13343,6 +13395,10 @@ MonoBehaviour:
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
+  genderSc: {fileID: 0}
+  femaleTxt: I'm hesitant because I've never tried internal condoms before
+  maleTxt: I have always pulled out on time before.
+  femaleReactive: 1
 --- !u!1 &2097440520
 GameObject:
   m_ObjectHideFlags: 0
@@ -13410,7 +13466,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -162.5, y: -4}
+  m_AnchoredPosition: {x: -162.5, y: 15.800007}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2100247586
@@ -13572,6 +13628,14 @@ MonoBehaviour:
   girlPink: {fileID: 21300000, guid: 3593671b97fab784fa9f91fa3495fd5f, type: 3}
   girlGrey: {fileID: 21300000, guid: c17d69b1365256544839ba0a747eadf1, type: 3}
   females: 1
+  allFemaleCards:
+  - {fileID: 1982914359}
+  - {fileID: 1395877625}
+  - {fileID: 2087408979}
+  - {fileID: 589403183}
+  - {fileID: 783987669}
+  DoneThing: 0
+  DoneBoys: 0
 --- !u!4 &2104919643
 Transform:
   m_ObjectHideFlags: 0

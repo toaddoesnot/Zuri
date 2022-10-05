@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 4419282223002463263}
-  justOncy: Potato
+  justOncy: 
 --- !u!1 &4419282223002463249
 GameObject:
   m_ObjectHideFlags: 0

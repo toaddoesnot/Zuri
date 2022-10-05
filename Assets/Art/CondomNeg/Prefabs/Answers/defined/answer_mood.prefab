@@ -314,6 +314,10 @@ MonoBehaviour:
   havePast: 0
   haveProblem: 0
   damageAm: 4
+  genderSc: {fileID: 0}
+  textObj: {fileID: 3753477660444727808}
+  femaleTxt: I will help you to warm up again.
+  femaleReactive: 1
 --- !u!114 &1891513118086786636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - 'Even if you lose erection, I will help to get everything back. '
+  - 'Even if you lose the mood, I will help to get everything back. '
 --- !u!1 &7050364243817137454
 GameObject:
   m_ObjectHideFlags: 0

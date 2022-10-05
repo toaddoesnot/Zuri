@@ -27,24 +27,86 @@ public class GenderChanger : MonoBehaviour
 
     public bool females;
 
+    public CardTrigger[] allFemaleCards;
+    public bool DoneThing;
+    public bool DoneBoys;
+
     public void Start()
     {
         boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        foreach (CardTrigger female in allFemaleCards)
+        {
+            female.StartFemales();
+        }
+        //allFemaleCards = FindObjectsOfType<CardTrigger>();
     }
 
     public void Update()
     {
+        if (females)
+        {
+            DoneBoys = false;
+        }
+        else
+        {
+            if (DoneBoys is false)
+            {
+                foreach (CardTrigger female in allFemaleCards)
+                {
+                    female.ReturnMales();
+                    DoneBoys = true;
+                }
+            }
+            
+        }
+
+
         if (choiceSc.partnerPink)
         {
             girlSkeleton.GetComponent<SpriteRenderer>().sprite = girlPink;
+            if (DoneThing is false)
+            {
+                foreach (CardTrigger female in allFemaleCards)
+                {
+                    female.StartFemales();
+                    DoneThing = true;
+                }
+            }
+            else
+            {
+
+            }
         }
         if (choiceSc.partnerGrey)
         {
             girlSkeleton.GetComponent<SpriteRenderer>().sprite = girlGrey;
+            if (DoneThing is false)
+            {
+                foreach (CardTrigger female in allFemaleCards)
+                {
+                    female.StartFemales();
+                    DoneThing = true;
+                }
+            }
+            else
+            {
+
+            }
         }
         if (choiceSc.partnerOrange)
         {
-            girlSkeleton.GetComponent<SpriteRenderer>().sprite = girlOrange;
+            if (DoneThing is false)
+            {
+                foreach (CardTrigger female in allFemaleCards)
+                {
+                    female.StartFemales();
+                    DoneThing = true;
+                }
+            }
+            else
+            {
+
+            }
         }
     }
 

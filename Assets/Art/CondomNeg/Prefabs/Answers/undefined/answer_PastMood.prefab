@@ -142,6 +142,10 @@ MonoBehaviour:
   havePast: 1
   haveProblem: 0
   damageAm: 3
+  genderSc: {fileID: 0}
+  textObj: {fileID: 0}
+  femaleTxt: 
+  femaleReactive: 0
 --- !u!114 &6432711383992676325
 MonoBehaviour:
   m_ObjectHideFlags: 0

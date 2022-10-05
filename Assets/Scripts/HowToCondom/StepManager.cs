@@ -15,6 +15,14 @@ public class StepManager : MonoBehaviour
     public GameObject[] Positioning;
     public GameObject[] CondomStart;
 
+    public CondomChoice choiceSc;
+
+    public GameObject condomWrap;
+    public GameObject condomFem;
+
+    public GameObject placementFull;
+    public GameObject placementHalf;
+
     // public Animation openCondom;
 
 
@@ -25,7 +33,15 @@ public class StepManager : MonoBehaviour
 
     public void Stage1()
     {
-        Step1.SetActive(true);
+        if (choiceSc.femaleCon is true)
+        {
+            condomWrap.SetActive(true);
+        }
+        else
+        {
+            Step1.SetActive(true);
+        }
+        
         if (textScript.currentSentence is 2)
         {
            // textScript.canProceed = false;
@@ -38,9 +54,20 @@ public class StepManager : MonoBehaviour
     }
     public void Stage3()
     {
-        Step3organ.SetActive(true);
-        Step3base.SetActive(true);
-        pinchedNot.SetActive(true);
+        if (choiceSc.femaleCon is false)
+        {
+            
+            Step3organ.SetActive(true);
+            Step3base.SetActive(true);
+            pinchedNot.SetActive(true);
+        }
+        else
+        {
+            Step3organ.SetActive(false);
+            Step3base.SetActive(false);
+            pinchedNot.SetActive(false);
+        }
+    
 }
     public void Stage4()
     {

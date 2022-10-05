@@ -16,9 +16,26 @@ public class AnswerRandomizer : MonoBehaviour
 
     public int damageAm;
 
+    public GenderChanger genderSc;
+    public TextMeshProUGUI textObj;
+    public string femaleTxt;
+
+    public bool femaleReactive;
+
 
     // Start is called before the first frame update
-    
+    public void Start()
+    {
+        genderSc = FindObjectOfType<GenderChanger>();
+        if (femaleReactive)
+        {
+            if (genderSc.females is true)
+            {
+                textObj.text = femaleTxt.ToString();
+            }
+        }
+        
+    }
 
     public void GenerateAnswer()
     {
