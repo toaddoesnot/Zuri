@@ -17,12 +17,16 @@ public class SelectTouch : MonoBehaviour
     public bool gotValue;
     public bool ImChecked;
 
+    public AudioSource blink;
+    public bool blinked;
+
     private void Start()
     {
         image = GetComponent<Image>();
         patternSc = FindObjectOfType<Patterns>();
         self = this.gameObject;
     }
+
     public void Update()
     {
         if (Input.GetMouseButton(0))
@@ -42,15 +46,13 @@ public class SelectTouch : MonoBehaviour
             gotValue = false;
             patternSc.howManySelected = 0;
         }
-
-
-
     }
 
     public void OnMouseOver()
     {
         if (MousePressed)
         {
+            
             if (patternSc.ActiveCircles.Contains(self))
             {
                 if (gotValue)
@@ -70,7 +72,8 @@ public class SelectTouch : MonoBehaviour
             }
             else
             {
-                
+                blink.time = 0.14f;
+                blink.Play();
                 image.color = new Color(1f, 1f, 1f, 1f);
                 patternSc.Recent = patternSc.mostRecent;
                 patternSc.mostRecent = self;
@@ -81,6 +84,7 @@ public class SelectTouch : MonoBehaviour
                 patternSc.thatManySelected = patternSc.howManySelected;
 
                 CircleSelected = true;
+                
             }
         }
     }
@@ -126,5 +130,7 @@ public class SelectTouch : MonoBehaviour
         }
     }
 
+
+   
 
 }

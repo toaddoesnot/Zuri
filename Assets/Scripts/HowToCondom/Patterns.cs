@@ -23,11 +23,21 @@ public class Patterns : MonoBehaviour
     public instructionText textSc;
     public bool cour;
 
+    public sounds soundSc;
+    public bool sounded;
+
+    public void Start()
+    {
+       
+    }
+
     public void Update()
     {
         if (Input.GetMouseButton(0))
         {
             MousePressed = true;
+            sounded = false;
+            textSc.nextPressed = false;
             twoNumbers = Recent.GetComponent<SelectTouch>().CircleNum + mostRecent.GetComponent<SelectTouch>().CircleNum.ToString();
         }
         else
@@ -43,7 +53,27 @@ public class Patterns : MonoBehaviour
                 StartCoroutine(AddString2());
                 cour = true;
             }
-            
+
+            if (textSc.currentSentence >= 1)
+            {
+                if (sounded is false)
+                {
+                    if (textSc.canProceed is true)
+                    {
+                        soundSc.SoundRight();
+                        sounded = true;
+                    }
+                    else
+                    {
+                        if (textSc.nextPressed is false)
+                        {
+                            soundSc.SoundWrong();
+                            sounded = true;
+                        }
+                    }
+                }
+            }
+
         }
     }
 

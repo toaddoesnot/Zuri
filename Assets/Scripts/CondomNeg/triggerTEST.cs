@@ -16,6 +16,9 @@ public class triggerTEST : MonoBehaviour
     public GameObject wrongColor;
     public bool InsideTrigger;
 
+    public bool wrongSound;
+    public AudioSource wrongSounder;
+
     public void Update()
     {
         if (InsideTrigger)
@@ -26,7 +29,20 @@ public class triggerTEST : MonoBehaviour
             }
             else
             {
-                wrongColor.SetActive(true);
+                if (Input.GetMouseButton(0))
+                {
+
+                }
+                else
+                {
+                    wrongColor.SetActive(true);
+                    if (wrongSound is false)
+                    {
+                        wrongSounder.Play();
+                        wrongSound = true;
+                    }
+                }
+                
             }
         }
         else
@@ -201,6 +217,7 @@ public class triggerTEST : MonoBehaviour
         }
 
         wrongColor.SetActive(false);
+        wrongSound = false;
 
     }
 

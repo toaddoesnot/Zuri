@@ -34,6 +34,10 @@ public class EndScreenSc : MonoBehaviour
 
     public NewRecap NewRecapSc;
     public GameObject animationImage;
+
+    public bool soundPlayed;
+    public GameObject soundW;
+    public GameObject soundL;
     
     public void Update()
     {
@@ -51,8 +55,13 @@ public class EndScreenSc : MonoBehaviour
             background.SetActive(true);
             textWin.SetActive(true);
             restart.SetActive(true);
-
             recapElement.SetActive(true);
+
+            if (soundPlayed is false)
+            {
+                soundW.GetComponent<AudioSource>().Play();
+                soundPlayed = true;
+            }
         }
         else
         {
@@ -70,8 +79,12 @@ public class EndScreenSc : MonoBehaviour
                 background.SetActive(true);
                 textLose.SetActive(true);
                 restart.SetActive(true);
-
                 recapElement.SetActive(true);
+                if (soundPlayed is false)
+                {
+                    soundL.GetComponent<AudioSource>().Play();
+                    soundPlayed = true;
+                }
             }
         }
     }

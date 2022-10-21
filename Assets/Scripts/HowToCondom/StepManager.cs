@@ -6,6 +6,8 @@ public class StepManager : MonoBehaviour
 {
     public instructionText textScript;
 
+    public GameObject gridIm;
+
     public GameObject Step1;
     public GameObject Step3organ;
     public GameObject Step3base;
@@ -22,13 +24,19 @@ public class StepManager : MonoBehaviour
 
     public GameObject placementFull;
     public GameObject placementHalf;
+    public GameObject placementHalf2;
+
+    public GameObject[] PutInternally;
+    public GameObject femaleVegBg;
+    public GameObject femaleConStart;
+    public GameObject femaleConDone;
 
     // public Animation openCondom;
 
 
     private void Start()
     {
-        Stage1();
+        
     }
 
     public void Stage1()
@@ -40,11 +48,12 @@ public class StepManager : MonoBehaviour
         else
         {
             Step1.SetActive(true);
+            //gridIm.SetActive(true);
         }
         
         if (textScript.currentSentence is 2)
         {
-           // textScript.canProceed = false;
+            //textScript.canProceed = false;
         }
     }
     public void Stage2()
@@ -52,6 +61,7 @@ public class StepManager : MonoBehaviour
         print("henlo");
         
     }
+
     public void Stage3()
     {
         if (choiceSc.femaleCon is false)
@@ -68,11 +78,11 @@ public class StepManager : MonoBehaviour
             pinchedNot.SetActive(false);
         }
     
-}
+    }
     public void Stage4()
     {
         //Step3base.SetActive(false);
-       // pinchedNot.SetActive(false);
+        //pinchedNot.SetActive(false);
     }
 
     public void Stage5Temp()

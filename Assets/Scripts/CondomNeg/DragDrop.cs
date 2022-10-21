@@ -6,7 +6,15 @@ using UnityEngine.EventSystems;
 public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
 {
     CanvasGroup canvasGroup;
+    public AudioSource audioSource;
+    //public AudioClip pickUpSound;
     //Vector3 offset;
+
+    public void Start()
+    {
+        audioSource = this.GetComponent<AudioSource>();
+        //pickUpSound = GameObject.Find("pickUpCardObj").GetComponent<AudioSource>().GetComponent<AudioClip>();
+    }
 
     void Awake()
     {
@@ -27,6 +35,8 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
     public void OnPointerDown(PointerEventData eventData)
     {
         //offset = transform.position - Input.mousePosition;
+        //audioSource.clip = pickUpSound;
+        audioSource.Play();
         canvasGroup.blocksRaycasts = false;
     }
 

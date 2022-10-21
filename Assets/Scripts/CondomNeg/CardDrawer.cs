@@ -15,11 +15,13 @@ public class CardDrawer : MonoBehaviour, IDropHandler
     public int TimesDrawn;
 
     public bool cardDrawn;
+    public AudioSource drawSound;
 
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag != null)
         {
+            drawSound.Play();
             Destroy(cardDelete);
 
             TimesDrawn++;

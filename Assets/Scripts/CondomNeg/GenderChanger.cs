@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class GenderChanger : MonoBehaviour
 {
@@ -31,6 +32,9 @@ public class GenderChanger : MonoBehaviour
     public bool DoneThing;
     public bool DoneBoys;
 
+    public TextMeshProUGUI femTxt;
+    public TextMeshProUGUI maleTxt;
+
     public void Start()
     {
         boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
@@ -46,6 +50,7 @@ public class GenderChanger : MonoBehaviour
         if (females)
         {
             DoneBoys = false;
+
         }
         else
         {
@@ -56,6 +61,7 @@ public class GenderChanger : MonoBehaviour
                     female.ReturnMales();
                     DoneBoys = true;
                 }
+
             }
             
         }

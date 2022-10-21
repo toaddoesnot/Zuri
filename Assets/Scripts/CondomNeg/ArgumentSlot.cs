@@ -36,11 +36,12 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
     public PartnerAnim animateSc;
     public PartnerAnim animateSc2;
 
+    public GameObject snatchedRightS;
+    public GameObject snatchedWrongS;
+
     void Start()
     {
         partnerMotivation = GameObject.FindGameObjectWithTag("slider").GetComponent<Slider>();
-
-
 
     }
 
@@ -137,8 +138,10 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
                 }
                 else
                 {
-                    sentenceAdded = card.GetComponent<SubTrigger>().sentenceList[0];
+                    snatchedRightS.GetComponent<AudioSource>().Play();
 
+                    sentenceAdded = card.GetComponent<SubTrigger>().sentenceList[0];
+                    
                     triggerSc.AddAcard();
                     snatchedTwice = true;
                     HaveSentence = false;
@@ -149,6 +152,8 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
             else
             {
                 //
+                snatchedRightS.GetComponent<AudioSource>().Play();
+
                 snatched = true;
                 FindObjectOfType<PlayerManager>().GetText();
 
