@@ -1,20 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class howtoTutorial : MonoBehaviour
 {
-    public GameObject tutBg;
-    public GameObject tutorial;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     public void SkipTutorial()
     {
-
+        SceneManager.LoadScene(1);
     }
 }

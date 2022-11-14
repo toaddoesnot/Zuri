@@ -8,15 +8,18 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NegotiationTutorial.unity
     guid: f7d5ab5ff02ce764899d1e4e99c9b3f1
   - enabled: 0
-    path: Assets/Scenes/How to put on a condom.unity
-    guid: 395c6880619007549a48f3bac036ab59
-  - enabled: 1
     path: Assets/Scenes/Condom Negotiation.unity
     guid: b43fc4cc48bfd2b4b9ff7cef883c8a42
+  - enabled: 1
+    path: Assets/Scenes/HowtoTutorial.unity
+    guid: 0992e9f1c45dfda47b78e5ebededd654
+  - enabled: 1
+    path: Assets/Scenes/How to put on a condom.unity
+    guid: 395c6880619007549a48f3bac036ab59
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 206404817223bd54fb17dfe1ccbb0be7, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 23156c8060207ef419e519c5c6bd0be1, type: 2}

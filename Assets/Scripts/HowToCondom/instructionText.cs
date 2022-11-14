@@ -31,7 +31,7 @@ public class instructionText : MonoBehaviour
     public bool done;
     public bool can;
 
-    public GameObject transition;
+    //public GameObject transition;
 
     public CondomChoice choiceSc;
     public bool NowIsTime;
@@ -44,7 +44,7 @@ public class instructionText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transition.SetActive(true);
+        //transition.SetActive(true);
         //NextStep();
         circles = GameObject.FindGameObjectsWithTag("Circle");
         sticks = GameObject.FindGameObjectsWithTag("Stick");
@@ -79,7 +79,7 @@ public class instructionText : MonoBehaviour
             stepsScript.Stage1();
 
             stepsScript.gridIm.transform.position = refPos.transform.position;
-            choiceSc.tutorialSc.SetActive(false);
+           // choiceSc.tutorialSc.SetActive(false);
 
             if (patternSc.thatManySelected is 9)
             {
@@ -465,7 +465,7 @@ public class instructionText : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void FemaleTextActivator()
