@@ -38,6 +38,8 @@ public class EndScreenSc : MonoBehaviour
     public bool soundPlayed;
     public GameObject soundW;
     public GameObject soundL;
+
+    public GameObject[] clearView;
     
     public void Update()
     {
@@ -53,6 +55,12 @@ public class EndScreenSc : MonoBehaviour
             buttonTakeCards.SetActive(false);
 
             background.SetActive(true);
+
+            foreach (GameObject view in clearView)
+            {
+                view.SetActive(false);
+            }
+
             textWin.SetActive(true);
             restart.SetActive(true);
             recapElement.SetActive(true);
@@ -77,6 +85,12 @@ public class EndScreenSc : MonoBehaviour
                 buttonTakeCards.SetActive(false);
 
                 background.SetActive(true);
+
+                foreach (GameObject view in clearView)
+                {
+                    view.SetActive(false);
+                }
+
                 textLose.SetActive(true);
                 restart.SetActive(true);
                 recapElement.SetActive(true);
@@ -92,7 +106,7 @@ public class EndScreenSc : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void PartnerRecap()

@@ -50,7 +50,8 @@ public class GenderChanger : MonoBehaviour
         if (females)
         {
             DoneBoys = false;
-
+            femTxt.color = new Color32(48, 29, 27, 255);
+            maleTxt.color = new Color32(48, 29, 27, 100);
         }
         else
         {
@@ -60,6 +61,8 @@ public class GenderChanger : MonoBehaviour
                 {
                     female.ReturnMales();
                     DoneBoys = true;
+                    femTxt.color = new Color32(48, 29, 27, 100);
+                    maleTxt.color = new Color32(48, 29, 27, 255);
                 }
 
             }
@@ -125,7 +128,7 @@ public class GenderChanger : MonoBehaviour
             girlSkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
-            arrow.GetComponent<Image>().sprite = right;
+            arrow.GetComponent<Image>().sprite = left;
 
             girl1.SetActive(false);
             girl2.SetActive(false);
@@ -142,7 +145,7 @@ public class GenderChanger : MonoBehaviour
             girlSkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
 
-            arrow.GetComponent<Image>().sprite = left;
+            arrow.GetComponent<Image>().sprite = right;
 
             girl1.SetActive(true);
             girl2.SetActive(true);

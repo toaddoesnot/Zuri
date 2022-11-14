@@ -11,8 +11,6 @@ public class CardRandomizer : MonoBehaviour
     public GameObject firstCard;
     public GameObject secondCard;
 
-    public GameObject notificationS;
-
     public void Start()
     {
         //notificationS = GameObject.Find("notification");
@@ -20,8 +18,6 @@ public class CardRandomizer : MonoBehaviour
 
     public void GenerateType()
     {
-        notificationS.GetComponent<AudioSource>().Play();
-
         int randomIndex = Random.Range(0, Cards.Count);
         currentType = randomIndex;
 
