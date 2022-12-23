@@ -37,6 +37,7 @@ public class TypeDictionary : MonoBehaviour
     public CardDrawer cardDrawer;
 
     public cardsBug bugger;
+    public takeTimeSc timeSc;
 
 
     // Start is called before the first frame update
@@ -94,6 +95,7 @@ public class TypeDictionary : MonoBehaviour
                     randomizer4Generators.GiveCard();
 
                     Round++;
+                    timeSc.totalTime = 0;
 
                 if (partnerSlider.value <= 0 || playerSlider.value < 0)
                 {

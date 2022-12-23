@@ -39,6 +39,11 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
     public GameObject snatchedRightS;
     public GameObject snatchedWrongS;
 
+    public Animation PositiveResponse; //NEW
+    public GameObject takeCardTips; //NEW
+    public TextMeshProUGUI tipText; //NEW
+    public TypeDictionary roundSc; //NEW
+
     void Start()
     {
         partnerMotivation = GameObject.FindGameObjectWithTag("slider").GetComponent<Slider>();
@@ -110,6 +115,12 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
         }
         if (cardDrawn.cardDrawn)
         {
+            if (roundSc.Round <= 2)
+            {
+                takeCardTips.SetActive(true);
+            }
+            tipText.text = "Drag cards into your bubble to respond";
+
             bugger.DestroyCard = true;
             argText.text = "...";
 
@@ -122,7 +133,8 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
         }
         else
         {
-            
+            takeCardTips.SetActive(false);
+            tipText.text = "Drag cards into your bubble to respond";
         }
     }
 
@@ -130,6 +142,13 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
     {
         if (HaveRightOne)
         {
+            if (roundSc.Round <= 2)
+            {
+                 takeCardTips.SetActive(true);
+            }
+           
+            tipText.text = "Press Take Card or Drag a second card";
+
             if (snatched)
             {
                 if (snatchedTwice)
@@ -139,6 +158,7 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
                 else
                 {
                     snatchedRightS.GetComponent<AudioSource>().Play();
+                    PositiveResponse.Play("bubbleRight");
 
                     sentenceAdded = card.GetComponent<SubTrigger>().sentenceList[0];
                     
@@ -153,6 +173,9 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
             {
                 //
                 snatchedRightS.GetComponent<AudioSource>().Play();
+                PositiveResponse.Play("bubbleRight");
+
+                
 
                 snatched = true;
                 FindObjectOfType<PlayerManager>().GetText();

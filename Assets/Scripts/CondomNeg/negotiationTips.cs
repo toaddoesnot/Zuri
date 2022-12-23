@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class negotiationTips : MonoBehaviour
 {
@@ -15,6 +17,10 @@ public class negotiationTips : MonoBehaviour
     public GameObject drawObj;
     public CardDrawer drawSc;
     public bool canProceed;
+
+    public GameObject takeAnim;
+    public TextMeshProUGUI tipTxt;
+    public TypeDictionary dictSc;
 
     // Start is called before the first frame update
     void Start()
@@ -45,16 +51,24 @@ public class negotiationTips : MonoBehaviour
         else
         {
             wrongy.Play();
-            arrow.SetActive(true);
-            drawCard.GetComponent<Animation>().Play();
+
+            //arrow.SetActive(true);
+            takeAnim.SetActive(true);
+            tipTxt.text = "If you don't have a right color, drag one of the cards to the Draw area";
             StartCoroutine(takeAnimation());
+
+            drawCard.GetComponent<Animation>().Play();
+            
         }
     }
 
     public IEnumerator takeAnimation()
     {
-        yield return new WaitForSeconds(1);
-        arrow.SetActive(false);
+        yield return new WaitForSeconds(5);
+        //arrow.SetActive(false);
+        takeAnim.SetActive(false);
+        tipTxt.text = "Drag cards into your bubble to respond";
     }
+
 
 }

@@ -34,6 +34,13 @@ public class GenderChanger : MonoBehaviour
 
     public TextMeshProUGUI femTxt;
     public TextMeshProUGUI maleTxt;
+    public TextMeshProUGUI welcomeTxt;
+
+    public int ChosenTwice;
+    public GameObject genderTip;
+
+    public GameObject[] animObj;
+    public bool ShootAnim;
 
     public void Start()
     {
@@ -47,6 +54,22 @@ public class GenderChanger : MonoBehaviour
 
     public void Update()
     {
+        if(ChosenTwice >= 1)
+        {
+            ShootAnim = true;
+            genderTip.SetActive(false);
+        }
+
+        if (ShootAnim)
+        {
+            animObj[0].GetComponent<Animation>().Play("pb1");
+            animObj[1].GetComponent<Animation>().Play("pb2");
+            animObj[2].GetComponent<Animation>().Play("pb3");
+            welcomeTxt.text = "Who do you want to talk to?";
+            ShootAnim = false;
+        }
+
+
         if (females)
         {
             DoneBoys = false;
@@ -121,6 +144,8 @@ public class GenderChanger : MonoBehaviour
 
     public void GenderButton()
     {
+        ChosenTwice++;
+
         if (females)
         {
             females = false;

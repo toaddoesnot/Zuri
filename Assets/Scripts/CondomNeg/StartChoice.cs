@@ -41,6 +41,8 @@ public class StartChoice : MonoBehaviour
     public bool partnerPink;
     public bool partnerGrey;
 
+    public TypeDictionary roundSc;
+
     public void Partner1()
     {
         animImage.SetActive(true);
@@ -48,11 +50,13 @@ public class StartChoice : MonoBehaviour
 
         startUI.SetActive(false);
         FindObjectOfType<TypeDictionary>().GenerateType();
+        roundSc.Round = 1;
        // animImage.SetActive(false);
     }
 
     public void Partner2()
     {
+        roundSc.Round = 1;
         animImage.SetActive(true);
         partnerPink = true;
 
@@ -91,7 +95,8 @@ public class StartChoice : MonoBehaviour
 
     public void Partner3()
     {
-       animImage.SetActive(true);
+        roundSc.Round = 1;
+        animImage.SetActive(true);
         partnerGrey = true;
 
         spriteRenderer.sprite = partner3;

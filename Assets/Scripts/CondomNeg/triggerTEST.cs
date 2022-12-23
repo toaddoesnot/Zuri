@@ -19,6 +19,8 @@ public class triggerTEST : MonoBehaviour
     public bool wrongSound;
     public AudioSource wrongSounder;
 
+    public Animation responseAn;
+
     public void Update()
     {
         if (InsideTrigger)
@@ -39,6 +41,7 @@ public class triggerTEST : MonoBehaviour
                     if (wrongSound is false)
                     {
                         wrongSounder.Play();
+                        responseAn.Play("bubbleWrong");
                         wrongSound = true;
                     }
                 }
