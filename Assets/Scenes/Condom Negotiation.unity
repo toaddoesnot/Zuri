@@ -4004,13 +4004,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - 'I already told you: nothing happens after just one time.'
+    - Nothing will happen after just one time.
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
   genderSc: {fileID: 0}
-  femaleTxt: I've never used it with other partners.
-  maleTxt: 'I already told you: nothing happens after just one time.'
+  femaleTxt: I never used a condom with other partners.
+  maleTxt: Nothing will happen after just one time.
   femaleReactive: 1
 --- !u!1 &590727260
 GameObject:
@@ -5717,8 +5717,8 @@ MonoBehaviour:
     power: 4
   playerMotivation: {fileID: 979097131}
   genderSc: {fileID: 0}
-  femaleTxt: It's too confusing to use.
-  maleTxt: It is too small for me.
+  femaleTxt: Condoms are too confusing to use.
+  maleTxt: Condoms are too small for me.
   femaleReactive: 1
 --- !u!1 &792129421
 GameObject:
@@ -7363,7 +7363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - "We haven\u2019t used condoms before?"
+    - But we didn't use condoms before?
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
@@ -9073,6 +9073,7 @@ MonoBehaviour:
   TimesDrawn: 0
   cardDrawn: 0
   drawSound: {fileID: 1102690326}
+  takeCardTips: {fileID: 971158708}
 --- !u!61 &1102690323
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11060,13 +11061,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - "You\u2019re on the pill, right?"
+    - You are on the pill, right?
     description: 6
     power: 6
   playerMotivation: {fileID: 979097131}
   genderSc: {fileID: 0}
-  femaleTxt: There's no risk for pregnancy anyway.
-  maleTxt: "You\u2019re on the pill, right?"
+  femaleTxt: There is no risk for pregnancy anyway.
+  maleTxt: You are on the pill, right?
   femaleReactive: 1
 --- !u!1 &1417138834
 GameObject:
@@ -12000,7 +12001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - 'That''s not romantic to have sex with a condom on. '
+    - 'That''s not romantic to put a condom on. '
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
@@ -12404,7 +12405,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - 'It would be awkward to have sex with a condom on. '
+    - 'Putting a condom on is awkward. '
     description: 3
     power: 3
   playerMotivation: {fileID: 979097131}
@@ -13757,6 +13758,7 @@ MonoBehaviour:
   cardDrawer: {fileID: 1102690322}
   bugger: {fileID: 1082828486}
   timeSc: {fileID: 1241046930}
+  takeCardTips: {fileID: 971158708}
 --- !u!1 &1853065042
 GameObject:
   m_ObjectHideFlags: 0
@@ -14097,7 +14099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - I have been tested for STI.
+    - I tested negative for STI.
     description: 6
     power: 6
   playerMotivation: {fileID: 979097131}
@@ -14284,13 +14286,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - "If I put a condom on, I\u2019ll lose my erection."
+    - If I put a condom on, I will lose my erection.
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
   genderSc: {fileID: 0}
-  femaleTxt: I can't really warm up with the condom in.
-  maleTxt: "If I put it on, I\u2019ll lose my erection."
+  femaleTxt: I can't warm up with the condom in.
+  maleTxt: If I put a condom on, I will lose my erection.
   femaleReactive: 1
 --- !u!1 &1983719836
 GameObject:
@@ -15374,7 +15376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - It takes me so much time I lose a sparkle.
+    - It takes so much time I lose a sparkle.
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
@@ -15611,13 +15613,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sentenceClass:
     sentence:
-    - I have always pulled out on time before.
+    - I always pulled out on time before.
     description: 4
     power: 4
   playerMotivation: {fileID: 979097131}
   genderSc: {fileID: 0}
-  femaleTxt: I'm hesitant because I've never tried internal condoms before
-  maleTxt: I have always pulled out on time before.
+  femaleTxt: I never tried internal condoms before.
+  maleTxt: I always pulled out on time before.
   femaleReactive: 1
 --- !u!1 &2097440520
 GameObject:

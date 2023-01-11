@@ -40,10 +40,14 @@ public class instructionText : MonoBehaviour
     public AudioSource nextSong;
 
     public GameObject refPos;
+    public GameObject nextaAnim;
+    public GameObject blocker;
+    public bool ready4anim;
 
     // Start is called before the first frame update
     void Start()
     {
+        blocker.SetActive(false);
         //transition.SetActive(true);
         //NextStep();
         circles = GameObject.FindGameObjectsWithTag("Circle");
@@ -67,6 +71,10 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence >= 7)
         {
+            if (patternSc.MousePressed is false)
+            {
+                blocker.SetActive(true);
+            }
             stepsScript.Stage5Temp();
             next.SetActive(false);
             replay.SetActive(true);
@@ -91,6 +99,9 @@ public class instructionText : MonoBehaviour
             else
             {
                 canProceed = false;
+
+                Steps[1] = "First, make sure there are no tears or defects on a package.";
+                instructions.GetComponent<TextMeshProUGUI>().text = Steps[1];
             }
 
         }
@@ -106,16 +117,23 @@ public class instructionText : MonoBehaviour
             else
             {
                 canProceed = false;
+                Steps[2] = "Is the expiration date ok?";
+                instructions.GetComponent<TextMeshProUGUI>().text = Steps[2];
             }
         }
 
         if (currentSentence is 3)
         {
-            if (patternSc.lastcombination is "6912" || patternSc.lastcombination is "1296" || patternSc.lastcombination is "4710" || patternSc.lastcombination is "1074")
+            if (patternSc.lastcombination is "6912" || patternSc.lastcombination is "1296" || patternSc.lastcombination is "4710" || patternSc.lastcombination is "1074" || patternSc.lastcombination is "1512963" || patternSc.lastcombination is "3691215" || patternSc.lastcombination is "1471013" || patternSc.lastcombination is "1310741")
             {
                 canProceed = true;
                 Steps[3] = "Perfect!";
                 instructions.GetComponent<TextMeshProUGUI>().text = Steps[3];
+
+                if (patternSc.MousePressed is false)
+                {
+                    blocker.SetActive(true);
+                }
 
                 if (animating)
                 {
@@ -144,16 +162,17 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence is 4)
         {
+            blocker.SetActive(false);
             stepsScript.condomWrap.SetActive(false);
 
             if (choiceSc.femaleCon is false)
             {
-                if (patternSc.lastcombination is "85" || patternSc.lastcombination is "8115" || patternSc.lastcombination is "1185")
+                if (patternSc.lastcombination is "85" || patternSc.lastcombination is "8115" || patternSc.lastcombination is "1185" || patternSc.lastcombination is "852" || patternSc.lastcombination is "11852")
                 {
                     canProceed = true;
 
                     Steps[4] = "That's right!";
-                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
+                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[4]; 
 
                     ////POSITION////
                     foreach (GameObject cond in stepsScript.Positioning)
@@ -167,6 +186,7 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     canProceed = false;
+
 
                     if (patternSc.lastcombination is "811" || patternSc.lastcombination is "5811" || patternSc.lastcombination is "8511")
                     {
@@ -218,6 +238,7 @@ public class instructionText : MonoBehaviour
                     else
                     {
                         Steps[4] = "Find the inner ring that goes inside the vagina";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[4];
                     }
                 }
             }
@@ -234,12 +255,20 @@ public class instructionText : MonoBehaviour
                     stepsScript.pinchedNot.SetActive(false);
                     stepsScript.pinched.SetActive(true);
                     canProceed = true;
+
                     Steps[5] = "That way the condom will not slide!";
                     instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+                    if (patternSc.MousePressed is false)
+                    {
+                        blocker.SetActive(true);
+                    }
+
                 }
                 else
                 {
                     canProceed = false;
+                    Steps[5] = "Let the air out of the tip.";
+                    instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
                 }
             }
             else
@@ -268,6 +297,9 @@ public class instructionText : MonoBehaviour
                     if (patternSc.lastcombination is "58" || patternSc.lastcombination is "118")
                     {
                         canProceed = true;
+                        Steps[5] = "Yes! Similar to a menstrual cup or a tampon";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+
                         stepsScript.placementFull.SetActive(false);
                         stepsScript.placementHalf.SetActive(false);
                         stepsScript.placementHalf2.SetActive(true);
@@ -275,6 +307,10 @@ public class instructionText : MonoBehaviour
                     else
                     {
                         canProceed = false;
+
+                        Steps[5] = "Squeeze the inner ring with your thumb and forefinger.";
+                        instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
+
                         stepsScript.placementFull.SetActive(true);
                         stepsScript.placementHalf.SetActive(false);
                     }
@@ -285,7 +321,7 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence is 6)
         {
-
+            blocker.SetActive(false);
             stepsScript.placementHalf.SetActive(false);
             stepsScript.placementHalf2.SetActive(false);
 
@@ -335,6 +371,7 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     canProceed = false;
+
                 }
             }
             else
@@ -390,6 +427,7 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     canProceed = false;
+
                 }
             }
                 
@@ -399,11 +437,27 @@ public class instructionText : MonoBehaviour
         {
             //make button normal
             buttonNext.color = new Color(buttonNext.color.r, buttonNext.color.g, buttonNext.color.b, 1f);
+            
+            if (patternSc.MousePressed is true)
+            {
+                //if (ready4anim is false)
+                    //ready4anim = true;
+            }
+            else
+            {
+                //blocker.SetActive(true);
+                if (currentSentence <= 3)
+                {
+                    nextaAnim.SetActive(true); //TIPS
+                }
+            }
         }
         else
         {
             //make button transparent
             buttonNext.color = new Color(buttonNext.color.r, buttonNext.color.g, buttonNext.color.b, .5f);
+            //blocker.SetActive(false);
+            nextaAnim.SetActive(false);
         }
     }
 

@@ -16,6 +16,7 @@ public class CardDrawer : MonoBehaviour, IDropHandler
 
     public bool cardDrawn;
     public AudioSource drawSound;
+    public GameObject takeCardTips;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -25,6 +26,7 @@ public class CardDrawer : MonoBehaviour, IDropHandler
             Destroy(cardDelete);
 
             TimesDrawn++;
+            takeCardTips.SetActive(true);
             cardDrawn = true;
         }
 

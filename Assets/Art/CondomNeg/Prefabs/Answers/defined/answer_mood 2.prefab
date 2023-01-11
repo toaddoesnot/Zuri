@@ -381,7 +381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - 'We will restore the mood together. '
+  - We will restore the mood together.
 --- !u!82 &-4215053293124741879
 AudioSource:
   m_ObjectHideFlags: 0

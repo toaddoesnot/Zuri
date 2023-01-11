@@ -133,7 +133,7 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
         }
         else
         {
-            takeCardTips.SetActive(false);
+            //takeCardTips.SetActive(false);
             tipText.text = "Drag cards into your bubble to respond";
         }
     }

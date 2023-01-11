@@ -26,6 +26,12 @@ public class Patterns : MonoBehaviour
     public sounds soundSc;
     public bool sounded;
 
+    public GameObject blocker;
+    public bool blocked;
+
+    public int mostRecentNo;
+
+
     public void Start()
     {
        
@@ -33,9 +39,11 @@ public class Patterns : MonoBehaviour
 
     public void Update()
     {
+        
         if (Input.GetMouseButton(0))
         {
             MousePressed = true;
+            mostRecentNo = mostRecent.GetComponent<SelectTouch>().CircleNum;
             sounded = false;
             textSc.nextPressed = false;
             twoNumbers = Recent.GetComponent<SelectTouch>().CircleNum + mostRecent.GetComponent<SelectTouch>().CircleNum.ToString();
@@ -73,8 +81,17 @@ public class Patterns : MonoBehaviour
                     }
                 }
             }
-
         }
+
+        if (blocker.activeInHierarchy)
+        {
+            blocked = true;
+        }
+        else
+        {
+            blocked = false;
+        }
+
     }
 
     public void AddString()
@@ -85,7 +102,7 @@ public class Patterns : MonoBehaviour
     public IEnumerator AddString2()
     {
         
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
 
         foreach (GameObject circle in textSc.circles)
         {

@@ -20,6 +20,13 @@ public class SelectTouch : MonoBehaviour
     public AudioSource blink;
     public bool blinked;
 
+    public bool clear;
+
+    public int arg1;
+    public int arg2;
+    public int arg3;
+    public int arg4;
+
     private void Start()
     {
         image = GetComponent<Image>();
@@ -29,63 +36,80 @@ public class SelectTouch : MonoBehaviour
 
     public void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (patternSc.mostRecentNo == arg1 || patternSc.mostRecentNo == arg2 || patternSc.mostRecentNo == arg3 || patternSc.mostRecentNo == arg4)
         {
-            MousePressed = true;
-            ImChecked = false;
+            clear = true;
         }
         else
         {
-            if (ImChecked is false)
-            {
-                CheckColors();
-                ImChecked = true;
-            }
-            MousePressed = false;
-            CircleSelected = false;
-            gotValue = false;
-            patternSc.howManySelected = 0;
+            clear = false;
         }
+
+
+        if (patternSc.blocked is false)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                MousePressed = true;
+                ImChecked = false;
+            }
+            else
+            {
+                if (ImChecked is false)
+                {
+                    CheckColors();
+                    ImChecked = true;
+                }
+                MousePressed = false;
+                CircleSelected = false;
+                gotValue = false;
+                patternSc.howManySelected = 0;
+            }
+        }
+
     }
 
     public void OnMouseOver()
     {
-        if (MousePressed)
+        if (clear is false)
         {
-            
-            if (patternSc.ActiveCircles.Contains(self))
+            if (MousePressed)
             {
-                if (gotValue)
+                if (patternSc.ActiveCircles.Contains(self))
+                {
+                    if (gotValue)
+                    {
+
+                    }
+                    else
+                    {
+                        patternSc.howManySelected += 1;
+                        gotValue = true;
+                    }
+                }
+
+                if (CircleSelected)
                 {
 
                 }
                 else
                 {
-                    patternSc.howManySelected += 1;
-                    gotValue = true;
+                    blink.time = 0.14f;
+                    blink.Play();
+                    image.color = new Color(1f, 1f, 1f, 1f);
+                    patternSc.Recent = patternSc.mostRecent;
+                    patternSc.mostRecent = self;
+
+                    //patternSc.fullKey = "";
+                    patternSc.fullKey += CircleNum;
+                    patternSc.lastcombination = patternSc.fullKey;
+                    patternSc.thatManySelected = patternSc.howManySelected;
+
+                    CircleSelected = true;
                 }
             }
 
-            if (CircleSelected)
-            {
-
-            }
-            else
-            {
-                blink.time = 0.14f;
-                blink.Play();
-                image.color = new Color(1f, 1f, 1f, 1f);
-                patternSc.Recent = patternSc.mostRecent;
-                patternSc.mostRecent = self;
-
-                //patternSc.fullKey = "";
-                patternSc.fullKey += CircleNum;
-                patternSc.lastcombination = patternSc.fullKey;
-                patternSc.thatManySelected = patternSc.howManySelected;
-
-                CircleSelected = true;
-                
-            }
+           
         }
     }
 

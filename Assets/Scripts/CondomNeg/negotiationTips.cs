@@ -1,4 +1,4 @@
-using System.Collections;
+            using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,6 +34,7 @@ public class negotiationTips : MonoBehaviour
         if (slotSc.snatched || drawSc.cardDrawn)
         {
             canProceed = true;
+            takeAnim.SetActive(false);
         }
         else
         {
@@ -64,7 +65,7 @@ public class negotiationTips : MonoBehaviour
 
     public IEnumerator takeAnimation()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(4.35f);
         //arrow.SetActive(false);
         takeAnim.SetActive(false);
         tipTxt.text = "Drag cards into your bubble to respond";

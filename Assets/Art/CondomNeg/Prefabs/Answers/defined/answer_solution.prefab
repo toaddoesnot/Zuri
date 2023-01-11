@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Then we can try sex without penetration.
+  m_text: We should not have sex now and cuddle instead then.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - 'Then we can try sex without penetration. '
+  - We should not have sex now and cuddle instead then.
 --- !u!82 &2189523176184702598
 AudioSource:
   m_ObjectHideFlags: 0

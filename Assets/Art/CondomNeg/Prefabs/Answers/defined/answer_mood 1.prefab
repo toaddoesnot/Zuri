@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - 'I will put a condom for you to make it special. '
+  - I will put a condom for you to make it special.
 --- !u!114 &7050364242703660193
 MonoBehaviour:
   m_ObjectHideFlags: 0

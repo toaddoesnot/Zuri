@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentenceList:
-  - 'I learned more about safe sex since. '
+  - I learned more about safe sex since the last time.
 --- !u!82 &-6369091241637866018
 AudioSource:
   m_ObjectHideFlags: 0
@@ -409,7 +409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I learned more about safe sex since.
+  m_text: I learned more about safe sex since the last time.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}

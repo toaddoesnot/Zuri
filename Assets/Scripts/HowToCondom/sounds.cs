@@ -9,14 +9,22 @@ public class sounds : MonoBehaviour
     public AudioSource soundR;
     public AudioSource soundW;
 
+    public Patterns patternSc;
+
     public void SoundRight()
     {
-        print("uv made it!");
-        soundR.Play();
+        if (patternSc.blocked is false)
+        {
+            print("uv made it!");
+            soundR.Play();
+        }
     }
 
     public void SoundWrong()
     {
-        soundW.Play();
+        if (patternSc.blocked is false)
+        {
+            soundW.Play();
+        }
     }
 }
