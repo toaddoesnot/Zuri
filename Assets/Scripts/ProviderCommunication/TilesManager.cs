@@ -7,37 +7,32 @@ using UnityEngine.SceneManagement;
 public class TilesManager : MonoBehaviour
 {
     public GameObject[] tiles;
-    public Sprite[] arrows;
+    //public Sprite[] arrows;
 
     public int OnTile;
 
-    public GameObject leftAr;
-    public GameObject rightAr;
+    //public GameObject leftAr;
+    //public GameObject rightAr;
 
-    public int newLeft;
-    public int newRight;
+    //public int newLeft;
+    //public int newRight;
 
     public int newLway;
     public int newRway;
 
     public GameObject endScr;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        leftAr.GetComponent<Image>().sprite = arrows[newLeft];
-        rightAr.GetComponent<Image>().sprite = arrows[newRight];
+        //leftAr.GetComponent<Image>().sprite = arrows[newLeft];
+        //rightAr.GetComponent<Image>().sprite = arrows[newRight];
 
-        if (OnTile is 3)
-        {
-            endScr.SetActive(true);
-        }
+        //if (OnTile is 3)
+        //{
+        //    endScr.SetActive(true);
+        //}
     }
 
     public void ChooseR()

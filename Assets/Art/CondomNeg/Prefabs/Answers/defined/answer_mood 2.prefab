@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: -4215053293124741879}
   m_Layer: 5
   m_Name: answer_mood 2
-  m_TagString: Answer
+  m_TagString: Answer2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -217,7 +217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252, y: -538.8204}
+  m_AnchoredPosition: {x: 4.490001, y: -538.8204}
   m_SizeDelta: {x: 230, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7050364242703660206
@@ -333,7 +333,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_RectTransform: {fileID: 7050364242703660192}
-  r_XAxis: -252
+  r_XAxis: 4.490001
   r_YAxis: -538.8204
 --- !u!225 &6575398789313464575
 CanvasGroup:

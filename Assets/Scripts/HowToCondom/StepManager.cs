@@ -31,6 +31,8 @@ public class StepManager : MonoBehaviour
     public GameObject femaleConStart;
     public GameObject femaleConDone;
 
+    public GameObject Step5;
+
     // public Animation openCondom;
 
 

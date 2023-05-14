@@ -44,6 +44,13 @@ public class instructionText : MonoBehaviour
     public GameObject blocker;
     public bool ready4anim;
 
+    public GameObject starsUp;
+    public GameObject starsDown;
+    public bool starsUpDone;
+    public bool starsDownDone;
+
+    public tipsMaanger tipsSc;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -142,6 +149,7 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     stepsScript.Step1.GetComponent<Animation>().Play();
+                    stepsScript.Step5.GetComponent<Animation>().Play();
                     animating = true;
                     //NextStep();
                 }
@@ -186,7 +194,8 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     canProceed = false;
-
+                    stepsScript.Step5.SetActive(false);
+                    
 
                     if (patternSc.lastcombination is "811" || patternSc.lastcombination is "5811" || patternSc.lastcombination is "8511")
                     {
@@ -267,6 +276,7 @@ public class instructionText : MonoBehaviour
                 else
                 {
                     canProceed = false;
+                    stepsScript.condomFem.SetActive(false);
                     Steps[5] = "Let the air out of the tip.";
                     instructions.GetComponent<TextMeshProUGUI>().text = Steps[5];
                 }
@@ -435,7 +445,22 @@ public class instructionText : MonoBehaviour
 
         if (canProceed)
         {
-            //make button normal
+            //public GameObject starsUp;
+            // public GameObject starsDown;
+            //public bool starsUpDone;
+            //public bool starsDownDone;
+
+            if(currentSentence is >= 1 && currentSentence is <= 6)
+            {
+                if (starsUpDone is false)
+                {
+                    starsUp.SetActive(true);
+                    starsDown.SetActive(true);
+                    StartCoroutine(Starry());
+                }
+            }
+            
+
             buttonNext.color = new Color(buttonNext.color.r, buttonNext.color.g, buttonNext.color.b, 1f);
             
             if (patternSc.MousePressed is true)
@@ -458,6 +483,7 @@ public class instructionText : MonoBehaviour
             buttonNext.color = new Color(buttonNext.color.r, buttonNext.color.g, buttonNext.color.b, .5f);
             //blocker.SetActive(false);
             nextaAnim.SetActive(false);
+            starsUpDone = false;
         }
     }
 
@@ -476,6 +502,8 @@ public class instructionText : MonoBehaviour
                 stepsScript.Positioning[0].SetActive(true);
 
                 currentSentence++;
+                tipsSc.totalTime = 0;
+                tipsSc.DoneTip = false;
                 instructions.GetComponent<TextMeshProUGUI>().text = Steps[currentSentence];
                 //nextPressed = false;
             }
@@ -495,6 +523,8 @@ public class instructionText : MonoBehaviour
                     stepsScript.pinchedNot.SetActive(true);
 
                     currentSentence++;
+                    tipsSc.totalTime = 0;
+                    tipsSc.DoneTip = false;
                     instructions.GetComponent<TextMeshProUGUI>().text = Steps[currentSentence];
                     //nextPressed = false;
                 }
@@ -503,12 +533,16 @@ public class instructionText : MonoBehaviour
                     if (currentSentence is 5)
                     {
                         currentSentence++;
+                        tipsSc.totalTime = 0;
+                        tipsSc.DoneTip = false;
                         instructions.GetComponent<TextMeshProUGUI>().text = Steps[currentSentence];
                         //nextPressed = false;
                     }
                     else
                     {
                         currentSentence++;
+                        tipsSc.totalTime = 0;
+                        tipsSc.DoneTip = false;
                         instructions.GetComponent<TextMeshProUGUI>().text = Steps[currentSentence];
                         //nextPressed = false;
                     }
@@ -519,7 +553,7 @@ public class instructionText : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1);//shall be one
     }
 
     public void FemaleTextActivator()
@@ -529,5 +563,12 @@ public class instructionText : MonoBehaviour
         Steps[6] = FemaleText[2];
     }
 
+    IEnumerator Starry()
+    {
+        yield return new WaitForSeconds(1f);
+        starsUp.SetActive(false);
+        starsDown.SetActive(false);
+        starsUpDone = true;
+    }
 
 }
