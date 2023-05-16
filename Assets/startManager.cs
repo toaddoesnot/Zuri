@@ -9,29 +9,37 @@ public class startManager : MonoBehaviour
     public GameObject[] changingPlaque;
     public GameObject[] doctors;
     public GameObject[] ways;
+    public GameObject[] pieces;
 
     public int chosenDoctor;
     public GameObject secondCanvas;
     public GameObject whiteBg;
 
+    public TilesManager tilesSc;
+    public promptManager promptSc;
+    public GameObject fastTile;
+
     public void Update()
     {
-        foreach (GameObject doc in doctors)
+        if (chosenDoctor is not 3)
         {
-            doc.SetActive(false);
-            doctors[chosenDoctor].SetActive(true);
-            ways[chosenDoctor].SetActive(true);
-        }
-        foreach (GameObject way in ways)
-        {
-            way.SetActive(false);
-            ways[chosenDoctor].SetActive(true);
+            foreach (GameObject doc in doctors)
+            {
+                doc.SetActive(false);
+                doctors[chosenDoctor].SetActive(true);
+            }
+            foreach (GameObject way in ways)
+            {
+                way.SetActive(false);
+                ways[chosenDoctor].SetActive(true);
+            }
         }
     }
 
     public void Provider1()
     {
         chosenDoctor = 0;
+        tilesSc.OnTile = 11;
         foreach (GameObject button in buttons)
         {
             button.SetActive(false);
@@ -43,6 +51,7 @@ public class startManager : MonoBehaviour
     public void Provider2()
     {
         chosenDoctor = 1;
+        tilesSc.OnTile = 3;
         foreach (GameObject button in buttons)
         {
             button.SetActive(false);
@@ -54,6 +63,7 @@ public class startManager : MonoBehaviour
     public void Provider3()
     {
         chosenDoctor = 2;
+        tilesSc.OnTile = 10;
         foreach (GameObject button in buttons)
         {
             button.SetActive(false);
@@ -83,7 +93,24 @@ public class startManager : MonoBehaviour
     {
         secondCanvas.SetActive(false);
         whiteBg.GetComponent<Animation>().Play("canvasFade");
+
+        promptSc.StartPrompts();
+
         StartCoroutine(Scheduled());
+
+        tilesSc.newLway = pieces[chosenDoctor].GetComponent<tileController>().LWay;
+        tilesSc.newRway = pieces[chosenDoctor].GetComponent<tileController>().RWay;
+
+        foreach (GameObject tile in pieces)
+        {
+            tile.SetActive(true);
+            pieces[chosenDoctor].SetActive(false);
+        }
+
+        if (chosenDoctor is 1)
+        {
+            fastTile.GetComponent<tileController>().fastPass = true;
+        }
     }
 
     public IEnumerator ReturnButtons()
