@@ -21,13 +21,8 @@ public class startManager : MonoBehaviour
 
     public void Update()
     {
-        if (chosenDoctor is not 3)
+        if (chosenDoctor is 0 || chosenDoctor is 1 || chosenDoctor is 2)
         {
-            foreach (GameObject doc in doctors)
-            {
-                doc.SetActive(false);
-                doctors[chosenDoctor].SetActive(true);
-            }
             foreach (GameObject way in ways)
             {
                 way.SetActive(false);
@@ -39,6 +34,9 @@ public class startManager : MonoBehaviour
     public void Provider1()
     {
         chosenDoctor = 0;
+        doctors[1].SetActive(false);
+        doctors[2].SetActive(false);
+
         tilesSc.OnTile = 11;
         foreach (GameObject button in buttons)
         {
@@ -51,6 +49,9 @@ public class startManager : MonoBehaviour
     public void Provider2()
     {
         chosenDoctor = 1;
+        doctors[0].SetActive(false);
+        doctors[2].SetActive(false);
+
         tilesSc.OnTile = 3;
         foreach (GameObject button in buttons)
         {
@@ -63,6 +64,9 @@ public class startManager : MonoBehaviour
     public void Provider3()
     {
         chosenDoctor = 2;
+        doctors[1].SetActive(false);
+        doctors[0].SetActive(false);
+
         tilesSc.OnTile = 10;
         foreach (GameObject button in buttons)
         {
@@ -74,6 +78,10 @@ public class startManager : MonoBehaviour
 
     public void Back()
     {
+        doctors[1].SetActive(true);
+        doctors[0].SetActive(true);
+        doctors[2].SetActive(true);
+
         if (chosenDoctor is 0)
         {
             changingPlaque[0].GetComponent<Animation>().Play("DEslidingPlaque");

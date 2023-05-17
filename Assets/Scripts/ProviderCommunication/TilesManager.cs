@@ -27,6 +27,7 @@ public class TilesManager : MonoBehaviour
 
     public promptManager promptSc;
     public bool ended;
+    public bool ended2;
 
     public TextMeshProUGUI leftAnswer;
     public TextMeshProUGUI rightAnswer;
@@ -42,13 +43,27 @@ public class TilesManager : MonoBehaviour
     {
         //leftAr.GetComponent<Image>().sprite = arrows[newLeft];
         //rightAr.GetComponent<Image>().sprite = arrows[newRight];
+        
+        if (promptSc.doing)
+        {
+            leftPlaque.GetComponent<Button>().interactable = false;
+            rightPlaque.GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            leftPlaque.GetComponent<Button>().interactable = true;
+            rightPlaque.GetComponent<Button>().interactable = true;
+        }
 
         if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
         {
+            ended2 = true;
+
             if (ended is false)
             {
                 promptSc.EndPrompts();
                 StartCoroutine(Ending());
+                //promptSc.promptText.text = "";
 
                 endingText.text = "Great job!";
                 leftPlaque.GetComponent<Animation>().Play("tileFade");
@@ -84,28 +99,44 @@ public class TilesManager : MonoBehaviour
 
     public void ChooseR()
     {
-        OnTile = newRway;
-        promptSc.generatePromptR();
+        if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
+        {
+            ended2 = true;
+            //promptSc.promptText.text = "";
+        }
+        else
+        {
+            OnTile = newRway;
+            promptSc.generatePromptR();
 
-        Image image = tiles[OnTile].GetComponent<Image>();
-        var tempColor = image.color;
-        tempColor.a = 0.01f;
-        image.color = tempColor;
+            Image image = tiles[OnTile].GetComponent<Image>();
+            var tempColor = image.color;
+            tempColor.a = 0.01f;
+            image.color = tempColor;
 
-        tiles[OnTile].GetComponent<tileController>().doDeed = true;
+            tiles[OnTile].GetComponent<tileController>().doDeed = true;
+        }
     }
 
     public void ChooseL()
     {
-        OnTile = newLway;
-        promptSc.generatePromptL();
+        if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
+        {
+            ended2 = true;
+            //promptSc.promptText.text = "";
+        }
+        else
+        {
+            OnTile = newLway;
+            promptSc.generatePromptL();
 
-        Image image = tiles[OnTile].GetComponent<Image>();
-        var tempColor = image.color;
-        tempColor.a = 0.01f;
-        image.color = tempColor;
+            Image image = tiles[OnTile].GetComponent<Image>();
+            var tempColor = image.color;
+            tempColor.a = 0.01f;
+            image.color = tempColor;
 
-        tiles[OnTile].GetComponent<tileController>().doDeed = true;
+            tiles[OnTile].GetComponent<tileController>().doDeed = true;
+        }
     }
 
     public void RestartGame()
