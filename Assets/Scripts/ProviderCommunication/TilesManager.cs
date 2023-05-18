@@ -38,12 +38,22 @@ public class TilesManager : MonoBehaviour
     public GameObject endingText2;
     public GameObject endButton;
 
+    public treasureMap treasureSc;
+    public bool special1;
+    public bool special2;
+    public bool repeated;
+
     // Update is called once per frame
     void Update()
     {
         //leftAr.GetComponent<Image>().sprite = arrows[newLeft];
         //rightAr.GetComponent<Image>().sprite = arrows[newRight];
-        
+
+        if (docScript.chosenDoctor is 1 && OnTile is 12)
+        {
+            repeated = true;
+        }
+
         if (promptSc.doing)
         {
             leftPlaque.GetComponent<Button>().interactable = false;
@@ -82,6 +92,13 @@ public class TilesManager : MonoBehaviour
         {
             OnTile = 4;
 
+            if (treasureSc.playonce[0] is false)
+            {
+                treasureSc.smiles[2].SetActive(true);
+                treasureSc.smiles[2].GetComponent<Animation>().Play("specialSmiles");
+                treasureSc.playonce[0] = true;
+            }
+
             Image image = tiles[OnTile].GetComponent<Image>();
             var tempColor = image.color; 
             tempColor.a = 0.01f;
@@ -95,10 +112,36 @@ public class TilesManager : MonoBehaviour
             leftAnswer.text = tiles[OnTile].GetComponent<tileController>().myLeft.ToString();
             rightAnswer.text = tiles[OnTile].GetComponent<tileController>().myRight.ToString();
         }
+
+        if (docScript.chosenDoctor is 0 && OnTile is 7 && special1 is true || docScript.chosenDoctor is 0 && OnTile is 6 && special2 is true)
+        {
+            rightPlaque.SetActive(false);
+        }
+        else
+        {
+            if (docScript.chosenDoctor is 1 && OnTile is 8 && repeated is true)
+            {
+                rightPlaque.SetActive(false);
+            }
+            else
+            {
+                rightPlaque.SetActive(true);
+            }
+        }
     }
 
     public void ChooseR()
     {
+        if (docScript.chosenDoctor is 0 && OnTile is 7 || docScript.chosenDoctor is 2 && OnTile is 6)
+        {
+            special1 = true;
+        }
+        if (docScript.chosenDoctor is 0 && OnTile is 5 || docScript.chosenDoctor is 0 && OnTile is 2 || docScript.chosenDoctor is 2 && OnTile is 5)
+        {
+            special2 = true;
+            //leftPlaque.SetActive(false);
+        }
+
         if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
         {
             ended2 = true;
