@@ -24,7 +24,7 @@ public class EndScreenSc : MonoBehaviour
     public Slider partnerSlider;
     public Slider playerSLider;
 
-    public GameObject buttonTakeCards;
+    //public GameObject buttonTakeCards;
     public int currentline;
     public GameObject background;
 
@@ -36,6 +36,7 @@ public class EndScreenSc : MonoBehaviour
     public GameObject animationImage;
 
     public bool soundPlayed;
+    public GameObject soundManager;
     public GameObject soundW;
     public GameObject soundL;
 
@@ -46,13 +47,14 @@ public class EndScreenSc : MonoBehaviour
         if (partnerSlider.value <= 0)
         {
             //animationImage.SetActive(false);
+            soundManager.SetActive(false);
             animationImage.SetActive(true);
 
             aim1.SetActive(true);
             aim2.SetActive(true);
             aim3.SetActive(true);
 
-            buttonTakeCards.SetActive(false);
+            //buttonTakeCards.SetActive(false);
 
             background.SetActive(true);
 
@@ -75,6 +77,7 @@ public class EndScreenSc : MonoBehaviour
         {
             if (playerSLider.value <= 0)
             {
+                soundManager.SetActive(false);
                 //animationImage.SetActive(false);
                 animationImage.SetActive(true);
 
@@ -82,7 +85,7 @@ public class EndScreenSc : MonoBehaviour
                 aim2.SetActive(true);
                 aim3.SetActive(true);
 
-                buttonTakeCards.SetActive(false);
+                //buttonTakeCards.SetActive(false);
 
                 background.SetActive(true);
 

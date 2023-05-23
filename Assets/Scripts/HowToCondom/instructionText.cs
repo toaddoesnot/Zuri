@@ -50,6 +50,7 @@ public class instructionText : MonoBehaviour
     public bool starsDownDone;
 
     public tipsMaanger tipsSc;
+    public GameObject[] trinkets;
 
     // Start is called before the first frame update
     void Start()
@@ -65,16 +66,31 @@ public class instructionText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if(Input.GetMouseButtonDown(0) is false)
+        if (currentSentence < 7)
+        {
+            if (canProceed)
+            {
+                if (patternSc.MousePressed is false)
+                {
+                    blocker.SetActive(true);
+                }
+            }
+            else
+            {
+                blocker.SetActive(false);
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0) is false)
         {
             if (NowIsTime)
             {
                 stepsScript.PutInternally[3].SetActive(false);
                 stepsScript.femaleConDone.SetActive(true);
             }
-            
+
         }
+
 
         if (currentSentence >= 7)
         {
@@ -131,7 +147,7 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence is 3)
         {
-            if (patternSc.lastcombination is "6912" || patternSc.lastcombination is "1296" || patternSc.lastcombination is "4710" || patternSc.lastcombination is "1074" || patternSc.lastcombination is "1512963" || patternSc.lastcombination is "3691215" || patternSc.lastcombination is "1471013" || patternSc.lastcombination is "1310741")
+            if (patternSc.lastcombination is "6912" || patternSc.lastcombination is "1296" || patternSc.lastcombination is "4710" || patternSc.lastcombination is "1074" || patternSc.lastcombination is "1512963" || patternSc.lastcombination is "3691215" || patternSc.lastcombination is "1471013" || patternSc.lastcombination is "1310741" || patternSc.lastcombination is "691215" || patternSc.lastcombination is "12963" ||  patternSc.lastcombination is "471013" || patternSc.lastcombination is "10741")
             {
                 canProceed = true;
                 Steps[3] = "Perfect!";
@@ -170,11 +186,13 @@ public class instructionText : MonoBehaviour
 
         if (currentSentence is 4)
         {
-            blocker.SetActive(false);
+            //blocker.SetActive(false);
             stepsScript.condomWrap.SetActive(false);
 
             if (choiceSc.femaleCon is false)
             {
+                trinkets[0].GetComponent<SelectTouch>().clear = false;
+
                 if (patternSc.lastcombination is "85" || patternSc.lastcombination is "8115" || patternSc.lastcombination is "1185" || patternSc.lastcombination is "852" || patternSc.lastcombination is "11852")
                 {
                     canProceed = true;
@@ -221,6 +239,9 @@ public class instructionText : MonoBehaviour
             }
             else
             {
+                trinkets[1].GetComponent<SelectTouch>().clear = false;
+                trinkets[2].GetComponent<SelectTouch>().clear = false;
+
                 foreach (GameObject cond in stepsScript.Positioning)
                 {
                     cond.SetActive(false);
@@ -495,6 +516,7 @@ public class instructionText : MonoBehaviour
         if (canProceed)
         {
             nextSong.Play();
+
             if (currentSentence is 3)
             {
                 //stepsScript.Stage2();
@@ -570,5 +592,6 @@ public class instructionText : MonoBehaviour
         starsDown.SetActive(false);
         starsUpDone = true;
     }
+
 
 }

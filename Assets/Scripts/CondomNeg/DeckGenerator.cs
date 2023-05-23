@@ -9,6 +9,7 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
     //public int currentType = -1;
 
     public GameObject card;
+    public GameObject cardObject;
     public GameObject canvas;
     public bool SlotFull;
 
@@ -21,7 +22,7 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
     public bool Iam2;
     public bool Iam3;
 
-
+    public bool doOnce;
 
     //RectTransform self;
 
@@ -29,6 +30,27 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
     void Start()
     {
         //CreateCard();
+    }
+
+    public void Update()
+    {
+        if (cardObject is not null)
+        {
+            if (cardObject.GetComponent<DragDrop>().dropped is true)
+            {
+
+                if (doOnce is false)
+                {
+                    cardObject.GetComponent<RectTrnasformChange>().r_XAxis = m_XAxis;
+                    cardObject.GetComponent<RectTrnasformChange>().r_YAxis = m_YAxis;
+                    cardObject.GetComponent<RectTrnasformChange>().ChangePosition();
+                    //doOnce = true;
+
+                }
+            }
+        }
+        
+        
     }
 
     public void CreateCard()
@@ -63,38 +85,21 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
         if(eventData.pointerDrag != null)
         {
             eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = GetComponent<RectTransform>().anchoredPosition;
-            //SlotFull = true;
+            //SlotFull = true;  // 
         }
     }
 
 
     public void OnTriggerStay2D(Collider2D collision)
     {
-        if (Iam1)
+        if (Iam1 && collision.gameObject.tag == "Answer" || Iam2 && collision.gameObject.tag == "Answer2" || Iam3 && collision.gameObject.tag == "Answer3")
         {
-            if (collision.gameObject.tag == "Answer")
-            {
-                SlotFull = true;
-
-            }
+            SlotFull = true;
         }
 
-        if (Iam2)
+        if (Iam1 && collision.gameObject.tag == "Answer" || Iam2 && collision.gameObject.tag == "Answer2" || Iam3 && collision.gameObject.tag == "Answer3")
         {
-            if (collision.gameObject.tag == "Answer2")
-            {
-                SlotFull = true;
-
-               
-            }
-        }
-
-        if (Iam3)
-        {
-            if (collision.gameObject.tag == "Answer3")
-            {
-                SlotFull = true;
-            }
+            cardObject = collision.gameObject;
         }
 
 
@@ -102,28 +107,9 @@ public class DeckGenerator : MonoBehaviour, IDropHandler
 
     public void OnTriggerExit2D(Collider2D collision)
     {
-        if (Iam1)
+        if (Iam1 && collision.gameObject.tag == "Answer" || Iam2 && collision.gameObject.tag == "Answer2" || Iam3 && collision.gameObject.tag == "Answer3")
         {
-            if (collision.gameObject.tag == "Answer")
-            {
-                SlotFull = false;
-            }
-        }
-
-        if (Iam2)
-        {
-            if (collision.gameObject.tag == "Answer2")
-            {
-                SlotFull = false;
-            }
-        }
-
-        if (Iam3)
-        {
-            if (collision.gameObject.tag == "Answer3")
-            {
-                SlotFull = false;
-            }
+            SlotFull = false;
         }
     }
 

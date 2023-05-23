@@ -36,11 +36,6 @@ public class StepManager : MonoBehaviour
     // public Animation openCondom;
 
 
-    private void Start()
-    {
-        
-    }
-
     public void Stage1()
     {
         if (choiceSc.femaleCon is true)

@@ -22,19 +22,45 @@ public class AnswerRandomizer : MonoBehaviour
 
     public bool femaleReactive;
 
+    public SubTrigger triggerSc;
+    public bool doOnce;
+
 
     // Start is called before the first frame update
     public void Start()
     {
         genderSc = FindObjectOfType<GenderChanger>();
-        if (femaleReactive)
+        triggerSc = this.GetComponent<SubTrigger>();
+    }
+    //
+    public void Update()
+    {
+        if (genderSc.DoneThing is false)
         {
-            if (genderSc.females is true)
+            if (femaleReactive)
             {
-                textObj.text = femaleTxt.ToString();
+
+                if (genderSc.females is true)
+                {
+                    triggerSc.sentenceList[0] = femaleTxt;
+                    
+                }
+                else
+                {
+                    triggerSc.sentenceList[0] = "Even if you lose erection, I will help you to get it back. ";
+                }
+            }
+        }
+        else
+        {
+            if (doOnce is false)
+            {
+                textObj.text = triggerSc.sentenceList[0].ToString();
+                doOnce = true;
             }
         }
         
+        //
     }
 
     public void GenerateAnswer()

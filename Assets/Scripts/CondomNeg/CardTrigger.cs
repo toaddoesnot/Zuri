@@ -15,33 +15,48 @@ public class CardTrigger : MonoBehaviour
 
     public bool femaleReactive;
 
+    public void Start()
+    {
+        
+    }
+
+    public void Update()
+    {
+        
+    }
+
     public void StartFemales()
     {
-        genderSc = FindObjectOfType<GenderChanger>();
-        if (femaleReactive)
-        {
-            if (genderSc.females is true)
-            {
-                sentenceClass.sentence[0] = femaleTxt.ToString();
-            }
-        }
+        
     }
     public void ReturnMales()
     {
-        genderSc = FindObjectOfType<GenderChanger>();
-        if (femaleReactive)
-        {
-            if (genderSc.females is false)
-            {
-                sentenceClass.sentence[0] = maleTxt.ToString();
-            }
-        }
+       
     }
 
 
     public void TriggerDialogue()
     {
+        genderSc = FindObjectOfType<GenderChanger>();
+
+        if (genderSc.females is true)
+        {
+            if (femaleReactive)
+            {
+                sentenceClass.sentence[0] = femaleTxt.ToString();
+            }
             FindObjectOfType<PartnerManager>().StartDialogue(sentenceClass);
             playerMotivation.value -= sentenceClass.power;
+        }
+        else
+        {
+            if (femaleReactive)
+            {
+                sentenceClass.sentence[0] = maleTxt.ToString();
+                
+            }
+            FindObjectOfType<PartnerManager>().StartDialogue(sentenceClass);
+            playerMotivation.value -= sentenceClass.power;
+        }
     }
 }

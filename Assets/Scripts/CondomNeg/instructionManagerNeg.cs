@@ -16,33 +16,23 @@ public class instructionManagerNeg : MonoBehaviour
     public GameObject arrowDown;
     public GameObject arrowLeft;
     public GameObject arrowRight;
-    public GameObject maskLeft;
-    public GameObject maskRight;
 
     public Sprite startButton;
     public Sprite normalButton;
 
-    public GameObject videoPanel;
-    public VideoClip clip1;
-    public VideoClip clip2;
-    public VideoClip clip3;
-
     public GameObject[] circles;
+    public GameObject[] animations;
 
-    public void Start()
-    {
-        
-    }
+    public GameObject circleAnim;
 
     // Update is called once per frame
     void Update()
     {
+        
+
         if(stage is 0)
         {
             prevButton.SetActive(false);
-            maskLeft.SetActive(true);
-            videoPanel.GetComponent<VideoPlayer>().clip = clip1;
-            videoPanel.GetComponent<VideoPlayer>().playbackSpeed = 1f;
             instText.GetComponent<TextMeshProUGUI>().text = "Drag one or two cards to your bubble to respond. Use the same color as in the sentence.";
 
             arrowDown.SetActive(true);
@@ -56,12 +46,11 @@ public class instructionManagerNeg : MonoBehaviour
         }
         if (stage is 1)
         {
+            circleAnim.SetActive(false);
+
             prevButton.SetActive(true);
             nextButton.GetComponent<Button>().GetComponent<Image>().sprite = normalButton;
-            maskLeft.SetActive(false);
-            maskRight.SetActive(true);
-            videoPanel.GetComponent<VideoPlayer>().clip = clip2;
-            videoPanel.GetComponent<VideoPlayer>().playbackSpeed = 1f;
+            
             instText.GetComponent<TextMeshProUGUI>().text = "To get rid of a card, drag it to the draw deck.";
 
             arrowDown.SetActive(false);
@@ -77,10 +66,7 @@ public class instructionManagerNeg : MonoBehaviour
         if (stage is 2)
         {
             nextButton.GetComponent<Button>().GetComponent<Image>().sprite = startButton;
-            maskRight.SetActive(false);
-            maskLeft.SetActive(true);
-            videoPanel.GetComponent<VideoPlayer>().clip = clip3;
-            videoPanel.GetComponent<VideoPlayer>().playbackSpeed = 0.5f;
+            
             instText.GetComponent<TextMeshProUGUI>().text = "When you either used a card or drew a card, press TAKE to proceed.";
 
             arrowLeft.SetActive(false);
@@ -101,10 +87,20 @@ public class instructionManagerNeg : MonoBehaviour
     public void Next()
     {
         stage++;
+        foreach (GameObject anim in animations)
+        {
+            anim.SetActive(false);
+            animations[stage].SetActive(true);
+        }
     }
 
     public void Prev()
     {
         stage--;
+        foreach (GameObject anim in animations)
+        {
+            anim.SetActive(false);
+            animations[stage].SetActive(true);
+        }
     }
 }

@@ -82,7 +82,7 @@ public class GenderChanger : MonoBehaviour
             {
                 foreach (CardTrigger female in allFemaleCards)
                 {
-                    female.ReturnMales();
+                   // female.ReturnMales();
                     DoneBoys = true;
                     femTxt.color = new Color32(48, 29, 27, 100);
                     maleTxt.color = new Color32(48, 29, 27, 255);
@@ -98,15 +98,7 @@ public class GenderChanger : MonoBehaviour
             girlSkeleton.GetComponent<SpriteRenderer>().sprite = girlPink;
             if (DoneThing is false)
             {
-                foreach (CardTrigger female in allFemaleCards)
-                {
-                    female.StartFemales();
-                    DoneThing = true;
-                }
-            }
-            else
-            {
-
+                DoneThing = true;
             }
         }
         if (choiceSc.partnerGrey)
@@ -114,30 +106,14 @@ public class GenderChanger : MonoBehaviour
             girlSkeleton.GetComponent<SpriteRenderer>().sprite = girlGrey;
             if (DoneThing is false)
             {
-                foreach (CardTrigger female in allFemaleCards)
-                {
-                    female.StartFemales();
-                    DoneThing = true;
-                }
-            }
-            else
-            {
-
+                DoneThing = true;
             }
         }
         if (choiceSc.partnerOrange)
         {
             if (DoneThing is false)
             {
-                foreach (CardTrigger female in allFemaleCards)
-                {
-                    female.StartFemales();
-                    DoneThing = true;
-                }
-            }
-            else
-            {
-
+                DoneThing = true;
             }
         }
     }
@@ -149,7 +125,7 @@ public class GenderChanger : MonoBehaviour
         if (females)
         {
             females = false;
-
+            
             girlSkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
             boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
 
@@ -167,6 +143,8 @@ public class GenderChanger : MonoBehaviour
         {
             females = true;
 
+            
+
             girlSkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             boySkeleton.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
 
@@ -179,6 +157,7 @@ public class GenderChanger : MonoBehaviour
             boy1.SetActive(false);
             boy2.SetActive(false);
             boy3.SetActive(false);
+
         }
     }
 }

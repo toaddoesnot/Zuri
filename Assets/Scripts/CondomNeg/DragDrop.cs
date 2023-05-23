@@ -7,6 +7,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
 {
     CanvasGroup canvasGroup;
     public AudioSource audioSource;
+    public bool dropped;
     //public AudioClip pickUpSound;
     //Vector3 offset;
 
@@ -38,12 +39,15 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoint
         //audioSource.clip = pickUpSound;
         audioSource.Play();
         canvasGroup.blocksRaycasts = false;
+        dropped = false;
     }
 
     public void OnPointerUp (PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
         canvasGroup.alpha = 1f;
+        
+        dropped = true;
         //throw new System.NotImplementedException();
     }
 

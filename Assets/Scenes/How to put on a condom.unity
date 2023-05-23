@@ -11014,6 +11014,10 @@ MonoBehaviour:
   starsUpDone: 0
   starsDownDone: 0
   tipsSc: {fileID: 1634548342}
+  trinkets:
+  - {fileID: 2039653715}
+  - {fileID: 555651777}
+  - {fileID: 532448076}
 --- !u!1 &1754680820
 GameObject:
   m_ObjectHideFlags: 0

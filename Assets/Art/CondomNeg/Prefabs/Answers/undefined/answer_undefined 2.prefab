@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 0}
+  dropped: 0
 --- !u!114 &982506686484394754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +149,8 @@ MonoBehaviour:
   textObj: {fileID: 0}
   femaleTxt: 
   femaleReactive: 0
+  triggerSc: {fileID: 0}
+  doOnce: 0
 --- !u!114 &690535401482604032
 MonoBehaviour:
   m_ObjectHideFlags: 0

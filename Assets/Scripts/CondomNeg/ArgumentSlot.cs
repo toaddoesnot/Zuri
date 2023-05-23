@@ -31,8 +31,6 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
 
     public CardDrawer cardDrawn;
 
-    public cardsBug bugger;
-
     public PartnerAnim animateSc;
     public PartnerAnim animateSc2;
 
@@ -91,8 +89,7 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
 
         if (snatched)
         {
-            bugger.DestroyCard = true;
-            FindObjectOfType<EndScreenSc>().PlayerRecap();
+           FindObjectOfType<EndScreenSc>().PlayerRecap();
             partnerMotivation.value -= damage;
             damage = 0;
             secondDamage = 0;
@@ -121,7 +118,6 @@ public class ArgumentSlot : MonoBehaviour, IDropHandler
             }
             tipText.text = "Drag cards into your bubble to respond";
 
-            bugger.DestroyCard = true;
             argText.text = "...";
 
             animateSc.noCardAnim = true;

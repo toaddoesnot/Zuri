@@ -40,7 +40,7 @@ public class SelectTouch : MonoBehaviour
 
         if (patternSc.mostRecentNo == arg1 || patternSc.mostRecentNo == arg2 || patternSc.mostRecentNo == arg3 || patternSc.mostRecentNo == arg4)
         {
-            clear = true;
+            //clear = true;
         }
         else
         {

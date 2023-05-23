@@ -22,12 +22,12 @@ public class CardDrawer : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
-            drawSound.Play();
             Destroy(cardDelete);
 
             TimesDrawn++;
             takeCardTips.SetActive(true);
             cardDrawn = true;
+            drawSound.Play();
         }
 
     }
