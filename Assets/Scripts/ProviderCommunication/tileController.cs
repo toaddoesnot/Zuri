@@ -9,19 +9,23 @@ public class tileController : MonoBehaviour
 
     public startManager startSc;
     public List<int> moves = new List<int>();
-    
+
+    [TextArea]
     public List<string> leftAnswers = new List<string>();
+    [TextArea]
     public List<string> rightAnswers = new List<string>();
+
     public string myLeft;
     public string myRight;
-
-    //public int LeftBt;
-    //public int RightBt;
 
     public int LWay;
     public int RWay;
 
     public bool fastPass;
+
+    public List<int> lines = new List<int>();
+    public int LLine;
+    public int RLine;
 
     // Update is called once per frame
     void Update()
@@ -39,6 +43,9 @@ public class tileController : MonoBehaviour
             RWay = moves[3];
             myLeft = leftAnswers[1];
             myRight = rightAnswers[1];
+
+            LLine = lines[2];
+            RLine = lines[3];
         }
         if (startSc.chosenDoctor is 2)
         {
@@ -50,17 +57,10 @@ public class tileController : MonoBehaviour
 
         if (doDeed is true)
         {
-            //tilesSc.newLeft = LeftBt;
-            //tilesSc.newRight = RightBt;
-
             tilesSc.newLway = LWay;
             tilesSc.newRway = RWay;
 
             doDeed = false;
-        }
-        else
-        {
-            
         }
     }
 }

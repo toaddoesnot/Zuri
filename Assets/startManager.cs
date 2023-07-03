@@ -99,6 +99,8 @@ public class startManager : MonoBehaviour
 
     public void Schedule()
     {
+        tilesSc.tilesOpened++;
+
         secondCanvas.SetActive(false);
         whiteBg.GetComponent<Animation>().Play("canvasFade");
 

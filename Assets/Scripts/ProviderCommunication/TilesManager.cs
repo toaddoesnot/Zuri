@@ -9,16 +9,9 @@ public class TilesManager : MonoBehaviour
 {
     public GameObject[] tiles;
     public GameObject[] girls;
-    //public Sprite[] arrows;
 
     public int OnTile;
     public startManager docScript;
-
-    //public GameObject leftAr;
-    //public GameObject rightAr;
-
-    //public int newLeft;
-    //public int newRight;
 
     public int newLway;
     public int newRway;
@@ -39,16 +32,18 @@ public class TilesManager : MonoBehaviour
     public GameObject endButton;
 
     public treasureMap treasureSc;
-    public bool special1;
-    public bool special2;
+    public bool special1; //all not cases
+    public bool special2; // exception
     public bool repeated;
+
+    public int tilesOpened;
+    public GameObject loseImage;
+    public GameObject tipsButton;
+    public GameObject tipText;
 
     // Update is called once per frame
     void Update()
     {
-        //leftAr.GetComponent<Image>().sprite = arrows[newLeft];
-        //rightAr.GetComponent<Image>().sprite = arrows[newRight];
-
         if (docScript.chosenDoctor is 1 && OnTile is 12)
         {
             repeated = true;
@@ -72,18 +67,34 @@ public class TilesManager : MonoBehaviour
             if (ended is false)
             {
                 promptSc.EndPrompts();
-                StartCoroutine(Ending());
-                //promptSc.promptText.text = "";
+                promptSc.promptText.text = "";
 
-                endingText.text = "Great job!";
-                leftPlaque.GetComponent<Animation>().Play("tileFade");
-                rightPlaque.GetComponent<Animation>().Play("tileFade");
 
-                foreach (GameObject tile in tiles)
+                if (tilesOpened is 11)
                 {
-                    tile.GetComponent<Animation>().Play("tileFade");
+                    endingText.text = "Great job!";
+                    foreach (GameObject tile in tiles)
+                    {
+                        tile.GetComponent<Animation>().Play("tileFade");
+                    }
+                    StartCoroutine(Ending());
                 }
-
+                else
+                {
+                    endingText.text = "Great, but there are more replies to open! Try again?!";
+                    endingText2.SetActive(true);
+                    tipsButton.SetActive(true);
+                }
+                
+                 //CHANGE BASED ON THE OUTCOME don't get the tiles out if it's not a win, add objects wilth a text, add tips to text (should fit on one screen)
+                if (leftPlaque.activeInHierarchy)
+                {
+                    leftPlaque.GetComponent<Animation>().Play("tileFade");
+                }
+                if (rightPlaque.activeInHierarchy)
+                {
+                    rightPlaque.GetComponent<Animation>().Play("tileFade");
+                }
                 ended = true;
             }
         }
@@ -113,42 +124,37 @@ public class TilesManager : MonoBehaviour
             rightAnswer.text = tiles[OnTile].GetComponent<tileController>().myRight.ToString();
         }
 
-        if (docScript.chosenDoctor is 0 && OnTile is 7 && special1 is true || docScript.chosenDoctor is 0 && OnTile is 6 && special2 is true)
-        {
-            rightPlaque.SetActive(false);
-        }
-        else
-        {
-            if (docScript.chosenDoctor is 1 && OnTile is 8 && repeated is true)
-            {
-                rightPlaque.SetActive(false);
-            }
-            else
-            {
-                rightPlaque.SetActive(true);
-            }
-        }
+        //if (docScript.chosenDoctor is 0 && OnTile is 7 && special1 is true || docScript.chosenDoctor is 0 && OnTile is 6 && special2 is true)
+        //{
+        //    rightPlaque.SetActive(false);
+        //}
+       // else
+       // {
+       //     rightPlaque.SetActive(true);
+       // }
     }
 
     public void ChooseR()
     {
+        tilesOpened++;
+
         if (docScript.chosenDoctor is 0 && OnTile is 7 || docScript.chosenDoctor is 2 && OnTile is 6)
         {
             special1 = true;
         }
         if (docScript.chosenDoctor is 0 && OnTile is 5 || docScript.chosenDoctor is 0 && OnTile is 2 || docScript.chosenDoctor is 2 && OnTile is 5)
         {
-            special2 = true;
-            //leftPlaque.SetActive(false);
+            special2 = true; 
         }
 
         if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
         {
             ended2 = true;
-            //promptSc.promptText.text = "";
         }
         else
         {
+            promptSc.lineNom = tiles[OnTile].GetComponent<tileController>().RLine; //NEW
+
             OnTile = newRway;
             promptSc.generatePromptR();
 
@@ -163,13 +169,15 @@ public class TilesManager : MonoBehaviour
 
     public void ChooseL()
     {
+        tilesOpened++;
         if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
         {
             ended2 = true;
-            //promptSc.promptText.text = "";
         }
         else
         {
+            promptSc.lineNom = tiles[OnTile].GetComponent<tileController>().LLine; //NEW
+
             OnTile = newLway;
             promptSc.generatePromptL();
 
@@ -184,14 +192,27 @@ public class TilesManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(0); // loads current scene
+        SceneManager.LoadScene(5); // loads current scene
     }
 
     public IEnumerator Ending()
     {
         yield return new WaitForSeconds(2f);
+
         endingText2.SetActive(true);
+        tipsButton.SetActive(true);
+
+        if (tilesOpened is 11)
+        {
+            girls[docScript.chosenDoctor].SetActive(true);
+        }
+    }
+
+    public void ShowTips()
+    {
+        loseImage.SetActive(true);
+        tipsButton.SetActive(false);
+        tipText.SetActive(true);
         endButton.SetActive(true);
-        girls[docScript.chosenDoctor].SetActive(true);
     }
 }

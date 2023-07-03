@@ -154,12 +154,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1439489867}
+  m_Father: {fileID: 879778468}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 192.8202, y: -16.8202}
+  m_AnchoredPosition: {x: 176, y: -56.5}
   m_SizeDelta: {x: 65.269, y: 65.269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4725684
@@ -247,7 +247,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1426539927}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -274,10 +274,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Just like you would visit your regular doctor yearly for a checkup, you
-    should visit your gynecologist yearly to assess your overall health so that any
-    issues are caught early. It's vital to perform \na clinical breast exam \nand
-    pelvic exam as well."
+  m_text: '
+
+    When it comes to sexual education, caregivers play a crucial role
+    in helping to understand sexaul health, relationships, and boundaries. Though,
+    the specifics of sexual education may vary depending on their cultural and personal
+    beliefs.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -286,7 +288,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 570425344
+    rgba: 4278190080
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -461,6 +463,9 @@ MonoBehaviour:
   LWay: 2
   RWay: 5
   fastPass: 0
+  lines: 000000000000000000000000000000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &22699198
 Animation:
   m_ObjectHideFlags: 0
@@ -508,7 +513,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -535,9 +540,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Just like you would visit your regular doctor yearly for a checkup, you
-    should visit your gynecologist yearly to assess your overall health so that any
-    issues are caught early. It's vital to perform \na clinical breast exam \nand
+  m_text: "\nJust like you would visit your regular doctor yearly for a checkup,
+    you should visit your gynecologist yearly to assess your overall health so that
+    any issues are caught early. It's vital to perform \na clinical breast exam \nand
     pelvic exam as well."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -547,8 +552,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278716165
+  m_fontColor: {r: 0.019607844, g: 0.027450982, b: 0.03137255, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -754,7 +759,7 @@ Transform:
   - {fileID: 1353873734}
   m_Father: {fileID: 1874541172}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -170.429}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -242.85446}
 --- !u!1 &142969482
 GameObject:
   m_ObjectHideFlags: 0
@@ -832,13 +837,151 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142969482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.1, y: 247.6, z: 3}
+  m_LocalPosition: {x: -11.3, y: 247.6, z: 3}
   m_LocalScale: {x: 14.723261, y: 14.723261, z: 14.723261}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &171876358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171876359}
+  - component: {fileID: 171876361}
+  - component: {fileID: 171876360}
+  m_Layer: 5
+  m_Name: tipText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &171876359
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171876358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -55.905}
+  m_SizeDelta: {x: 586, y: 797.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &171876360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171876358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "<style=\"Title>TIPS:</style>\n\n\nFrame it as a health conversation\r.\n\nBack
+    up your concerns with research.\r\n\nUnderstand your caregiver's beliefs.\r\n\nShare
+    what concerns you.\r\n\nStay calm and composed.\r\n\nGive it time: be patient.\r\n\nSeek
+    support from trusted adults."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33
+  m_fontSizeBase: 33
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -16.275848, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &171876361
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171876358}
+  m_CullTransparentMesh: 1
 --- !u!1 &205509339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,17 +1229,20 @@ MonoBehaviour:
   moves: 090000000c0000000a00000008000000080000000c000000
   leftAnswers:
   - Doc 1 Left 11
-  - Doc 2 Left 11
+  - I really appreciate the talk! Let's do it more in the future.
   - Doc 3 Left 11
   rightAnswers:
   - Doc 1 Right 11
-  - Doc 2 Right 11
+  - What if my partner wouldn't support all precautions?
   - Doc 3 Right 11
   myLeft: 
   myRight: 
-  LWay: 0
-  RWay: 0
+  LWay: 10
+  RWay: 8
   fastPass: 0
+  lines: 00000000000000000c0000000b0000000000000000000000
+  LLine: 12
+  RLine: 11
 --- !u!111 &208089728
 Animation:
   m_ObjectHideFlags: 0
@@ -1384,7 +1530,11 @@ RectTransform:
   - {fileID: 857029924}
   - {fileID: 1482753619}
   - {fileID: 380892777}
+  - {fileID: 1899744199}
   - {fileID: 1854955877}
+  - {fileID: 385607221}
+  - {fileID: 1364248382}
+  - {fileID: 171876359}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1487,10 +1637,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 350666739}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.17240524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.17241484}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 189.5409, y: -21.1409}
+  m_AnchoredPosition: {x: 197.99997, y: -54.09108}
   m_SizeDelta: {x: 54.2819, y: 54.2819}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &302804030
@@ -1579,7 +1729,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1426539927}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1959,7 +2109,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.69411767}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1973,7 +2123,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 350666741}
   m_OnClick:
     m_PersistentCalls:
@@ -2444,7 +2594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &383279639
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2503,6 +2653,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383279638}
   m_CullTransparentMesh: 1
+--- !u!1001 &385607220
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 256172833}
+    m_Modifications:
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711483, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Name
+      value: backToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788607972294038, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+--- !u!224 &385607221 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+  m_PrefabInstance: {fileID: 385607220}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466259630
 GameObject:
   m_ObjectHideFlags: 0
@@ -2610,7 +2866,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525058538}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2637,7 +2893,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Doe, Melisha, DO
+  m_text: Contact a Nurse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -2749,8 +3005,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 60.299957, y: 58.808838}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 79.806, y: 58.808838}
+  m_SizeDelta: {x: 239.013, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474837749
 MonoBehaviour:
@@ -2772,7 +3028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Doe, Melisha, DO
+  m_text: Contact a Nurse
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -2880,7 +3136,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525058538}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2907,9 +3163,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Just like you would visit your regular doctor yearly for a checkup, you
-    should visit your gynecologist yearly to assess your overall health so that any
-    issues are caught early. It's vital to perform \na clinical breast exam \nand
+  m_text: "\nJust like you would visit your regular doctor yearly for a checkup,
+    you should visit your gynecologist yearly to assess your overall health so that
+    any issues are caught early. It's vital to perform \na clinical breast exam \nand
     pelvic exam as well."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -2919,7 +3175,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
+    rgba: 67108864
   m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -3156,6 +3412,7 @@ RectTransform:
   - {fileID: 605760529}
   - {fileID: 1922141668}
   - {fileID: 1424208367}
+  - {fileID: 553150838}
   - {fileID: 470667586}
   - {fileID: 1640428355}
   - {fileID: 487029364}
@@ -3262,6 +3519,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531597033}
   m_CullTransparentMesh: 1
+--- !u!1 &553150837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 553150838}
+  - component: {fileID: 553150841}
+  - component: {fileID: 553150840}
+  - component: {fileID: 553150839}
+  m_Layer: 5
+  m_Name: face_sad (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &553150838
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150837}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 525058538}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 198, y: 307}
+  m_SizeDelta: {x: 54.2819, y: 54.2819}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &553150839
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150837}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7bbbb272c94432944ba69c7de64b57f2, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7bbbb272c94432944ba69c7de64b57f2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &553150840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 36e1270581b89084ea8467c5f02d37c4, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &553150841
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553150837}
+  m_CullTransparentMesh: 1
 --- !u!1 &599283683
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,6 +3712,7 @@ RectTransform:
   - {fileID: 904085806}
   - {fileID: 1426539927}
   - {fileID: 525058538}
+  - {fileID: 1136570779}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3478,7 +3829,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525058538}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3786,17 +4137,20 @@ MonoBehaviour:
   moves: 030000000600000001000000040000000100000005000000
   leftAnswers:
   - Doc 1 Left 2
-  - Doc 2 Left 2
+  - I wanted to discuss sexual partners. How can I make responsible choices?
   - Doc 3 Left 2
   rightAnswers:
   - Doc 1 Right 2
-  - Doc 2 Right 2
+  - I wanted to discuss contraception. Which options do I have?
   - Doc 3 Right 2
   myLeft: 
   myRight: 
   LWay: 3
   RWay: 6
   fastPass: 0
+  lines: 000000000000000003000000030000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &656449783
 Animation:
   m_ObjectHideFlags: 0
@@ -3871,7 +4225,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ffa5c4b21dbc4c7468bab3086ed987cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ccc566fad86e89c4db8d4ef417776f5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3921,11 +4275,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000068665, y: -197.17}
+  m_AnchoredPosition: {x: 0.000068665, y: -120.3}
   m_SizeDelta: {x: 218.326, y: 72.3248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &683614518
@@ -4118,17 +4472,20 @@ MonoBehaviour:
   moves: 030000000300000005000000090000000200000003000000
   leftAnswers:
   - Doc 1 Left 6
-  - Doc 2 Left 6
+  - What about birth control pills then?
   - Doc 3 Left 6
   rightAnswers:
   - Doc 1 Right 6
-  - Doc 2 Right 6
+  - What about birth control pills then?
   - Doc 3 Right 6
   myLeft: 
   myRight: 
   LWay: 3
   RWay: 3
   fastPass: 0
+  lines: 00000000000000000a0000000a0000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &701435962
 Animation:
   m_ObjectHideFlags: 0
@@ -4317,17 +4674,22 @@ MonoBehaviour:
   moves: 0800000005000000080000000c0000000500000006000000
   leftAnswers:
   - Doc 1 Left 9
-  - Doc 2 Left 9
+  - What if my partner wouldn't support all precautions?
   - Doc 3 Left 9
   rightAnswers:
   - Doc 1 Right 9
-  - Doc 2 Right 9
+  - 'I think I am ready to schedule regular
+
+    OB-GYN visits.'
   - Doc 3 Right 9
   myLeft: 
   myRight: 
   LWay: 8
   RWay: 5
   fastPass: 0
+  lines: 00000000000000000b0000000c0000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &728301286
 Animation:
   m_ObjectHideFlags: 0
@@ -4402,7 +4764,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Obstetrics & Gynaecology
+  m_text: Obstetrics & Gynaecology Specialist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -4411,8 +4773,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4510,7 +4872,43 @@ Transform:
   - {fileID: 1601016645}
   m_Father: {fileID: 1812305832}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.153044}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -101.50125}
+--- !u!1 &818548092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818548093}
+  m_Layer: 5
+  m_Name: empty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &818548093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818548092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1642924670}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &857029923
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,8 +5039,8 @@ RectTransform:
   m_Children:
   - {fileID: 357744336}
   - {fileID: 383279639}
-  - {fileID: 1594552606}
   - {fileID: 1828390182}
+  - {fileID: 4725683}
   - {fileID: 767063563}
   m_Father: {fileID: 599283687}
   m_RootOrder: 2
@@ -4677,7 +5075,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.69411767}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -4691,7 +5089,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 879778470}
   m_OnClick:
     m_PersistentCalls:
@@ -4836,7 +5234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "How would you \nrespond to:"
+  m_text: "Choose a response\nto open as many \ntiles as possible:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -4863,15 +5261,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -4899,7 +5297,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -224.71396, y: -18.855282, z: -255.9447, w: -30.274952}
+  m_margin: {x: -60.256516, y: -55.990875, z: -66.63599, w: -30.274952}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4962,6 +5360,7 @@ RectTransform:
   - {fileID: 1778414659}
   - {fileID: 62171810}
   - {fileID: 671613941}
+  - {fileID: 1435909467}
   - {fileID: 1610286281}
   - {fileID: 1086665495}
   - {fileID: 1233929072}
@@ -5364,7 +5763,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -134.10007, y: 0.90893555}
+  m_AnchoredPosition: {x: -137.9, y: -0.00000083447}
   m_SizeDelta: {x: 148.542, y: 181.1055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &959873377
@@ -5380,7 +5779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.38431373}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -5437,11 +5836,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1426539927}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000068665, y: -197.17}
+  m_AnchoredPosition: {x: 0.000068665, y: -120.3}
   m_SizeDelta: {x: 218.326, y: 72.3248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &969103817
@@ -5627,7 +6026,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f66f714802b73614283eb150b0a7195e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32129e8e40dce70439b2260668f4b320, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5906,7 +6305,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1086665495
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5920,7 +6319,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5996,7 +6395,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6023,7 +6422,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Obstetrics & Gynaecology
+  m_text: Obstetrics & Gynaecology Specialist
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -6032,8 +6431,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.2924528, g: 0.2924528, b: 0.2924528, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6135,7 +6534,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 91.79999, y: 3.9700928}
+  m_AnchoredPosition: {x: 92.047, y: 7.77}
   m_SizeDelta: {x: 264.1722, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124930877
@@ -6158,7 +6557,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Endocrinology
+  m_text: 'Physical and emotional
+
+    care and support person'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -6167,8 +6568,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6293,7 +6694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7dfa0a398977b47458261b7681e97a19, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ccc566fad86e89c4db8d4ef417776f5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6311,6 +6712,108 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130920989}
   m_CullTransparentMesh: 1
+--- !u!1001 &1136570778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 599283687}
+    m_Modifications:
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850788606926711483, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+      propertyPath: m_Name
+      value: backToMenu
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+--- !u!224 &1136570779 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
+  m_PrefabInstance: {fileID: 1136570778}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1140953915
 GameObject:
   m_ObjectHideFlags: 0
@@ -6422,8 +6925,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18, y: 583}
-  m_SizeDelta: {x: 245.1, y: 56.8338}
+  m_AnchoredPosition: {x: -32.596, y: 583}
+  m_SizeDelta: {x: 279.906, y: 56.834}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146783692
 MonoBehaviour:
@@ -6508,7 +7011,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -171.09068, y: 0, z: -31.248268, w: -48.481552}
+  m_margin: {x: -148.395, y: 0, z: -17.664574, w: -48.481552}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -6711,17 +7214,20 @@ MonoBehaviour:
   moves: 020000000600000006000000080000000400000007000000
   leftAnswers:
   - Doc 1 Left 5
-  - Doc 2 Left 5
+  - I've heard about emergency contraception. Can you explain what it is?
   - Doc 3 Left 5
   rightAnswers:
   - Doc 1 Right 5
-  - Doc 2 Right 5
+  - Can I use emergency contraception then?
   - Doc 3 Right 5
   myLeft: 
   myRight: 
-  LWay: 2
-  RWay: 6
+  LWay: 6
+  RWay: 8
   fastPass: 0
+  lines: 000000000000000009000000090000000000000000000000
+  LLine: 9
+  RLine: 9
 --- !u!111 &1161587744
 Animation:
   m_ObjectHideFlags: 0
@@ -6920,7 +7426,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1426539927}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6947,7 +7453,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bell, Kemmarie, APRN
+  m_text: Contact a Caregiver
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -7055,7 +7561,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7082,7 +7588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Smith, Kai, MD
+  m_text: Contact a Doctor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -7315,7 +7821,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 119991690}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 29.199}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.6279927}
+--- !u!1 &1364248381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364248382}
+  - component: {fileID: 1364248384}
+  - component: {fileID: 1364248383}
+  m_Layer: 5
+  m_Name: loseImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1364248382
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364248381}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.00027752, y: -30.8}
+  m_SizeDelta: {x: 730, y: 955}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1364248383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364248381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2076c6ff781ab3c4a88dd5a2e57e7f8d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1364248384
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364248381}
+  m_CullTransparentMesh: 1
 --- !u!1 &1385020794
 GameObject:
   m_ObjectHideFlags: 0
@@ -7405,7 +7987,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bell, Kemmarie, APRN
+  m_text: Contact a Caregiver
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -7640,6 +8222,7 @@ RectTransform:
   - {fileID: 1644586473}
   - {fileID: 1130920990}
   - {fileID: 982551924}
+  - {fileID: 1761393826}
   - {fileID: 1226252072}
   - {fileID: 1782148807}
   - {fileID: 16728028}
@@ -7653,6 +8236,99 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -243.9}
   m_SizeDelta: {x: 34.7454, y: 44.9414}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1435909466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435909467}
+  - component: {fileID: 1435909470}
+  - component: {fileID: 1435909469}
+  - component: {fileID: 1435909468}
+  m_Layer: 5
+  m_Name: face_smile (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1435909467
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435909466}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 904085806}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 176, y: 304.5}
+  m_SizeDelta: {x: 65.269, y: 65.269}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1435909468
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435909466}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: abf6d4a6079b845408ccbf658115772b, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: abf6d4a6079b845408ccbf658115772b, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1435909469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435909466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1a9eb1b1573b1fe4b979973c45ec1d62, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1435909470
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435909466}
+  m_CullTransparentMesh: 1
 --- !u!1 &1439489866
 GameObject:
   m_ObjectHideFlags: 0
@@ -7687,7 +8363,7 @@ RectTransform:
   - {fileID: 1443333504}
   - {fileID: 1408772913}
   - {fileID: 1124930876}
-  - {fileID: 4725683}
+  - {fileID: 1594552606}
   m_Father: {fileID: 599283687}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7848,7 +8524,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f66f714802b73614283eb150b0a7195e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32129e8e40dce70439b2260668f4b320, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8322,6 +8998,9 @@ MonoBehaviour:
   LWay: 7
   RWay: 7
   fastPass: 0
+  lines: 000000000000000000000000000000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &1504925195
 Animation:
   m_ObjectHideFlags: 0
@@ -8431,7 +9110,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1874541172}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.121799}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 34.066}
 --- !u!1 &1562153581
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,8 +9146,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 656.87354}
-  m_SizeDelta: {x: 569.33, y: 114.3499}
+  m_AnchoredPosition: {x: -1.11, y: 673.36304}
+  m_SizeDelta: {x: 598.365, y: 108.96}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562153583
 MonoBehaviour:
@@ -8490,9 +9169,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Choose a health provider
-
-    to schedule a visit with:'
+  m_text: 'Choose a person to talk to about your sexual  health:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -8555,7 +9232,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 3.125389, y: 0, z: -0.74811745, w: 7.214365}
+  m_margin: {x: 3.125389, y: 0, z: -0.74811745, w: 0.5777891}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8595,17 +9272,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594552605}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 879778468}
-  m_RootOrder: 2
+  m_Father: {fileID: 1439489867}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 202.77333, y: -27.373388}
+  m_AnchoredPosition: {x: 199.3, y: -52.5}
   m_SizeDelta: {x: 48.9467, y: 48.9467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1594552607
@@ -8692,7 +9369,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 801024837}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -6.35}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.8580775}
 --- !u!1 &1607000095
 GameObject:
   m_ObjectHideFlags: 0
@@ -8817,7 +9494,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8958,17 +9635,20 @@ MonoBehaviour:
   moves: 08000000090000000b0000000b0000000800000009000000
   leftAnswers:
   - Doc 1 Left 12
-  - Doc 2 Left 12
+  - I did my research and would like to schedule a visit.
   - Doc 3 Left 12
   rightAnswers:
   - Doc 1 Right 12
-  - Doc 2 Right 12
+  - Actually, nevermind...
   - Doc 3 Right 12
   myLeft: 
   myRight: 
   LWay: 8
   RWay: 9
   fastPass: 0
+  lines: 000000000000000004000000040000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &1625236889
 Animation:
   m_ObjectHideFlags: 0
@@ -9109,7 +9789,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525058538}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9136,7 +9816,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Primary Care
+  m_text: Certified Nurse Assistant providing holistic care
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -9145,8 +9825,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9248,8 +9928,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 92.385956, y: 8.808838}
-  m_SizeDelta: {x: 264.1722, y: 50}
+  m_AnchoredPosition: {x: 92.385956, y: -7.861}
+  m_SizeDelta: {x: 264.172, y: 83.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1640741240
 MonoBehaviour:
@@ -9271,7 +9951,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Primary Care
+  m_text: Certified Nurse Assistant providing holistic care
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -9280,8 +9960,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9388,6 +10068,7 @@ RectTransform:
   - {fileID: 1504925191}
   - {fileID: 208089724}
   - {fileID: 1625236887}
+  - {fileID: 818548093}
   m_Father: {fileID: 256172833}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9568,17 +10249,22 @@ MonoBehaviour:
   moves: 07000000050000000a0000000c0000000600000009000000
   leftAnswers:
   - Doc 1 Left 8
-  - Doc 2 Left 8
+  - Next time I will just ask a doctor.
   - Doc 3 Left 8
   rightAnswers:
   - Doc 1 Right 8
-  - Doc 2 Right 8
+  - 'I think I am ready to schedule regular
+
+    OB-GYN visits.'
   - Doc 3 Right 8
   myLeft: 
   myRight: 
-  LWay: 7
-  RWay: 5
+  LWay: 10
+  RWay: 12
   fastPass: 0
+  lines: 00000000000000000c0000000c0000000000000000000000
+  LLine: 12
+  RLine: 12
 --- !u!111 &1673013505
 Animation:
   m_ObjectHideFlags: 0
@@ -9750,6 +10436,8 @@ MonoBehaviour:
   myDoc: {fileID: 0}
   chosenDoc: 0
   currentLine: 0
+  newLine: 
+  lineNom: 0
   started: 0
   docScript: {fileID: 1692893010}
   tilesSc: {fileID: 1784085102}
@@ -9786,11 +10474,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 525058538}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000068665, y: -197.17}
+  m_AnchoredPosition: {x: 0.000068665, y: -120.3}
   m_SizeDelta: {x: 218.326, y: 72.3248}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1697845429
@@ -10160,17 +10848,20 @@ MonoBehaviour:
   moves: 010000000500000005000000070000000000000000000000
   leftAnswers:
   - Doc 1 Left 4
-  - Doc 2 Left 4
+  - The time will still come eventually. I need to know how to protect myself!!
   - Doc 3 Left 4
   rightAnswers:
   - Doc 1 Right 4
-  - Doc 2 Right 4
+  - I'm worried about my sexual health. Can we find a common ground on contraception?
   - Doc 3 Right 4
   myLeft: 
   myRight: 
-  LWay: 1
-  RWay: 5
+  LWay: 5
+  RWay: 7
   fastPass: 0
+  lines: 000000000000000005000000060000000000000000000000
+  LLine: 5
+  RLine: 6
 --- !u!111 &1734427533
 Animation:
   m_ObjectHideFlags: 0
@@ -10187,6 +10878,99 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &1761393825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1761393826}
+  - component: {fileID: 1761393829}
+  - component: {fileID: 1761393828}
+  - component: {fileID: 1761393827}
+  m_Layer: 5
+  m_Name: face_ok
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1761393826
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761393825}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1426539927}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 199, y: 309}
+  m_SizeDelta: {x: 48.9467, y: 48.9467}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!111 &1761393827
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761393825}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1ffdd5ec6ecb748469f61a1bc789eb4e, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 1ffdd5ec6ecb748469f61a1bc789eb4e, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &1761393828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761393825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 68d03efacb672a14eb0eddabf96aa555, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1761393829
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1761393825}
+  m_CullTransparentMesh: 1
 --- !u!1 &1778414658
 GameObject:
   m_ObjectHideFlags: 0
@@ -10359,17 +11143,20 @@ MonoBehaviour:
   moves: 040000000a000000050000000b0000000400000007000000
   leftAnswers:
   - Doc 1 Left 7
-  - Doc 2 Left 7
+  - I am worried about sexually transmitted infections.
   - Doc 3 Left 7
   rightAnswers:
   - Doc 1 Right 7
-  - Doc 2 Right 7
+  - I'm just afraid you will use my questions against me.
   - Doc 3 Right 7
   myLeft: 
   myRight: 
   LWay: 4
   RWay: 10
   fastPass: 0
+  lines: 000000000000000007000000080000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &1779398681
 Animation:
   m_ObjectHideFlags: 0
@@ -10417,7 +11204,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1426539927}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10444,7 +11231,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Endocrinology
+  m_text: 'Physical and emotional
+
+    care and support person'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -10453,8 +11242,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4283124555
+  m_fontColor: {r: 0.29411766, g: 0.29411766, b: 0.29411766, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10552,7 +11341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiles:
-  - {fileID: 208089723}
+  - {fileID: 22699193}
   - {fileID: 22699193}
   - {fileID: 656449778}
   - {fileID: 1992251560}
@@ -10588,6 +11377,10 @@ MonoBehaviour:
   special1: 0
   special2: 0
   repeated: 0
+  tilesOpened: 0
+  loseImage: {fileID: 1364248381}
+  tipsButton: {fileID: 1899744198}
+  tipText: {fileID: 171876358}
 --- !u!4 &1784085103
 Transform:
   m_ObjectHideFlags: 0
@@ -10700,7 +11493,7 @@ Transform:
   - {fileID: 801024837}
   m_Father: {fileID: 1874541172}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -166.17276}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -193.1715}
 --- !u!1 &1816801817
 GameObject:
   m_ObjectHideFlags: 0
@@ -10833,7 +11626,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 879778468}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10860,7 +11653,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Smith, Kai, MD
+  m_text: Contact a Doctor
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
   m_sharedMaterial: {fileID: 1569156305505146467, guid: 6db06e7442102b64092fffdc7dd3b0d4, type: 2}
@@ -10969,7 +11762,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11103,7 +11896,7 @@ Transform:
   - {fileID: 119991690}
   m_Father: {fileID: 889542732}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.463908}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -12.409}
 --- !u!1 &1884238321
 GameObject:
   m_ObjectHideFlags: 0
@@ -11136,7 +11929,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 904085806}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -11237,6 +12030,139 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884238321}
   m_CullTransparentMesh: 1
+--- !u!1 &1899744198
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1899744199}
+  - component: {fileID: 1899744202}
+  - component: {fileID: 1899744201}
+  - component: {fileID: 1899744200}
+  m_Layer: 5
+  m_Name: tipsB
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1899744199
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899744198}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -701.9}
+  m_SizeDelta: {x: 130, y: 130}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1899744200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899744198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1899744201}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1784085102}
+        m_TargetAssemblyTypeName: TilesManager, Assembly-CSharp
+        m_MethodName: ShowTips
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1899744201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899744198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4ec1c395344597c47983d89c1721a15d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1899744202
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1899744198}
+  m_CullTransparentMesh: 1
 --- !u!1 &1922141667
 GameObject:
   m_ObjectHideFlags: 0
@@ -11295,7 +12221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e28819ee5e0ce3a49975a4469a096e4b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ccc566fad86e89c4db8d4ef417776f5d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11530,35 +12456,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   docResponses:
-  - Hi! What bring you in today?
-  - You chose left 1. What now?
-  - You chose right 1. What now?
-  - You chose left 2. What now?
-  - You chose right 2. What now?
-  - You chose left 3. What now?
-  - You chose right 3. What now?
-  - You chose left 4. What now?
-  - You chose right 4. What now?
-  - You chose left 5. What now?
-  - You chose right 5. What now?
-  - You chose left 6. What now?
-  - You chose right 6. What now?
-  - You chose left 7. What now?
-  - You chose right 7. What now?
-  - You chose left 8. What now?
-  - You chose right 8. What now?
-  - You chose left 9. What now?
-  - You chose right 9. What now?
-  - You chose left 10. What now?
-  - You chose right 10. What now?
-  - You chose left 11. What now?
-  - You chose right 11. What now?
-  - You chose left 12. What now?
-  - You chose right 12. What now?
+  - So, did you want to talk about something?
+  - "We didn\u2019t expect it that early\u2026 but at least you're interested in
+    learning. What do you want to know?"
+  - Where did that even come from? What do you even want to know?
+  - Just wait until you're married, that's the best advice we can give you!
+  - Ok, then it's decided.
+  - You don't need to worry about that right now. You're too young for all this.
+  - 'Well... As long as it''s a valid concern: what do you want to know?'
+  - There are various methods available, but remember that only condoms will protect
+    you from infections.
+  - I'm not excited about any of this, but it is important that you can trust me.
+  - 'This pill is only for extreme cases of contraception failure: If you need one,
+    you''d better seek guidance!'
+  - Birth control pills are effective, but they have side effects too, and are not
+    accepted in our community!
+  - Whoever your partner would be, just remember that open communication and boundaries
+    are a must.
+  - I don't think it's necessary at your age... Unless you really want to get examined?
   specialResponses:
   - 'A special tile 1: any response will do.'
   - 'A special tile 2: any response will do.'
-  - Stay safe! We will be in touch.
+  - I'm glad we had this conversation too!
   tilesSc: {fileID: 1784085102}
 --- !u!114 &1979533797
 MonoBehaviour:
@@ -11583,8 +12502,8 @@ MonoBehaviour:
   - {fileID: 1683189243}
   - {fileID: 1385020795}
   m_Bounds:
-    m_Center: {x: 0.19428062, y: -2.4498973, z: 0}
-    m_Extent: {x: 4.034411, y: 7.8312316, z: 0}
+    m_Center: {x: 0.19428444, y: -2.4498978, z: 0}
+    m_Extent: {x: 4.0344086, y: 7.831234, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -11629,7 +12548,7 @@ SpriteRenderer:
   m_SortingLayerID: -1783606415
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2f7ecb9c2d38f6c48a0494b526b483c5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 083ca0e113adfff49959576403ef2aeb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11766,20 +12685,23 @@ MonoBehaviour:
   tilesSc: {fileID: 1784085102}
   doDeed: 0
   startSc: {fileID: 1692893010}
-  moves: 000000000000000002000000060000000200000003000000
+  moves: 000000000000000002000000020000000200000003000000
   leftAnswers:
   - Doc 1 Left 3
-  - Doc 2 Left 3
+  - I've been reading about sexual health lately, and want to know more.
   - Doc 3 Left 3
   rightAnswers:
   - Doc 1 Right 3
-  - Doc 2 Right 3
+  - I want to know more about sex.
   - Doc 3 Right 3
   myLeft: 
   myRight: 
   LWay: 0
   RWay: 0
   fastPass: 0
+  lines: 000000000000000001000000020000000000000000000000
+  LLine: 0
+  RLine: 0
 --- !u!111 &1992251565
 Animation:
   m_ObjectHideFlags: 0

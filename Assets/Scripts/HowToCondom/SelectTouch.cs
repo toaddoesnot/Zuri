@@ -36,8 +36,6 @@ public class SelectTouch : MonoBehaviour
 
     public void Update()
     {
-        
-
         if (patternSc.mostRecentNo == arg1 || patternSc.mostRecentNo == arg2 || patternSc.mostRecentNo == arg3 || patternSc.mostRecentNo == arg4)
         {
             //clear = true;
@@ -46,7 +44,6 @@ public class SelectTouch : MonoBehaviour
         {
             clear = false;
         }
-
 
         if (patternSc.blocked is false)
         {

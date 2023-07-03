@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class narrativeController : MonoBehaviour
 {
+    [TextArea]
     public List<string> docResponses = new List<string>();
     public List<string> specialResponses = new List<string>();
 
@@ -16,9 +17,4 @@ public class narrativeController : MonoBehaviour
             docResponses.Clear();
         }
     }
-    //public GameObject mySpec1;
-    //public GameObject mySpec2;
-
-    //public int spec1;
-    //public int spec2;
 }

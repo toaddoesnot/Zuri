@@ -52,12 +52,12 @@ public class instructionText : MonoBehaviour
     public tipsMaanger tipsSc;
     public GameObject[] trinkets;
 
+    public pauseBlocker blockerSc;
+
     // Start is called before the first frame update
     void Start()
     {
         blocker.SetActive(false);
-        //transition.SetActive(true);
-        //NextStep();
         circles = GameObject.FindGameObjectsWithTag("Circle");
         sticks = GameObject.FindGameObjectsWithTag("Stick");
         //RightComb();
@@ -77,7 +77,16 @@ public class instructionText : MonoBehaviour
             }
             else
             {
-                blocker.SetActive(false);
+                if (blockerSc.paused)
+                {
+                    blocker.SetActive(true);
+                    circles[7].GetComponent<SelectTouch>().MousePressed = false;
+                    circles[14].GetComponent<SelectTouch>().MousePressed = false;
+                }
+                else
+                {
+                    blocker.SetActive(false);
+                }
             }
         }
 
@@ -575,7 +584,7 @@ public class instructionText : MonoBehaviour
 
     public void Replay()
     {
-        SceneManager.LoadScene(1);//shall be one
+        SceneManager.LoadScene(4);
     }
 
     public void FemaleTextActivator()

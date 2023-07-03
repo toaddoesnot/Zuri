@@ -43,7 +43,7 @@ public class howtoTutorial : MonoBehaviour
 
         if (stage is 2)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(4);
         }
     }
 
@@ -69,6 +69,6 @@ public class howtoTutorial : MonoBehaviour
 
     public void SkipTutorial()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(4);
     }
 }

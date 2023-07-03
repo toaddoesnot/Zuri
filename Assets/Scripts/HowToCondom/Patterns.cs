@@ -31,12 +31,6 @@ public class Patterns : MonoBehaviour
 
     public int mostRecentNo;
 
-
-    public void Start()
-    {
-       
-    }
-
     public void Update()
     {
         
@@ -94,16 +88,10 @@ public class Patterns : MonoBehaviour
 
     }
 
-    public void AddString()
-    {
-        
-    }
-
     public IEnumerator AddString2()
     {
         
         yield return new WaitForSeconds(0.1f);
-
         foreach (GameObject circle in textSc.circles)
         {
             circle.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.5f);

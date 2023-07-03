@@ -80,7 +80,7 @@ public class instructionManagerNeg : MonoBehaviour
         }
         if (stage is 3)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
