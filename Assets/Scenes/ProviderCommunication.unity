@@ -451,21 +451,21 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 020000000500000000000000000000000400000005000000
   leftAnswers:
-  - Doc 1 Left 1
+  - Can a pelvic exam detect pregnancy or STIs?
   - Doc 2 Left 1
-  - Doc 3 Left 1
+  - Okay, thank you for your time!
   rightAnswers:
-  - Doc 1 Right 1
+  - Are you going to do any tests?
   - Doc 2 Right 1
-  - Doc 3 Right 1
+  - My breasts and nipples are sore sometimes, what do you think may be the cause?
   myLeft: 
   myRight: 
-  LWay: 2
+  LWay: 4
   RWay: 5
   fastPass: 0
-  lines: 000000000000000000000000000000000000000000000000
+  lines: 0b0000000a00000000000000000000000000000009000000
   LLine: 0
-  RLine: 0
+  RLine: 10
 --- !u!111 &22699198
 Animation:
   m_ObjectHideFlags: 0
@@ -875,7 +875,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 31
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -902,10 +902,28 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<style=\"Title>TIPS:</style>\n\n\nFrame it as a health conversation\r.\n\nBack
-    up your concerns with research.\r\n\nUnderstand your caregiver's beliefs.\r\n\nShare
-    what concerns you.\r\n\nStay calm and composed.\r\n\nGive it time: be patient.\r\n\nSeek
-    support from trusted adults."
+  m_text: '<style="Title>TIPS:</style>
+
+
+
+    Be open and honest.
+
+
+    Know your
+    rights.
+
+
+    Ask questions about your health.
+
+
+    Learn about the procedures.
+
+
+    Communicate
+    your discomfort.
+
+
+    Remember: this exam is normal and important.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -1016,7 +1034,7 @@ RectTransform:
   m_Children:
   - {fileID: 1032042804}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 17
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1226,21 +1244,21 @@ MonoBehaviour:
   tilesSc: {fileID: 1784085102}
   doDeed: 0
   startSc: {fileID: 1692893010}
-  moves: 090000000c0000000a00000008000000080000000c000000
+  moves: 0c0000000c0000000a00000008000000080000000c000000
   leftAnswers:
-  - Doc 1 Left 11
+  - I just want to be done with it as fast as possible.
   - I really appreciate the talk! Let's do it more in the future.
-  - Doc 3 Left 11
+  - And what is considered "regular"?
   rightAnswers:
-  - Doc 1 Right 11
+  - I'm a bit nervous, to be honest. Can you walk me through what will happen?
   - What if my partner wouldn't support all precautions?
-  - Doc 3 Right 11
+  - And what is a normal length of a menstrual cycle?
   myLeft: 
   myRight: 
-  LWay: 10
-  RWay: 8
+  LWay: 8
+  RWay: 12
   fastPass: 0
-  lines: 00000000000000000c0000000b0000000000000000000000
+  lines: 0f000000010000000c0000000b0000001000000003000000
   LLine: 12
   RLine: 11
 --- !u!111 &208089728
@@ -1290,7 +1308,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1427,7 +1445,7 @@ RectTransform:
   m_Children:
   - {fileID: 2036922551}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1505,6 +1523,9 @@ RectTransform:
   m_Children:
   - {fileID: 1140953916}
   - {fileID: 1146783691}
+  - {fileID: 1704171437}
+  - {fileID: 1979533799}
+  - {fileID: 1474623745}
   - {fileID: 531597034}
   - {fileID: 255133570}
   - {fileID: 932783576}
@@ -1535,8 +1556,10 @@ RectTransform:
   - {fileID: 385607221}
   - {fileID: 1364248382}
   - {fileID: 171876359}
+  - {fileID: 541438573}
+  - {fileID: 1021661979}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1861,7 +1884,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 16
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2123,7 +2146,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 350666741}
   m_OnClick:
     m_PersistentCalls:
@@ -2210,7 +2233,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2419,7 +2442,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 23
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2570,7 +2593,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 26
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2670,7 +2693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 1850788606926711482, guid: ee637c82d8fa6de46a6b2da9ba55e872, type: 3}
       propertyPath: m_AnchorMax.x
@@ -3163,10 +3186,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\nJust like you would visit your regular doctor yearly for a checkup,
-    you should visit your gynecologist yearly to assess your overall health so that
-    any issues are caught early. It's vital to perform \na clinical breast exam \nand
-    pelvic exam as well."
+  m_text: "\nRegistered nurses play a crucial role in providing comprehensive and
+    holistic care, including sexual health care. They are equipped with knowledge
+    and skills to address the physical, emotional, and sexual well-being of their
+    patients.\r"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -3474,7 +3497,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 2
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3518,6 +3541,144 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531597033}
+  m_CullTransparentMesh: 1
+--- !u!1 &541438572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541438573}
+  - component: {fileID: 541438575}
+  - component: {fileID: 541438574}
+  m_Layer: 5
+  m_Name: tipText1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &541438573
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541438572}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -55.905}
+  m_SizeDelta: {x: 586, y: 797.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &541438574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541438572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "<style=\"Title>TIPS:</style>\n\n\nFrame it as a health conversation\r.\n\nBack
+    up your concerns with research.\r\n\nUnderstand your caregiver's beliefs.\r\n\nShare
+    what concerns you.\r\n\nStay calm and composed.\r\n\nGive it time: be patient.\r\n\nSeek
+    support from trusted adults."
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33
+  m_fontSizeBase: 33
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -16.275848, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &541438575
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541438572}
   m_CullTransparentMesh: 1
 --- !u!1 &553150837
 GameObject:
@@ -3714,7 +3875,7 @@ RectTransform:
   - {fileID: 525058538}
   - {fileID: 1136570779}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3962,7 +4123,7 @@ RectTransform:
   m_Children:
   - {fileID: 466259631}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 11
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4136,21 +4297,21 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 030000000600000001000000040000000100000005000000
   leftAnswers:
-  - Doc 1 Left 2
+  - I don't think I can make it comfortable in any way... (Finish)
   - I wanted to discuss sexual partners. How can I make responsible choices?
-  - Doc 3 Left 2
+  - 'One more thing: I hear my friends say we need to check our breasts often?'
   rightAnswers:
-  - Doc 1 Right 2
+  - Is it possible to bring my caretaker with me?
   - I wanted to discuss contraception. Which options do I have?
-  - Doc 3 Right 2
+  - I understand and have no more questions.
   myLeft: 
   myRight: 
-  LWay: 3
-  RWay: 6
+  LWay: 1
+  RWay: 5
   fastPass: 0
-  lines: 000000000000000003000000030000000000000000000000
+  lines: 0c0000000d00000003000000030000000a0000000f000000
   LLine: 0
-  RLine: 0
+  RLine: 13
 --- !u!111 &656449783
 Animation:
   m_ObjectHideFlags: 0
@@ -4471,19 +4632,20 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 030000000300000005000000090000000200000003000000
   leftAnswers:
-  - Doc 1 Left 6
+  - Ok, I am ready now!
   - What about birth control pills then?
-  - Doc 3 Left 6
+  - Okay, the pain is usually mild and goes away anyway.
   rightAnswers:
-  - Doc 1 Right 6
+  - Ok, I am ready now!
   - What about birth control pills then?
-  - Doc 3 Right 6
+  - Okay. I also noticed that I have slight pain about 2 weeks before my period.
+    What is that?
   myLeft: 
   myRight: 
-  LWay: 3
+  LWay: 2
   RWay: 3
   fastPass: 0
-  lines: 00000000000000000a0000000a0000000000000000000000
+  lines: 00000000000000000a0000000a0000000800000007000000
   LLine: 0
   RLine: 0
 --- !u!111 &701435962
@@ -4533,7 +4695,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 13
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 166.95}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4673,23 +4835,23 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 0800000005000000080000000c0000000500000006000000
   leftAnswers:
-  - Doc 1 Left 9
+  - I see how this test can be beneficial!
   - What if my partner wouldn't support all precautions?
-  - Doc 3 Left 9
+  - Since it's normal, there is probably nothing I can do.
   rightAnswers:
-  - Doc 1 Right 9
+  - Ok. I just want to have my exam as fast as possible.
   - 'I think I am ready to schedule regular
 
     OB-GYN visits.'
-  - Doc 3 Right 9
+  - Is there a way to get rid of the pain as it constantly affects my daily activities?
   myLeft: 
   myRight: 
-  LWay: 8
-  RWay: 5
+  LWay: 5
+  RWay: 6
   fastPass: 0
-  lines: 00000000000000000b0000000c0000000000000000000000
+  lines: 04000000110000000b0000000c0000000f00000006000000
   LLine: 0
-  RLine: 0
+  RLine: 6
 --- !u!111 &728301286
 Animation:
   m_ObjectHideFlags: 0
@@ -4941,7 +5103,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 24
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5089,7 +5251,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 879778470}
   m_OnClick:
     m_PersistentCalls:
@@ -5207,7 +5369,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 15
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5487,6 +5649,7 @@ GameObject:
   - component: {fileID: 907585231}
   - component: {fileID: 907585230}
   - component: {fileID: 907585229}
+  - component: {fileID: 907585232}
   m_Layer: 5
   m_Name: special6
   m_TagString: Untagged
@@ -5507,7 +5670,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 166.95}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5568,6 +5731,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 907585227}
   m_CullTransparentMesh: 1
+--- !u!114 &907585232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907585227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1704171435}
+  self: {fileID: 907585227}
+  revealed: 0
+  myAnim: doc1_idle
+  myAnim2: doc1_breathing
+  speed: 2.8
 --- !u!1 &909740928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5597,7 +5779,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5647,6 +5829,7 @@ GameObject:
   - component: {fileID: 932783579}
   - component: {fileID: 932783578}
   - component: {fileID: 932783577}
+  - component: {fileID: 932783580}
   m_Layer: 5
   m_Name: special10
   m_TagString: Untagged
@@ -5667,7 +5850,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 166.95}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5728,6 +5911,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932783575}
   m_CullTransparentMesh: 1
+--- !u!114 &932783580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932783575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1704171435}
+  self: {fileID: 932783575}
+  revealed: 0
+  myAnim: doc1_idle
+  myAnim2: doc1_breathing
+  speed: 2.8
 --- !u!1 &959873375
 GameObject:
   m_ObjectHideFlags: 0
@@ -6076,6 +6278,166 @@ Transform:
   m_Father: {fileID: 1321770445}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -162.762}
+--- !u!1 &1021661978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021661979}
+  - component: {fileID: 1021661981}
+  - component: {fileID: 1021661980}
+  m_Layer: 5
+  m_Name: tipText2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1021661979
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021661978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -55.905}
+  m_SizeDelta: {x: 586, y: 797.01}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1021661980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021661978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: '<style="Title>TIPS:</style>
+
+
+
+    Address concerns that you have.
+
+
+    Understand
+    how the menstrual cycle works.
+
+
+    Embrace feeling nervous or unsure.
+
+
+    Take
+    control of your health.
+
+
+    Don''t be afraid to ask any questions.
+
+
+    Ask
+    for assistance.
+
+
+    Normalize breast examination.'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 33
+  m_fontSizeBase: 33
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: -16.275848, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1021661981
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021661978}
+  m_CullTransparentMesh: 1
 --- !u!1 &1028270157
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,8 +7287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32.596, y: 583}
-  m_SizeDelta: {x: 279.906, y: 56.834}
+  m_AnchoredPosition: {x: -107.737, y: 562.66705}
+  m_SizeDelta: {x: 430.194, y: 161.58}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1146783692
 MonoBehaviour:
@@ -6983,7 +7345,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -7011,7 +7373,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -148.395, y: 0, z: -17.664574, w: -48.481552}
+  m_margin: {x: 0.36822504, y: 0, z: -51.454323, w: -2.1684341}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -7037,6 +7399,7 @@ GameObject:
   - component: {fileID: 1148866394}
   - component: {fileID: 1148866393}
   - component: {fileID: 1148866392}
+  - component: {fileID: 1148866395}
   m_Layer: 5
   m_Name: special7
   m_TagString: Untagged
@@ -7057,7 +7420,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 10
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7118,6 +7481,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148866390}
   m_CullTransparentMesh: 1
+--- !u!114 &1148866395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148866390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1474623741}
+  self: {fileID: 1148866390}
+  revealed: 0
+  myAnim: doc3_idle
+  myAnim2: doc3_breathing
+  speed: 3.5
 --- !u!1 &1161587739
 GameObject:
   m_ObjectHideFlags: 0
@@ -7213,21 +7595,21 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 020000000600000006000000080000000400000007000000
   leftAnswers:
-  - Doc 1 Left 5
+  - Can a pelvic exam detect pregnancy or STIs?
   - I've heard about emergency contraception. Can you explain what it is?
-  - Doc 3 Left 5
+  - I'm afraid I can find something bad.
   rightAnswers:
-  - Doc 1 Right 5
+  - Ok, let's do it.
   - Can I use emergency contraception then?
-  - Doc 3 Right 5
+  - What do I do if I find a lump?
   myLeft: 
   myRight: 
-  LWay: 6
-  RWay: 8
+  LWay: 2
+  RWay: 6
   fastPass: 0
-  lines: 000000000000000009000000090000000000000000000000
-  LLine: 9
-  RLine: 9
+  lines: 0b0000000a00000009000000090000000e0000000d000000
+  LLine: 11
+  RLine: 0
 --- !u!111 &1161587744
 Animation:
   m_ObjectHideFlags: 0
@@ -7278,7 +7660,7 @@ RectTransform:
   m_Children:
   - {fileID: 505746435}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 18
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7697,7 +8079,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -7853,7 +8235,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 30
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8651,35 +9033,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   docResponses:
-  - Hi! What bring you in today?
-  - You chose left 1. What now?
-  - You chose right 1. What now?
-  - You chose left 2. What now?
-  - You chose right 2. What now?
-  - You chose left 3. What now?
-  - You chose right 3. What now?
-  - You chose left 4. What now?
-  - You chose right 4. What now?
-  - You chose left 5. What now?
-  - You chose right 5. What now?
-  - You chose left 6. What now?
-  - You chose right 6. What now?
-  - You chose left 7. What now?
-  - You chose right 7. What now?
-  - You chose left 8. What now?
-  - You chose right 8. What now?
-  - You chose left 9. What now?
-  - You chose right 9. What now?
-  - You chose left 10. What now?
-  - You chose right 10. What now?
-  - You chose left 11. What now?
-  - You chose right 11. What now?
-  - You chose left 12. What now?
-  - You chose right 12. What now?
+  - 'Hi! I''ll be assisting you today. Let''s start with some questions: do you have
+    your menstrual cycle regularly?'
+  - 'Let''s make sure: your cycle starts the first day of bleeding and ends one day
+    prior to the next bleeding. '
+  - Ok! Do you have any concerns or questions?
+  - Usually, it is 23-35 days with 2-7 days of bleeding. Regular cycle has about
+    the same length every month!
+  - "Yes. It happens because your uterus contacts to shed blood and its lining, and
+    there is also a hormone that increases the pain \u2014 prostaglandin."
+  - '1-3 days: if it''s more, or if the pain is severe, we may need to conduct some
+    tests to determine if there are other factors.'
+  - Try to reduce sugar/fat/caffeine intake, use warm or cold compress on the abdomen,
+    and take over-the-counter pain medications.
+  - This is called ovulation* or mid-cycle pain. The blood or fluid released during
+    ovulation irritates your abdomen, causing pain.
+  - To ease the pain, you may place a heating pad on your abdomen, take a hot bath,
+    or use nonsteroidal anti-inflammatory medications.
+  - Breast and nipple pain usually occur as premenstrual symptoms, but may be due
+    to other underlying medical conditions.
+  - 'Yes, breast examination is important as it helps to identify any problems with
+    the breast and commence early treatment. '
+  - You can examine your breasts yourself monthly. I will send you instructions how
+    to do so!
+  - You can certainly schedule an appointment with us for a breast examination!
+  - If you find a lump or experience pain, please schedule an appointment with us
+    as soon as possible.
+  - It's okay to be a little nervous, but it is still important to examine. You can
+    always call us for further tests.
+  - 'Also, remember to examine your breast: it helps to identify any problems with
+    the breast and commence early treatment. '
+  - 'Regular cycle has about the same length every month! Usually, it lasts 23-35
+    days with 2-7 days of bleeding. '
   specialResponses:
   - 'A special tile 1: any response will do.'
   - 'A special tile 2: any response will do.'
-  - Stay safe! We will be in touch.
+  - You are welcome. Please do not hesitate to reach out should you have further
+    questions.
   tilesSc: {fileID: 1784085102}
 --- !u!114 &1474623743
 MonoBehaviour:
@@ -8704,8 +9094,8 @@ MonoBehaviour:
   - {fileID: 119991690}
   - {fileID: 1353873734}
   m_Bounds:
-    m_Center: {x: -0.13997054, y: -1.6918573, z: 0}
-    m_Extent: {x: 3.1678786, y: 8.657238, z: 0}
+    m_Center: {x: -0.13997006, y: -1.6918554, z: 0.00000014901161}
+    m_Extent: {x: 3.1678789, y: 8.65724, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -8768,14 +9158,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474623741}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 124.8, y: 269.5, z: 3}
-  m_LocalScale: {x: 13.91954, y: 13.91954, z: 13.91954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 284.03848, y: 613.36835, z: -220.76707}
+  m_LocalScale: {x: 31.680168, y: 31.680168, z: 31.680168}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 889542732}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &1474623746
 Animation:
@@ -8884,7 +9274,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 25
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8988,17 +9378,17 @@ MonoBehaviour:
   leftAnswers:
   - Doc 1 Left 10
   - Doc 2 Left 10
-  - Doc 3 Left 10
+  - I think my cycle is normal.
   rightAnswers:
   - Doc 1 Right 10
   - Doc 2 Right 10
-  - Doc 3 Right 10
+  - 'I think my cycle is short and irregular: maybe I''m not tracking it properly?'
   myLeft: 
   myRight: 
-  LWay: 7
-  RWay: 7
+  LWay: 8
+  RWay: 11
   fastPass: 0
-  lines: 000000000000000000000000000000000000000000000000
+  lines: 070000000700000000000000000000000200000001000000
   LLine: 0
   RLine: 0
 --- !u!111 &1504925195
@@ -9382,6 +9772,7 @@ GameObject:
   - component: {fileID: 1607000099}
   - component: {fileID: 1607000098}
   - component: {fileID: 1607000097}
+  - component: {fileID: 1607000100}
   m_Layer: 5
   m_Name: special3
   m_TagString: Untagged
@@ -9402,7 +9793,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9463,6 +9854,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607000095}
   m_CullTransparentMesh: 1
+--- !u!114 &1607000100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607000095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1474623741}
+  self: {fileID: 1607000095}
+  revealed: 0
+  myAnim: doc3_idle
+  myAnim2: doc3_breathing
+  speed: 3.5
 --- !u!1 &1610286280
 GameObject:
   m_ObjectHideFlags: 0
@@ -9634,19 +10044,19 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 08000000090000000b0000000b0000000800000009000000
   leftAnswers:
-  - Doc 1 Left 12
+  - No, I never took a GNA test.
   - I did my research and would like to schedule a visit.
-  - Doc 3 Left 12
+  - I experience low abdominal pain during my period, is this normal?
   rightAnswers:
-  - Doc 1 Right 12
+  - "No, I don\u2019t know my blood type and rhesus factor."
   - Actually, nevermind...
-  - Doc 3 Right 12
+  - I frequently have menstrual cramps, is this normal?
   myLeft: 
   myRight: 
   LWay: 8
   RWay: 9
   fastPass: 0
-  lines: 000000000000000004000000040000000000000000000000
+  lines: 020000000300000004000000040000000400000004000000
   LLine: 0
   RLine: 0
 --- !u!111 &1625236889
@@ -9677,6 +10087,7 @@ GameObject:
   - component: {fileID: 1631069338}
   - component: {fileID: 1631069337}
   - component: {fileID: 1631069336}
+  - component: {fileID: 1631069339}
   m_Layer: 5
   m_Name: special1
   m_TagString: Untagged
@@ -9691,17 +10102,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631069334}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 166.95}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -174, y: 262.25003}
+  m_AnchoredPosition: {x: -266, y: -83}
   m_SizeDelta: {x: 76.691, y: 76.691}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!111 &1631069336
@@ -9758,6 +10169,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1631069334}
   m_CullTransparentMesh: 1
+--- !u!114 &1631069339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631069334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1979533795}
+  self: {fileID: 1631069334}
+  revealed: 0
+  myAnim: doc2_breathing
+  myAnim2: doc2_idle
+  speed: 1.8
 --- !u!1 &1640428354
 GameObject:
   m_ObjectHideFlags: 0
@@ -9816,7 +10246,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Certified Nurse Assistant providing holistic care
+  m_text: "Registered Nurse \nproviding holistic care"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -9951,7 +10381,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Certified Nurse Assistant providing holistic care
+  m_text: "Registered Nurse \nproviding holistic care"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
   m_sharedMaterial: {fileID: -1321293550981176838, guid: 5cbe1d89dca572e4ea89461c5fd6389c, type: 2}
@@ -10070,7 +10500,7 @@ RectTransform:
   - {fileID: 1625236887}
   - {fileID: 818548093}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 14
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10248,23 +10678,23 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 07000000050000000a0000000c0000000600000009000000
   leftAnswers:
-  - Doc 1 Left 8
+  - "I\u2019m not exactly sure, but I think about 20 days ago?"
   - Next time I will just ask a doctor.
-  - Doc 3 Left 8
+  - Is it ok to feel pain during a menstrual cycle?
   rightAnswers:
-  - Doc 1 Right 8
+  - "No, I don\u2019t track this information."
   - 'I think I am ready to schedule regular
 
     OB-GYN visits.'
-  - Doc 3 Right 8
+  - I understand the menstrual pain is normal, but how long can it last?
   myLeft: 
   myRight: 
-  LWay: 10
-  RWay: 12
+  LWay: 6
+  RWay: 9
   fastPass: 0
-  lines: 00000000000000000c0000000c0000000000000000000000
-  LLine: 12
-  RLine: 12
+  lines: 05000000100000000c0000000c0000000400000005000000
+  LLine: 5
+  RLine: 0
 --- !u!111 &1673013505
 Animation:
   m_ObjectHideFlags: 0
@@ -10654,16 +11084,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1704171435}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.2, y: 291.9, z: 3}
-  m_LocalScale: {x: 13.919537, y: 13.919537, z: 13.919537}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 294.05264, y: 664.34955, z: -220.76707}
+  m_LocalScale: {x: 31.680159, y: 31.680159, z: 31.680159}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1321770445}
   - {fileID: 930488436}
   - {fileID: 1966241738}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1704171438
 MonoBehaviour:
@@ -10678,35 +11108,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   docResponses:
-  - Hi! What bring you in today?
-  - You chose left 1. What now?
-  - You chose right 1. What now?
-  - You chose left 2. What now?
-  - You chose right 2. What now?
-  - You chose left 3. What now?
-  - You chose right 3. What now?
-  - You chose left 4. What now?
-  - You chose right 4. What now?
-  - You chose left 5. What now?
-  - You chose right 5. What now?
-  - You chose left 6. What now?
-  - You chose right 6. What now?
-  - You chose left 7. What now?
-  - You chose right 7. What now?
-  - You chose left 8. What now?
-  - You chose right 8. What now?
-  - You chose left 9. What now?
-  - You chose right 9. What now?
-  - You chose left 10. What now?
-  - You chose right 10. What now?
-  - You chose left 11. What now?
-  - You chose right 11. What now?
-  - You chose left 12. What now?
-  - You chose right 12. What now?
+  - Good morning! I see this is your first pelvic exam today. How are you feeling?
+  - "First, we'll start with some general medical questions. Do you know your blood
+    genotype?\r"
+  - "Actually, we test if you have blood type A, B, AB, or O, and whether your rhesus
+    factor (Rf) is positive or negative. Do you know when your last period was?\r"
+  - "That\u2019s totally fine! We will test if you have blood type A, B, AB, or O,
+    and whether your rhesus factor (Rf) is positive or negative."
+  - "Do you know when your last period was?\r"
+  - "Ok! I encourage you to start tracking your menstrual cycle, it helps a lot.
+    And are you sexually active?\r"
+  - Ok. By knowing the risks we can do the most for your well-being. What do you
+    know about pelvic exams?
+  - This information is confidential. By knowing the risks of STIs and unplanned
+    pregnancy we can do the most for your well-being.
+  - "Ok, now it\u2019s time to start your pelvic exam. What do you know about the
+    procedure?"
+  - "It's normal to feel a bit of pressure or discomfort, but it shouldn't be painful.\r"
+  - We will also perform a pap smear to test you for cervical cancer. It is an important
+    preventive measure.
+  - It may only provide some clues or indications that further testing is needed.
+  - I will respect your right to decline a procedure or request an alternative!
+  - Absolutely! You have a right for a chaperone to be present.
+  - Thank you for your cooperation! I'll do my best to make it as comfortable as
+    possible for you.
+  - Sure! First, we need to know your blood genotype?. Did you do the test before?
+  - Ok! I encourage you to start tracking your menstrual cycle, it helps a lot. We
+    will start your pelvic exam shortly.
+  - "Let's start your pelvic exam. You may feel a bit of pressure or discomfort,
+    but it shouldn't be painful.\r"
   specialResponses:
   - 'A special tile 1: any response will do.'
   - 'A special tile 2: any response will do.'
-  - Stay safe! We will be in touch.
+  - Thank you for your cooperation! I'll do my best to make it as comfortable as
+    possible for you.
   tilesSc: {fileID: 1784085102}
 --- !u!114 &1704171439
 MonoBehaviour:
@@ -10730,8 +11165,8 @@ MonoBehaviour:
   - {fileID: 930488436}
   - {fileID: 1966241738}
   m_Bounds:
-    m_Center: {x: -0.06006646, y: -2.7904663, z: 0}
-    m_Extent: {x: 3.2086034, y: 8.624369, z: 0}
+    m_Center: {x: -0.060067892, y: -2.7904644, z: -0.0000002682209}
+    m_Extent: {x: 3.2086039, y: 8.624369, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -10847,21 +11282,21 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 010000000500000005000000070000000000000000000000
   leftAnswers:
-  - Doc 1 Left 4
+  - It might be uncomfortable, but not painful.
   - The time will still come eventually. I need to know how to protect myself!!
   - Doc 3 Left 4
   rightAnswers:
-  - Doc 1 Right 4
+  - "I\u2019ve heard it\u2019s ok for it to be painful."
   - I'm worried about my sexual health. Can we find a common ground on contraception?
   - Doc 3 Right 4
   myLeft: 
   myRight: 
-  LWay: 5
-  RWay: 7
+  LWay: 1
+  RWay: 5
   fastPass: 0
-  lines: 000000000000000005000000060000000000000000000000
-  LLine: 5
-  RLine: 6
+  lines: 090000000900000005000000060000000000000000000000
+  LLine: 9
+  RLine: 0
 --- !u!111 &1734427533
 Animation:
   m_ObjectHideFlags: 0
@@ -11142,21 +11577,21 @@ MonoBehaviour:
   startSc: {fileID: 1692893010}
   moves: 040000000a000000050000000b0000000400000007000000
   leftAnswers:
-  - Doc 1 Left 7
+  - "(Lie) I\u2019m not."
   - I am worried about sexually transmitted infections.
-  - Doc 3 Left 7
+  - Thank you, I have learnt many new things!
   rightAnswers:
-  - Doc 1 Right 7
+  - Will this information be shared with anyone?
   - I'm just afraid you will use my questions against me.
-  - Doc 3 Right 7
+  - Ok, thank you!
   myLeft: 
   myRight: 
   LWay: 4
   RWay: 10
   fastPass: 0
-  lines: 000000000000000007000000080000000000000000000000
-  LLine: 0
-  RLine: 0
+  lines: 060000000700000007000000080000000000000000000000
+  LLine: 8
+  RLine: 7
 --- !u!111 &1779398681
 Animation:
   m_ObjectHideFlags: 0
@@ -11380,7 +11815,11 @@ MonoBehaviour:
   tilesOpened: 0
   loseImage: {fileID: 1364248381}
   tipsButton: {fileID: 1899744198}
-  tipText: {fileID: 171876358}
+  tipText:
+  - {fileID: 171876358}
+  - {fileID: 541438572}
+  - {fileID: 1021661978}
+  winwin: 0
 --- !u!4 &1784085103
 Transform:
   m_ObjectHideFlags: 0
@@ -11462,6 +11901,7 @@ MonoBehaviour:
   playonce: 000000
   tilesScript: {fileID: 1784085102}
   startScript: {fileID: 1692893010}
+  secrets: 0
 --- !u!1 &1812305831
 GameObject:
   m_ObjectHideFlags: 0
@@ -11762,7 +12202,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 28
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12062,7 +12502,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 27
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12271,7 +12711,7 @@ RectTransform:
   m_Children:
   - {fileID: 1028270158}
   m_Father: {fileID: 256172833}
-  m_RootOrder: 12
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12378,7 +12818,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 20
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12502,8 +12942,8 @@ MonoBehaviour:
   - {fileID: 1683189243}
   - {fileID: 1385020795}
   m_Bounds:
-    m_Center: {x: 0.19428444, y: -2.4498978, z: 0}
-    m_Extent: {x: 4.0344086, y: 7.831234, z: 0}
+    m_Center: {x: 0.19428349, y: -2.4498968, z: 0.00000014901161}
+    m_Extent: {x: 4.034409, y: 7.831233, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -12566,14 +13006,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1979533795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 104.4, y: 304.9, z: 3}
-  m_LocalScale: {x: 13.91954, y: 13.91954, z: 13.91954}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 256.72708, y: 693.9369, z: -220.76707}
+  m_LocalScale: {x: 31.680168, y: 31.680168, z: 31.680168}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1409772728}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 256172833}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!111 &1979533800
 Animation:
@@ -12730,6 +13170,7 @@ GameObject:
   - component: {fileID: 1999558110}
   - component: {fileID: 1999558109}
   - component: {fileID: 1999558108}
+  - component: {fileID: 1999558111}
   m_Layer: 5
   m_Name: special12
   m_TagString: Untagged
@@ -12750,7 +13191,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 256172833}
-  m_RootOrder: 8
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12811,6 +13252,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999558106}
   m_CullTransparentMesh: 1
+--- !u!114 &1999558111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999558106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae5742b58d077b4196d720992fe5951, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  treasureSc: {fileID: 1784085104}
+  myDoc: {fileID: 1979533795}
+  self: {fileID: 1999558106}
+  revealed: 0
+  myAnim: doc2_breathing
+  myAnim2: doc2_idle
+  speed: 1.8
 --- !u!1 &2036922550
 GameObject:
   m_ObjectHideFlags: 0

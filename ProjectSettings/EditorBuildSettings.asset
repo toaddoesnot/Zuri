@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/How to put on a condom.unity
     guid: 395c6880619007549a48f3bac036ab59
   - enabled: 1
+    path: Assets/Scenes/ProviderTutorial.unity
+    guid: 01e351ea219d037479005d1851f8adf6
+  - enabled: 1
     path: Assets/Scenes/ProviderCommunication.unity
     guid: 16d2d8c47ad567c448dd57e412613a70
   m_configObjects:

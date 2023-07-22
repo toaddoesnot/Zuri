@@ -36,6 +36,9 @@ public class tileController : MonoBehaviour
             RWay = moves[1];
             myLeft = leftAnswers[0];
             myRight = rightAnswers[0];
+
+            LLine = lines[0];
+            RLine = lines[1];
         }
         if (startSc.chosenDoctor is 1)
         {
@@ -53,6 +56,9 @@ public class tileController : MonoBehaviour
             RWay = moves[5];
             myLeft = leftAnswers[2];
             myRight = rightAnswers[2];
+
+            LLine = lines[4];
+            RLine = lines[5];
         }
 
         if (doDeed is true)

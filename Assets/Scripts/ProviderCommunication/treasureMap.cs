@@ -14,6 +14,7 @@ public class treasureMap : MonoBehaviour
 
     public TilesManager tilesScript;
     public startManager startScript;
+    public int secrets;
 
     void Update()
     {
@@ -50,12 +51,10 @@ public class treasureMap : MonoBehaviour
             if (tilesScript.OnTile is 6 && tilesScript.ended is false)
             {
                 tilesScript.leftPlaque.SetActive(false);
-                smiles[3].SetActive(true);
-                if (playonce[1] is false)
-                {
-                    smiles[3].GetComponent<Animation>().Play("specialSmiles");
-                    playonce[1] = true;
-                }
+                //if (playonce[1] is false)
+                //{
+                //    playonce[1] = true;
+                //}
             }
             else
             {
@@ -67,6 +66,16 @@ public class treasureMap : MonoBehaviour
                 {
                     tilesScript.leftPlaque.SetActive(false);
                     tilesScript.rightPlaque.SetActive(false);
+                }
+            }
+
+            if (tilesScript.OnTile is 7 && tilesScript.ended is false)
+            {
+                smiles[2].SetActive(true);
+                if (playonce[1] is false)
+                {
+                    smiles[2].GetComponent<Animation>().Play("specialSmiles");
+                    playonce[1] = true;
                 }
             }
 
@@ -93,7 +102,17 @@ public class treasureMap : MonoBehaviour
         {
             Zuri.transform.localPosition = ZuriPositions3[tilesScript.OnTile];
 
-            if (tilesScript.special1 is true)
+            if (tilesScript.OnTile is 7)
+            {
+                smiles[6].SetActive(true);
+                if (playonce[1] is false)
+                {
+                    smiles[6].GetComponent<Animation>().Play("specialSmiles");
+                    playonce[1] = true;
+                }
+            }
+
+            if (tilesScript.special1 is true && tilesScript.OnTile == 3 || tilesScript.special1 is true && tilesScript.OnTile == 6)
             {
                 tilesScript.rightPlaque.SetActive(false);
 
@@ -102,28 +121,30 @@ public class treasureMap : MonoBehaviour
                 if (playonce[0] is false)
                 {
                     smiles[5].GetComponent<Animation>().Play("specialSmiles");
-                    tilesScript.OnTile = 6;
                     playonce[0] = true;
                 }
+                tilesScript.OnTile = 6;
             }
-
-            if (tilesScript.special2 is true)
+            else
             {
-                tilesScript.rightPlaque.SetActive(false);
-
-                smiles[6].SetActive(true);
-
-                if (playonce[1] is false)
+                if (tilesScript.special2 is true)
                 {
-                    smiles[6].GetComponent<Animation>().Play("specialSmiles");
-                    tilesScript.OnTile = 5;
-                    playonce[1] = true;
-                }
-            }
+                    tilesScript.rightPlaque.SetActive(false);
+                    smiles[6].SetActive(true);
 
-            if (tilesScript.OnTile is not 6 && tilesScript.OnTile is not 5 && tilesScript.ended is false)
-            {
-                tilesScript.rightPlaque.SetActive(true);
+                    //if (playonce[1] is false)
+                    //{
+                    //    smiles[6].GetComponent<Animation>().Play("specialSmiles");
+                    //    tilesScript.OnTile = 5;
+                    //    playonce[1] = true;
+                    //}
+                    tilesScript.newLway = 4;
+                }
+                else
+                {
+                    tilesScript.rightPlaque.SetActive(true);
+                    
+                }
             }
         }
     }

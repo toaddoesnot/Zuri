@@ -39,7 +39,9 @@ public class TilesManager : MonoBehaviour
     public int tilesOpened;
     public GameObject loseImage;
     public GameObject tipsButton;
-    public GameObject tipText;
+    public GameObject[] tipText;
+
+    public bool winwin;
 
     // Update is called once per frame
     void Update()
@@ -70,8 +72,9 @@ public class TilesManager : MonoBehaviour
                 promptSc.promptText.text = "";
 
 
-                if (tilesOpened is 11)
+                if (docScript.chosenDoctor is 1 && tilesOpened >= 11 || docScript.chosenDoctor is 0 && tilesOpened >= 11 || docScript.chosenDoctor is 2 && tilesOpened > 11 || treasureSc.secrets == 2) 
                 {
+                    winwin = true;
                     endingText.text = "Great job!";
                     foreach (GameObject tile in tiles)
                     {
@@ -105,8 +108,8 @@ public class TilesManager : MonoBehaviour
 
             if (treasureSc.playonce[0] is false)
             {
-                treasureSc.smiles[2].SetActive(true);
-                treasureSc.smiles[2].GetComponent<Animation>().Play("specialSmiles");
+                //treasureSc.smiles[2].SetActive(true);
+                //treasureSc.smiles[2].GetComponent<Animation>().Play("specialSmiles");
                 treasureSc.playonce[0] = true;
             }
 
@@ -124,14 +127,38 @@ public class TilesManager : MonoBehaviour
             rightAnswer.text = tiles[OnTile].GetComponent<tileController>().myRight.ToString();
         }
 
-        //if (docScript.chosenDoctor is 0 && OnTile is 7 && special1 is true || docScript.chosenDoctor is 0 && OnTile is 6 && special2 is true)
-        //{
-        //    rightPlaque.SetActive(false);
-        //}
-       // else
-       // {
-       //     rightPlaque.SetActive(true);
-       // }
+        if (docScript.chosenDoctor is 0 && OnTile is 7 && special1 is true || docScript.chosenDoctor is 0 && OnTile is 6)// && special2 is true)
+        {
+            if(OnTile is 7)
+            {
+                rightAnswer.text = "(Tell the truth). Understood.";
+                newRway = 4;
+                tiles[7].GetComponent<tileController>().RLine = 8;
+            }
+            if (OnTile is 6)
+            {
+                rightPlaque.SetActive(false);
+            }
+        }
+
+        if (docScript.chosenDoctor is 2 && OnTile == 6 && special1 is true)
+        {
+            leftAnswer.text = "When I have this ovulation pain. What should I do?";
+        }
+        if (docScript.chosenDoctor is 2 && OnTile == 5 && special2 is true)
+        {
+            leftAnswer.text = "Thank you, I have learnt many new things!";
+        }
+        if (docScript.chosenDoctor is 2 && OnTile == 5 && !special2)
+        {
+            tiles[5].GetComponent<tileController>().LWay = 7;
+            newLway = 7;
+        }
+        if (docScript.chosenDoctor is 2 && OnTile == 7)
+        {
+            newRway = 4;
+        }
+
     }
 
     public void ChooseR()
@@ -170,6 +197,12 @@ public class TilesManager : MonoBehaviour
     public void ChooseL()
     {
         tilesOpened++;
+
+        if (docScript.chosenDoctor is 0 && OnTile is 2)
+        {
+            promptSc.docs[0].GetComponent<narrativeController>().specialResponses[2] = "I will respect your right to decline a procedure or request an alternative!";
+        }
+
         if (docScript.chosenDoctor is 0 && OnTile is 3 || docScript.chosenDoctor is 1 && OnTile is 10 || docScript.chosenDoctor is 2 && OnTile is 4)
         {
             ended2 = true;
@@ -192,7 +225,7 @@ public class TilesManager : MonoBehaviour
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(5); // loads current scene
+        SceneManager.LoadScene(6); // loads current scene
     }
 
     public IEnumerator Ending()
@@ -202,7 +235,7 @@ public class TilesManager : MonoBehaviour
         endingText2.SetActive(true);
         tipsButton.SetActive(true);
 
-        if (tilesOpened is 11)
+        if (winwin)
         {
             girls[docScript.chosenDoctor].SetActive(true);
         }
@@ -212,7 +245,7 @@ public class TilesManager : MonoBehaviour
     {
         loseImage.SetActive(true);
         tipsButton.SetActive(false);
-        tipText.SetActive(true);
+        tipText[docScript.chosenDoctor].SetActive(true);
         endButton.SetActive(true);
     }
 }
